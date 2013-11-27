@@ -1,0 +1,9 @@
+org.cyanogenmod.oneclick.BuildConfig
+org.cyanogenmod.oneclick.R
+org.cyanogenmod.oneclick.R$attr
+org.cyanogenmod.oneclick.R$color
+org.cyanogenmod.oneclick.R$drawable
+org.cyanogenmod.oneclick.R$id
+org.cyanogenmod.oneclick.R$layout
+org.cyanogenmod.oneclick.R$string
+org.cyanogenmod.oneclick.R$style

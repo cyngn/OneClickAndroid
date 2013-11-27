@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CyanogenMod Installer</string>
+    <string name="welcome">Willkommen</string>
+    <string name="intro">Diese App wird Dir assistieren, während Du CyanogenMod installierst. Du brauchst einen Windowsrechner, worauf Vista oder etwas Neueres läuft, und ein USB-Kabel.\n\nWährend der Installation werden alle Werkeinstellungen auf Deinem Gerät zurückgesetzt, darum solltest Du von allen wichtigen Daten jetzt eine Sicherungskopie machen.</string>
+    
+    <string name="begin">Los gehts</string>
+    <string name="open_developer_options">Fortfahren</string>
+    <string name="continue_on_windows">Installation in Windows fortsetzen</string>
+
+    <string name="enable_usb_help">Um fortzufahren, schalte die USB-Debugging am nächsten Bildschirm an, wie unten abgebildet.</string>
+    <string name="enable_ptp_help">Um fortzufahren, schalte die Kamera (PTP) am nächsten Bildschirm an, wie unten abgebildet.</string>
+    <string name="device_ready">Dein Gerät ist jetzt bereit für die CyanogenMod-Installation. Besuche die unten aufgeführte Website auf Deinem Windowsrechner um fortzufahren:</string>
+    <string name="device_ready_windows">Dein Gerät wurde erfolgreich vom CyanogenMod-Installer erkannt. Um fortzufahren, gehe mit Deinem Windowsrechner zum CyanogenMod-Installer zurück und folge den Anweisungen dort.</string>
+    <string name="website_link">http://get.cm</string>
+</resources>

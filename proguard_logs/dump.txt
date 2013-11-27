@@ -1,0 +1,3434 @@
+_____________________________________________________________________
++ Program class: android/os/SystemProperties
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class android.os.SystemProperties extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 60):
+  + Integer [31]
+  + Integer [91]
+  + String [key.length > 31]
+  + String [val.length > 91]
+  + Class [android/os/SystemProperties]
+  + Class [java/lang/IllegalArgumentException]
+  + Class [java/lang/Object]
+  + Class [java/lang/String]
+  + Methodref [android/os/SystemProperties.native_get (Ljava/lang/String;)Ljava/lang/String;]
+  + Methodref [android/os/SystemProperties.native_get (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + Methodref [android/os/SystemProperties.native_get_boolean (Ljava/lang/String;Z)Z]
+  + Methodref [android/os/SystemProperties.native_get_int (Ljava/lang/String;I)I]
+  + Methodref [android/os/SystemProperties.native_get_long (Ljava/lang/String;J)J]
+  + Methodref [android/os/SystemProperties.native_set (Ljava/lang/String;Ljava/lang/String;)V]
+  + Methodref [java/lang/IllegalArgumentException.<init> (Ljava/lang/String;)V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [java/lang/String.length ()I]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [length ()I]
+  + NameAndType [native_get (Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [native_get (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [native_get_boolean (Ljava/lang/String;Z)Z]
+  + NameAndType [native_get_int (Ljava/lang/String;I)I]
+  + NameAndType [native_get_long (Ljava/lang/String;J)J]
+  + NameAndType [native_set (Ljava/lang/String;Ljava/lang/String;)V]
+  + Utf8 [()I]
+  + Utf8 [()V]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;I)I]
+  + Utf8 [(Ljava/lang/String;J)J]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;Z)Z]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [ConstantValue]
+  + Utf8 [I]
+  + Utf8 [PROP_NAME_MAX]
+  + Utf8 [PROP_VALUE_MAX]
+  + Utf8 [StackMapTable]
+  + Utf8 [android/os/SystemProperties]
+  + Utf8 [get]
+  + Utf8 [getBoolean]
+  + Utf8 [getInt]
+  + Utf8 [getLong]
+  + Utf8 [java/lang/IllegalArgumentException]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/String]
+  + Utf8 [key.length > 31]
+  + Utf8 [length]
+  + Utf8 [native_get]
+  + Utf8 [native_get_boolean]
+  + Utf8 [native_get_int]
+  + Utf8 [native_get_long]
+  + Utf8 [native_set]
+  + Utf8 [set]
+  + Utf8 [val.length > 91]
+
+Fields (count = 2):
+  + Field:        PROP_NAME_MAX I
+    Access flags: 0x19
+      = public static final int PROP_NAME_MAX
+    Class member attributes (count = 1):
+    + Constant value attribute:
+    + Integer [31]
+  + Field:        PROP_VALUE_MAX I
+    Access flags: 0x19
+      = public static final int PROP_VALUE_MAX
+    Class member attributes (count = 1):
+    + Constant value attribute:
+    + Integer [91]
+
+Methods (count = 13):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public SystemProperties()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #16
+        + Methodref [java/lang/Object.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       native_get(Ljava/lang/String;)Ljava/lang/String;
+    Access flags: 0x10a
+      = private static native java.lang.String native_get(java.lang.String)
+  + Method:       native_get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    Access flags: 0x10a
+      = private static native java.lang.String native_get(java.lang.String,java.lang.String)
+  + Method:       native_get_int(Ljava/lang/String;I)I
+    Access flags: 0x10a
+      = private static native int native_get_int(java.lang.String,int)
+  + Method:       native_get_long(Ljava/lang/String;J)J
+    Access flags: 0x10a
+      = private static native long native_get_long(java.lang.String,long)
+  + Method:       native_get_boolean(Ljava/lang/String;Z)Z
+    Access flags: 0x10a
+      = private static native boolean native_get_boolean(java.lang.String,boolean)
+  + Method:       native_set(Ljava/lang/String;Ljava/lang/String;)V
+    Access flags: 0x10a
+      = private static native void native_set(java.lang.String,java.lang.String)
+  + Method:       get(Ljava/lang/String;)Ljava/lang/String;
+    Access flags: 0x9
+      = public static java.lang.String get(java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 24, locals = 1, stack = 3):
+      [0] aload_0 v0
+      [1] invokevirtual #17
+        + Methodref [java/lang/String.length ()I]
+      [4] bipush 31
+      [6] ificmple +13 (target=19)
+      [9] new #6
+        + Class [java/lang/IllegalArgumentException]
+      [12] dup
+      [13] ldc #3
+        + String [key.length > 31]
+      [15] invokespecial #15
+        + Methodref [java/lang/IllegalArgumentException.<init> (Ljava/lang/String;)V]
+      [18] athrow
+      [19] aload_0 v0
+      [20] invokestatic #9
+        + Methodref [android/os/SystemProperties.native_get (Ljava/lang/String;)Ljava/lang/String;]
+      [23] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [19] Var: ..., Stack: (empty)
+  + Method:       get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    Access flags: 0x9
+      = public static java.lang.String get(java.lang.String,java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 25, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] invokevirtual #17
+        + Methodref [java/lang/String.length ()I]
+      [4] bipush 31
+      [6] ificmple +13 (target=19)
+      [9] new #6
+        + Class [java/lang/IllegalArgumentException]
+      [12] dup
+      [13] ldc #3
+        + String [key.length > 31]
+      [15] invokespecial #15
+        + Methodref [java/lang/IllegalArgumentException.<init> (Ljava/lang/String;)V]
+      [18] athrow
+      [19] aload_0 v0
+      [20] aload_1 v1
+      [21] invokestatic #10
+        + Methodref [android/os/SystemProperties.native_get (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [24] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [19] Var: ..., Stack: (empty)
+  + Method:       getInt(Ljava/lang/String;I)I
+    Access flags: 0x9
+      = public static int getInt(java.lang.String,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 25, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] invokevirtual #17
+        + Methodref [java/lang/String.length ()I]
+      [4] bipush 31
+      [6] ificmple +13 (target=19)
+      [9] new #6
+        + Class [java/lang/IllegalArgumentException]
+      [12] dup
+      [13] ldc #3
+        + String [key.length > 31]
+      [15] invokespecial #15
+        + Methodref [java/lang/IllegalArgumentException.<init> (Ljava/lang/String;)V]
+      [18] athrow
+      [19] aload_0 v0
+      [20] iload_1 v1
+      [21] invokestatic #12
+        + Methodref [android/os/SystemProperties.native_get_int (Ljava/lang/String;I)I]
+      [24] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [19] Var: ..., Stack: (empty)
+  + Method:       getLong(Ljava/lang/String;J)J
+    Access flags: 0x9
+      = public static long getLong(java.lang.String,long)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 25, locals = 3, stack = 3):
+      [0] aload_0 v0
+      [1] invokevirtual #17
+        + Methodref [java/lang/String.length ()I]
+      [4] bipush 31
+      [6] ificmple +13 (target=19)
+      [9] new #6
+        + Class [java/lang/IllegalArgumentException]
+      [12] dup
+      [13] ldc #3
+        + String [key.length > 31]
+      [15] invokespecial #15
+        + Methodref [java/lang/IllegalArgumentException.<init> (Ljava/lang/String;)V]
+      [18] athrow
+      [19] aload_0 v0
+      [20] lload_1 v1
+      [21] invokestatic #13
+        + Methodref [android/os/SystemProperties.native_get_long (Ljava/lang/String;J)J]
+      [24] lreturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [19] Var: ..., Stack: (empty)
+  + Method:       getBoolean(Ljava/lang/String;Z)Z
+    Access flags: 0x9
+      = public static boolean getBoolean(java.lang.String,boolean)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 25, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] invokevirtual #17
+        + Methodref [java/lang/String.length ()I]
+      [4] bipush 31
+      [6] ificmple +13 (target=19)
+      [9] new #6
+        + Class [java/lang/IllegalArgumentException]
+      [12] dup
+      [13] ldc #3
+        + String [key.length > 31]
+      [15] invokespecial #15
+        + Methodref [java/lang/IllegalArgumentException.<init> (Ljava/lang/String;)V]
+      [18] athrow
+      [19] aload_0 v0
+      [20] iload_1 v1
+      [21] invokestatic #11
+        + Methodref [android/os/SystemProperties.native_get_boolean (Ljava/lang/String;Z)Z]
+      [24] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [19] Var: ..., Stack: (empty)
+  + Method:       set(Ljava/lang/String;Ljava/lang/String;)V
+    Access flags: 0x9
+      = public static void set(java.lang.String,java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 48, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] invokevirtual #17
+        + Methodref [java/lang/String.length ()I]
+      [4] bipush 31
+      [6] ificmple +13 (target=19)
+      [9] new #6
+        + Class [java/lang/IllegalArgumentException]
+      [12] dup
+      [13] ldc #3
+        + String [key.length > 31]
+      [15] invokespecial #15
+        + Methodref [java/lang/IllegalArgumentException.<init> (Ljava/lang/String;)V]
+      [18] athrow
+      [19] aload_1 v1
+      [20] ifnull +22 (target=42)
+      [23] aload_1 v1
+      [24] invokevirtual #17
+        + Methodref [java/lang/String.length ()I]
+      [27] bipush 91
+      [29] ificmple +13 (target=42)
+      [32] new #6
+        + Class [java/lang/IllegalArgumentException]
+      [35] dup
+      [36] ldc #4
+        + String [val.length > 91]
+      [38] invokespecial #15
+        + Methodref [java/lang/IllegalArgumentException.<init> (Ljava/lang/String;)V]
+      [41] athrow
+      [42] aload_0 v0
+      [43] aload_1 v1
+      [44] invokestatic #14
+        + Methodref [android/os/SystemProperties.native_set (Ljava/lang/String;Ljava/lang/String;)V]
+      [47] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [19] Var: ..., Stack: (empty)
+        - [42] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: org/cyanogenmod/oneclick/FinishActivity
+  Superclass:    android/app/Activity
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class org.cyanogenmod.oneclick.FinishActivity extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 66):
+  + Integer [2130903046]
+  + String [adb_enabled]
+  + Class [android/app/Activity]
+  + Class [android/content/Intent]
+  + Class [android/provider/Settings$Secure]
+  + Class [android/view/Window]
+  + Class [org/cyanogenmod/oneclick/FinishActivity]
+  + Class [org/cyanogenmod/oneclick/StartActivity]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/app/Activity.onResume ()V]
+  + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + Methodref [android/provider/Settings$Secure.getInt (Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+  + Methodref [android/view/Window.addFlags (I)V]
+  + Methodref [org/cyanogenmod/oneclick/FinishActivity.a ()Z]
+  + Methodref [org/cyanogenmod/oneclick/FinishActivity.finish ()V]
+  + Methodref [org/cyanogenmod/oneclick/FinishActivity.getBaseContext ()Landroid/content/Context;]
+  + Methodref [org/cyanogenmod/oneclick/FinishActivity.getContentResolver ()Landroid/content/ContentResolver;]
+  + Methodref [org/cyanogenmod/oneclick/FinishActivity.getWindow ()Landroid/view/Window;]
+  + Methodref [org/cyanogenmod/oneclick/FinishActivity.setContentView (I)V]
+  + Methodref [org/cyanogenmod/oneclick/FinishActivity.startActivity (Landroid/content/Intent;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + NameAndType [a ()Z]
+  + NameAndType [addFlags (I)V]
+  + NameAndType [finish ()V]
+  + NameAndType [getBaseContext ()Landroid/content/Context;]
+  + NameAndType [getContentResolver ()Landroid/content/ContentResolver;]
+  + NameAndType [getInt (Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+  + NameAndType [getWindow ()Landroid/view/Window;]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [onResume ()V]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + Utf8 [()Landroid/content/ContentResolver;]
+  + Utf8 [()Landroid/content/Context;]
+  + Utf8 [()Landroid/view/Window;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(I)V]
+  + Utf8 [(Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [adb_enabled]
+  + Utf8 [addFlags]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/provider/Settings$Secure]
+  + Utf8 [android/view/Window]
+  + Utf8 [finish]
+  + Utf8 [getBaseContext]
+  + Utf8 [getContentResolver]
+  + Utf8 [getInt]
+  + Utf8 [getWindow]
+  + Utf8 [onCreate]
+  + Utf8 [onResume]
+  + Utf8 [org/cyanogenmod/oneclick/FinishActivity]
+  + Utf8 [org/cyanogenmod/oneclick/StartActivity]
+  + Utf8 [setContentView]
+  + Utf8 [startActivity]
+
+Fields (count = 0):
+
+Methods (count = 4):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public FinishActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #9
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 22, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] invokevirtual #19
+        + Methodref [org/cyanogenmod/oneclick/FinishActivity.getWindow ()Landroid/view/Window;]
+      [4] sipush 128
+      [7] invokevirtual #14
+        + Methodref [android/view/Window.addFlags (I)V]
+      [10] aload_0 v0
+      [11] aload_1 v1
+      [12] invokespecial #10
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [15] aload_0 v0
+      [16] ldc #1
+        + Integer [2130903046]
+      [18] invokevirtual #20
+        + Methodref [org/cyanogenmod/oneclick/FinishActivity.setContentView (I)V]
+      [21] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onResume()V
+    Access flags: 0x1
+      = public void onResume()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 33, locals = 1, stack = 5):
+      [0] aload_0 v0
+      [1] invokespecial #11
+        + Methodref [android/app/Activity.onResume ()V]
+      [4] aload_0 v0
+      [5] invokespecial #15
+        + Methodref [org/cyanogenmod/oneclick/FinishActivity.a ()Z]
+      [8] ifne +24 (target=32)
+      [11] aload_0 v0
+      [12] new #4
+        + Class [android/content/Intent]
+      [15] dup
+      [16] aload_0 v0
+      [17] invokevirtual #17
+        + Methodref [org/cyanogenmod/oneclick/FinishActivity.getBaseContext ()Landroid/content/Context;]
+      [20] ldc #8
+        + Class [org/cyanogenmod/oneclick/StartActivity]
+      [22] invokespecial #12
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [25] invokevirtual #21
+        + Methodref [org/cyanogenmod/oneclick/FinishActivity.startActivity (Landroid/content/Intent;)V]
+      [28] aload_0 v0
+      [29] invokevirtual #16
+        + Methodref [org/cyanogenmod/oneclick/FinishActivity.finish ()V]
+      [32] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [32] Var: ..., Stack: (empty)
+  + Method:       a()Z
+    Access flags: 0x2
+      = private boolean a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 20, locals = 1, stack = 3):
+      [0] aload_0 v0
+      [1] invokevirtual #18
+        + Methodref [org/cyanogenmod/oneclick/FinishActivity.getContentResolver ()Landroid/content/ContentResolver;]
+      [4] ldc #2
+        + String [adb_enabled]
+      [6] iconst_0
+      [7] invokestatic #13
+        + Methodref [android/provider/Settings$Secure.getInt (Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+      [10] iconst_1
+      [11] ificmpne +7 (target=18)
+      [14] iconst_1
+      [15] goto +4 (target=19)
+      [18] iconst_0
+      [19] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [18] Var: ..., Stack: (empty)
+        - [19] Var: ..., Stack: [i]
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: org/cyanogenmod/oneclick/HTCFastBootActivity
+  Superclass:    android/app/Activity
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class org.cyanogenmod.oneclick.HTCFastBootActivity extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 153):
+  + Integer [2130903040]
+  + Integer [2131165184]
+  + Integer [2131165185]
+  + Float [250.0]
+  + String [com.htc.htcpowermanager]
+  + String [com.htc.htcpowermanager.PowerManagerActivity]
+  + String [enable_fastboot]
+  + Class [android/app/Activity]
+  + Class [android/content/ComponentName]
+  + Class [android/content/Intent]
+  + Class [android/content/pm/PackageManager]
+  + Class [android/provider/Settings$Secure]
+  + Class [android/view/View]
+  + Class [android/view/animation/AlphaAnimation]
+  + Class [android/view/animation/AnimationSet]
+  + Class [android/view/animation/DecelerateInterpolator]
+  + Class [android/view/animation/TranslateAnimation]
+  + Class [android/widget/ImageView]
+  + Class [java/lang/Exception]
+  + Class [org/cyanogenmod/oneclick/HTCFastBootActivity]
+  + Class [org/cyanogenmod/oneclick/UnplugDeviceActivity]
+  + Class [org/cyanogenmod/oneclick/a]
+  + Long [-1]
+  + Long [500]
+  + Long [750]
+  + Long [1000]
+  + Fieldref [org/cyanogenmod/oneclick/HTCFastBootActivity.a Landroid/content/ComponentName;]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/app/Activity.onResume ()V]
+  + Methodref [android/content/ComponentName.<init> (Ljava/lang/String;Ljava/lang/String;)V]
+  + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + Methodref [android/content/pm/PackageManager.getActivityInfo (Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;]
+  + Methodref [android/provider/Settings$Secure.getInt (Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+  + Methodref [android/view/View.setAnimation (Landroid/view/animation/Animation;)V]
+  + Methodref [android/view/View.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  + Methodref [android/view/animation/AlphaAnimation.<init> (FF)V]
+  + Methodref [android/view/animation/AlphaAnimation.setDuration (J)V]
+  + Methodref [android/view/animation/AlphaAnimation.setStartOffset (J)V]
+  + Methodref [android/view/animation/AlphaAnimation.setStartTime (J)V]
+  + Methodref [android/view/animation/AnimationSet.<init> (Z)V]
+  + Methodref [android/view/animation/AnimationSet.addAnimation (Landroid/view/animation/Animation;)V]
+  + Methodref [android/view/animation/AnimationSet.setInterpolator (Landroid/view/animation/Interpolator;)V]
+  + Methodref [android/view/animation/DecelerateInterpolator.<init> (F)V]
+  + Methodref [android/view/animation/TranslateAnimation.<init> (FFFF)V]
+  + Methodref [android/view/animation/TranslateAnimation.setDuration (J)V]
+  + Methodref [android/view/animation/TranslateAnimation.setStartTime (J)V]
+  + Methodref [android/widget/ImageView.setAnimation (Landroid/view/animation/Animation;)V]
+  + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.a ()Z]
+  + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.findViewById (I)Landroid/view/View;]
+  + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.finish ()V]
+  + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.getBaseContext ()Landroid/content/Context;]
+  + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.getContentResolver ()Landroid/content/ContentResolver;]
+  + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.getPackageManager ()Landroid/content/pm/PackageManager;]
+  + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.setContentView (I)V]
+  + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.startActivity (Landroid/content/Intent;)V]
+  + Methodref [org/cyanogenmod/oneclick/a.<init> (Lorg/cyanogenmod/oneclick/HTCFastBootActivity;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (F)V]
+  + NameAndType [<init> (FF)V]
+  + NameAndType [<init> (FFFF)V]
+  + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + NameAndType [<init> (Ljava/lang/String;Ljava/lang/String;)V]
+  + NameAndType [<init> (Lorg/cyanogenmod/oneclick/HTCFastBootActivity;)V]
+  + NameAndType [<init> (Z)V]
+  + NameAndType [a ()Z]
+  + NameAndType [a Landroid/content/ComponentName;]
+  + NameAndType [addAnimation (Landroid/view/animation/Animation;)V]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [finish ()V]
+  + NameAndType [getActivityInfo (Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;]
+  + NameAndType [getBaseContext ()Landroid/content/Context;]
+  + NameAndType [getContentResolver ()Landroid/content/ContentResolver;]
+  + NameAndType [getInt (Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+  + NameAndType [getPackageManager ()Landroid/content/pm/PackageManager;]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [onResume ()V]
+  + NameAndType [setAnimation (Landroid/view/animation/Animation;)V]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setDuration (J)V]
+  + NameAndType [setInterpolator (Landroid/view/animation/Interpolator;)V]
+  + NameAndType [setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  + NameAndType [setStartOffset (J)V]
+  + NameAndType [setStartTime (J)V]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + Utf8 [()Landroid/content/ContentResolver;]
+  + Utf8 [()Landroid/content/Context;]
+  + Utf8 [()Landroid/content/pm/PackageManager;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(F)V]
+  + Utf8 [(FF)V]
+  + Utf8 [(FFFF)V]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(I)V]
+  + Utf8 [(J)V]
+  + Utf8 [(Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;]
+  + Utf8 [(Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/view/View$OnClickListener;)V]
+  + Utf8 [(Landroid/view/animation/Animation;)V]
+  + Utf8 [(Landroid/view/animation/Interpolator;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)V]
+  + Utf8 [(Lorg/cyanogenmod/oneclick/HTCFastBootActivity;)V]
+  + Utf8 [(Z)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/content/ComponentName;]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [addAnimation]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/content/ComponentName]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/content/pm/PackageManager]
+  + Utf8 [android/provider/Settings$Secure]
+  + Utf8 [android/view/View]
+  + Utf8 [android/view/animation/AlphaAnimation]
+  + Utf8 [android/view/animation/AnimationSet]
+  + Utf8 [android/view/animation/DecelerateInterpolator]
+  + Utf8 [android/view/animation/TranslateAnimation]
+  + Utf8 [android/widget/ImageView]
+  + Utf8 [com.htc.htcpowermanager]
+  + Utf8 [com.htc.htcpowermanager.PowerManagerActivity]
+  + Utf8 [enable_fastboot]
+  + Utf8 [findViewById]
+  + Utf8 [finish]
+  + Utf8 [getActivityInfo]
+  + Utf8 [getBaseContext]
+  + Utf8 [getContentResolver]
+  + Utf8 [getInt]
+  + Utf8 [getPackageManager]
+  + Utf8 [java/lang/Exception]
+  + Utf8 [onCreate]
+  + Utf8 [onResume]
+  + Utf8 [org/cyanogenmod/oneclick/HTCFastBootActivity]
+  + Utf8 [org/cyanogenmod/oneclick/UnplugDeviceActivity]
+  + Utf8 [org/cyanogenmod/oneclick/a]
+  + Utf8 [setAnimation]
+  + Utf8 [setContentView]
+  + Utf8 [setDuration]
+  + Utf8 [setInterpolator]
+  + Utf8 [setOnClickListener]
+  + Utf8 [setStartOffset]
+  + Utf8 [setStartTime]
+  + Utf8 [startActivity]
+
+Fields (count = 1):
+  + Field:        a Landroid/content/ComponentName;
+    Access flags: 0x0
+      = android.content.ComponentName a
+
+Methods (count = 4):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public HTCFastBootActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 20, locals = 1, stack = 5):
+      [0] aload_0 v0
+      [1] invokespecial #32
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] aload_0 v0
+      [5] new #9
+        + Class [android/content/ComponentName]
+      [8] dup
+      [9] ldc #5
+        + String [com.htc.htcpowermanager]
+      [11] ldc #6
+        + String [com.htc.htcpowermanager.PowerManagerActivity]
+      [13] invokespecial #35
+        + Methodref [android/content/ComponentName.<init> (Ljava/lang/String;Ljava/lang/String;)V]
+      [16] putfield #31
+        + Fieldref [org/cyanogenmod/oneclick/HTCFastBootActivity.a Landroid/content/ComponentName;]
+      [19] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 228, locals = 9, stack = 6):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #33
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] invokespecial #53
+        + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.a ()Z]
+      [9] ifeq +25 (target=34)
+      [12] aload_0 v0
+      [13] new #10
+        + Class [android/content/Intent]
+      [16] dup
+      [17] aload_0 v0
+      [18] invokevirtual #56
+        + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.getBaseContext ()Landroid/content/Context;]
+      [21] ldc #21
+        + Class [org/cyanogenmod/oneclick/UnplugDeviceActivity]
+      [23] invokespecial #36
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [26] invokevirtual #60
+        + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.startActivity (Landroid/content/Intent;)V]
+      [29] aload_0 v0
+      [30] invokevirtual #55
+        + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.finish ()V]
+      [33] return
+      [34] aload_0 v0
+      [35] ldc #1
+        + Integer [2130903040]
+      [37] invokevirtual #59
+        + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.setContentView (I)V]
+      [40] aload_0 v0
+      [41] ldc #2
+        + Integer [2131165184]
+      [43] invokevirtual #54
+        + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.findViewById (I)Landroid/view/View;]
+      [46] checkcast #18
+        + Class [android/widget/ImageView]
+      [49] astore_2 v2
+      [50] new #16
+        + Class [android/view/animation/DecelerateInterpolator]
+      [53] dup
+      [54] fconst_2
+      [55] invokespecial #48
+        + Methodref [android/view/animation/DecelerateInterpolator.<init> (F)V]
+      [58] astore_3 v3
+      [59] new #15
+        + Class [android/view/animation/AnimationSet]
+      [62] dup
+      [63] iconst_1
+      [64] invokespecial #45
+        + Methodref [android/view/animation/AnimationSet.<init> (Z)V]
+      [67] astore v4
+      [69] aload v4
+      [71] aload_3 v3
+      [72] invokevirtual #47
+        + Methodref [android/view/animation/AnimationSet.setInterpolator (Landroid/view/animation/Interpolator;)V]
+      [75] new #17
+        + Class [android/view/animation/TranslateAnimation]
+      [78] dup
+      [79] fconst_0
+      [80] fconst_0
+      [81] ldc #4
+        + Float [250.0]
+      [83] fconst_0
+      [84] invokespecial #49
+        + Methodref [android/view/animation/TranslateAnimation.<init> (FFFF)V]
+      [87] astore v5
+      [89] aload v5
+      [91] ldc2_w #29
+        + Long [1000]
+      [94] invokevirtual #50
+        + Methodref [android/view/animation/TranslateAnimation.setDuration (J)V]
+      [97] aload v5
+      [99] ldc2_w #23
+        + Long [-1]
+      [102] invokevirtual #51
+        + Methodref [android/view/animation/TranslateAnimation.setStartTime (J)V]
+      [105] aload v4
+      [107] aload v5
+      [109] invokevirtual #46
+        + Methodref [android/view/animation/AnimationSet.addAnimation (Landroid/view/animation/Animation;)V]
+      [112] new #14
+        + Class [android/view/animation/AlphaAnimation]
+      [115] dup
+      [116] fconst_0
+      [117] fconst_1
+      [118] invokespecial #41
+        + Methodref [android/view/animation/AlphaAnimation.<init> (FF)V]
+      [121] astore v6
+      [123] aload v6
+      [125] ldc2_w #29
+        + Long [1000]
+      [128] invokevirtual #42
+        + Methodref [android/view/animation/AlphaAnimation.setDuration (J)V]
+      [131] aload v6
+      [133] ldc2_w #25
+        + Long [500]
+      [136] invokevirtual #43
+        + Methodref [android/view/animation/AlphaAnimation.setStartOffset (J)V]
+      [139] aload v6
+      [141] ldc2_w #23
+        + Long [-1]
+      [144] invokevirtual #44
+        + Methodref [android/view/animation/AlphaAnimation.setStartTime (J)V]
+      [147] aload v4
+      [149] aload v6
+      [151] invokevirtual #46
+        + Methodref [android/view/animation/AnimationSet.addAnimation (Landroid/view/animation/Animation;)V]
+      [154] aload_2 v2
+      [155] aload v4
+      [157] invokevirtual #52
+        + Methodref [android/widget/ImageView.setAnimation (Landroid/view/animation/Animation;)V]
+      [160] new #14
+        + Class [android/view/animation/AlphaAnimation]
+      [163] dup
+      [164] fconst_0
+      [165] fconst_1
+      [166] invokespecial #41
+        + Methodref [android/view/animation/AlphaAnimation.<init> (FF)V]
+      [169] astore v7
+      [171] aload v7
+      [173] ldc2_w #27
+        + Long [750]
+      [176] invokevirtual #42
+        + Methodref [android/view/animation/AlphaAnimation.setDuration (J)V]
+      [179] aload v7
+      [181] ldc2_w #23
+        + Long [-1]
+      [184] invokevirtual #44
+        + Methodref [android/view/animation/AlphaAnimation.setStartTime (J)V]
+      [187] aload v7
+      [189] ldc2_w #29
+        + Long [1000]
+      [192] invokevirtual #43
+        + Methodref [android/view/animation/AlphaAnimation.setStartOffset (J)V]
+      [195] aload_0 v0
+      [196] ldc #3
+        + Integer [2131165185]
+      [198] invokevirtual #54
+        + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.findViewById (I)Landroid/view/View;]
+      [201] aload v7
+      [203] invokevirtual #39
+        + Methodref [android/view/View.setAnimation (Landroid/view/animation/Animation;)V]
+      [206] new #22
+        + Class [org/cyanogenmod/oneclick/a]
+      [209] dup
+      [210] aload_0 v0
+      [211] invokespecial #61
+        + Methodref [org/cyanogenmod/oneclick/a.<init> (Lorg/cyanogenmod/oneclick/HTCFastBootActivity;)V]
+      [214] astore v8
+      [216] aload_0 v0
+      [217] ldc #3
+        + Integer [2131165185]
+      [219] invokevirtual #54
+        + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.findViewById (I)Landroid/view/View;]
+      [222] aload v8
+      [224] invokevirtual #40
+        + Methodref [android/view/View.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+      [227] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [34] Var: ..., Stack: (empty)
+  + Method:       onResume()V
+    Access flags: 0x1
+      = public void onResume()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 16, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #34
+        + Methodref [android/app/Activity.onResume ()V]
+      [4] aload_0 v0
+      [5] invokespecial #53
+        + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.a ()Z]
+      [8] ifeq +7 (target=15)
+      [11] aload_0 v0
+      [12] invokevirtual #55
+        + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.finish ()V]
+      [15] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [15] Var: ..., Stack: (empty)
+  + Method:       a()Z
+    Access flags: 0x2
+      = private boolean a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 38, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] invokevirtual #58
+        + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.getPackageManager ()Landroid/content/pm/PackageManager;]
+      [4] aload_0 v0
+      [5] getfield #31
+        + Fieldref [org/cyanogenmod/oneclick/HTCFastBootActivity.a Landroid/content/ComponentName;]
+      [8] iconst_0
+      [9] invokevirtual #37
+        + Methodref [android/content/pm/PackageManager.getActivityInfo (Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;]
+      [12] pop
+      [13] goto +6 (target=19)
+      [16] astore_1 v1
+      [17] iconst_1
+      [18] ireturn
+      [19] aload_0 v0
+      [20] invokevirtual #57
+        + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.getContentResolver ()Landroid/content/ContentResolver;]
+      [23] ldc #7
+        + String [enable_fastboot]
+      [25] iconst_1
+      [26] invokestatic #38
+        + Methodref [android/provider/Settings$Secure.getInt (Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+      [29] ifne +7 (target=36)
+      [32] iconst_1
+      [33] goto +4 (target=37)
+      [36] iconst_0
+      [37] ireturn
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (0 -> 13: 16):
+      + Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 4):
+        - [16] Var: ..., Stack: [a:java/lang/Exception]
+        - [19] Var: ..., Stack: (empty)
+        - [36] Var: ..., Stack: (empty)
+        - [37] Var: ..., Stack: [i]
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: org/cyanogenmod/oneclick/a
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class org.cyanogenmod.oneclick.a extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/view/View$OnClickListener]
+
+Constant Pool (count = 53):
+  + Class [android/content/ActivityNotFoundException]
+  + Class [android/content/Intent]
+  + Class [android/view/View]
+  + Class [android/view/View$OnClickListener]
+  + Class [java/lang/Object]
+  + Class [org/cyanogenmod/oneclick/HTCFastBootActivity]
+  + Class [org/cyanogenmod/oneclick/HTCFastBootMonitorService]
+  + Class [org/cyanogenmod/oneclick/a]
+  + Fieldref [org/cyanogenmod/oneclick/HTCFastBootActivity.a Landroid/content/ComponentName;]
+  + Fieldref [org/cyanogenmod/oneclick/a.a Lorg/cyanogenmod/oneclick/HTCFastBootActivity;]
+  + Methodref [android/content/Intent.<init> ()V]
+  + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + Methodref [android/content/Intent.setComponent (Landroid/content/ComponentName;)Landroid/content/Intent;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.getBaseContext ()Landroid/content/Context;]
+  + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.startActivity (Landroid/content/Intent;)V]
+  + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.startService (Landroid/content/Intent;)Landroid/content/ComponentName;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + NameAndType [a Landroid/content/ComponentName;]
+  + NameAndType [a Lorg/cyanogenmod/oneclick/HTCFastBootActivity;]
+  + NameAndType [getBaseContext ()Landroid/content/Context;]
+  + NameAndType [setComponent (Landroid/content/ComponentName;)Landroid/content/Intent;]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + NameAndType [startService (Landroid/content/Intent;)Landroid/content/ComponentName;]
+  + Utf8 [()Landroid/content/Context;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/ComponentName;)Landroid/content/Intent;]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)V]
+  + Utf8 [(Landroid/content/Intent;)Landroid/content/ComponentName;]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [(Lorg/cyanogenmod/oneclick/HTCFastBootActivity;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/content/ComponentName;]
+  + Utf8 [Lorg/cyanogenmod/oneclick/HTCFastBootActivity;]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android/content/ActivityNotFoundException]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/view/View]
+  + Utf8 [android/view/View$OnClickListener]
+  + Utf8 [getBaseContext]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onClick]
+  + Utf8 [org/cyanogenmod/oneclick/HTCFastBootActivity]
+  + Utf8 [org/cyanogenmod/oneclick/HTCFastBootMonitorService]
+  + Utf8 [org/cyanogenmod/oneclick/a]
+  + Utf8 [setComponent]
+  + Utf8 [startActivity]
+  + Utf8 [startService]
+
+Fields (count = 1):
+  + Field:        a Lorg/cyanogenmod/oneclick/HTCFastBootActivity;
+    Access flags: 0x1010
+      = final synthetic org.cyanogenmod.oneclick.HTCFastBootActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lorg/cyanogenmod/oneclick/HTCFastBootActivity;)V
+    Access flags: 0x0
+      = a(org.cyanogenmod.oneclick.HTCFastBootActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #10
+        + Fieldref [org/cyanogenmod/oneclick/a.a Lorg/cyanogenmod/oneclick/HTCFastBootActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #14
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/view/View;)V
+    Access flags: 0x1
+      = public void onClick(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 57, locals = 4, stack = 5):
+      [0] new #2
+        + Class [android/content/Intent]
+      [3] dup
+      [4] invokespecial #11
+        + Methodref [android/content/Intent.<init> ()V]
+      [7] astore_2 v2
+      [8] aload_2 v2
+      [9] aload_0 v0
+      [10] getfield #10
+        + Fieldref [org/cyanogenmod/oneclick/a.a Lorg/cyanogenmod/oneclick/HTCFastBootActivity;]
+      [13] getfield #9
+        + Fieldref [org/cyanogenmod/oneclick/HTCFastBootActivity.a Landroid/content/ComponentName;]
+      [16] invokevirtual #13
+        + Methodref [android/content/Intent.setComponent (Landroid/content/ComponentName;)Landroid/content/Intent;]
+      [19] pop
+      [20] aload_0 v0
+      [21] getfield #10
+        + Fieldref [org/cyanogenmod/oneclick/a.a Lorg/cyanogenmod/oneclick/HTCFastBootActivity;]
+      [24] aload_2 v2
+      [25] invokevirtual #16
+        + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.startActivity (Landroid/content/Intent;)V]
+      [28] aload_0 v0
+      [29] getfield #10
+        + Fieldref [org/cyanogenmod/oneclick/a.a Lorg/cyanogenmod/oneclick/HTCFastBootActivity;]
+      [32] new #2
+        + Class [android/content/Intent]
+      [35] dup
+      [36] aload_0 v0
+      [37] getfield #10
+        + Fieldref [org/cyanogenmod/oneclick/a.a Lorg/cyanogenmod/oneclick/HTCFastBootActivity;]
+      [40] invokevirtual #15
+        + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.getBaseContext ()Landroid/content/Context;]
+      [43] ldc #7
+        + Class [org/cyanogenmod/oneclick/HTCFastBootMonitorService]
+      [45] invokespecial #12
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [48] invokevirtual #17
+        + Methodref [org/cyanogenmod/oneclick/HTCFastBootActivity.startService (Landroid/content/Intent;)Landroid/content/ComponentName;]
+      [51] pop
+      [52] goto +4 (target=56)
+      [55] astore_3 v3
+      [56] return
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (20 -> 52: 55):
+      + Class [android/content/ActivityNotFoundException]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [55] Var: [a:org/cyanogenmod/oneclick/a][a:android/view/View][a:android/content/Intent], Stack: [a:android/content/ActivityNotFoundException]
+        - [56] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: org/cyanogenmod/oneclick/HTCFastBootMonitorService
+  Superclass:    org/cyanogenmod/oneclick/b
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class org.cyanogenmod.oneclick.HTCFastBootMonitorService extends org.cyanogenmod.oneclick.b
+
+Interfaces (count = 0):
+
+Constant Pool (count = 53):
+  + String [com.htc.htcpowermanager]
+  + String [com.htc.htcpowermanager.PowerManagerActivity]
+  + String [enable_fastboot]
+  + Class [android/content/ComponentName]
+  + Class [android/content/pm/PackageManager]
+  + Class [android/provider/Settings$Secure]
+  + Class [java/lang/Exception]
+  + Class [org/cyanogenmod/oneclick/HTCFastBootMonitorService]
+  + Class [org/cyanogenmod/oneclick/UnplugDeviceActivity]
+  + Class [org/cyanogenmod/oneclick/b]
+  + Fieldref [org/cyanogenmod/oneclick/HTCFastBootMonitorService.a Landroid/content/ComponentName;]
+  + Methodref [android/content/ComponentName.<init> (Ljava/lang/String;Ljava/lang/String;)V]
+  + Methodref [android/content/pm/PackageManager.getActivityInfo (Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;]
+  + Methodref [android/provider/Settings$Secure.getInt (Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+  + Methodref [org/cyanogenmod/oneclick/HTCFastBootMonitorService.getContentResolver ()Landroid/content/ContentResolver;]
+  + Methodref [org/cyanogenmod/oneclick/HTCFastBootMonitorService.getPackageManager ()Landroid/content/pm/PackageManager;]
+  + Methodref [org/cyanogenmod/oneclick/b.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Ljava/lang/String;Ljava/lang/String;)V]
+  + NameAndType [a Landroid/content/ComponentName;]
+  + NameAndType [getActivityInfo (Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;]
+  + NameAndType [getContentResolver ()Landroid/content/ContentResolver;]
+  + NameAndType [getInt (Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+  + NameAndType [getPackageManager ()Landroid/content/pm/PackageManager;]
+  + Utf8 [()Landroid/content/ContentResolver;]
+  + Utf8 [()Landroid/content/pm/PackageManager;]
+  + Utf8 [()Ljava/lang/Class;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;]
+  + Utf8 [(Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/content/ComponentName;]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android/content/ComponentName]
+  + Utf8 [android/content/pm/PackageManager]
+  + Utf8 [android/provider/Settings$Secure]
+  + Utf8 [b]
+  + Utf8 [com.htc.htcpowermanager]
+  + Utf8 [com.htc.htcpowermanager.PowerManagerActivity]
+  + Utf8 [enable_fastboot]
+  + Utf8 [getActivityInfo]
+  + Utf8 [getContentResolver]
+  + Utf8 [getInt]
+  + Utf8 [getPackageManager]
+  + Utf8 [java/lang/Exception]
+  + Utf8 [org/cyanogenmod/oneclick/HTCFastBootMonitorService]
+  + Utf8 [org/cyanogenmod/oneclick/UnplugDeviceActivity]
+  + Utf8 [org/cyanogenmod/oneclick/b]
+
+Fields (count = 1):
+  + Field:        a Landroid/content/ComponentName;
+    Access flags: 0x0
+      = android.content.ComponentName a
+
+Methods (count = 3):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public HTCFastBootMonitorService()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 20, locals = 1, stack = 5):
+      [0] aload_0 v0
+      [1] invokespecial #17
+        + Methodref [org/cyanogenmod/oneclick/b.<init> ()V]
+      [4] aload_0 v0
+      [5] new #4
+        + Class [android/content/ComponentName]
+      [8] dup
+      [9] ldc #1
+        + String [com.htc.htcpowermanager]
+      [11] ldc #2
+        + String [com.htc.htcpowermanager.PowerManagerActivity]
+      [13] invokespecial #12
+        + Methodref [android/content/ComponentName.<init> (Ljava/lang/String;Ljava/lang/String;)V]
+      [16] putfield #11
+        + Fieldref [org/cyanogenmod/oneclick/HTCFastBootMonitorService.a Landroid/content/ComponentName;]
+      [19] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()Z
+    Access flags: 0x4
+      = protected boolean a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 38, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] invokevirtual #16
+        + Methodref [org/cyanogenmod/oneclick/HTCFastBootMonitorService.getPackageManager ()Landroid/content/pm/PackageManager;]
+      [4] aload_0 v0
+      [5] getfield #11
+        + Fieldref [org/cyanogenmod/oneclick/HTCFastBootMonitorService.a Landroid/content/ComponentName;]
+      [8] iconst_0
+      [9] invokevirtual #13
+        + Methodref [android/content/pm/PackageManager.getActivityInfo (Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;]
+      [12] pop
+      [13] goto +6 (target=19)
+      [16] astore_1 v1
+      [17] iconst_1
+      [18] ireturn
+      [19] aload_0 v0
+      [20] invokevirtual #15
+        + Methodref [org/cyanogenmod/oneclick/HTCFastBootMonitorService.getContentResolver ()Landroid/content/ContentResolver;]
+      [23] ldc #3
+        + String [enable_fastboot]
+      [25] iconst_1
+      [26] invokestatic #14
+        + Methodref [android/provider/Settings$Secure.getInt (Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+      [29] ifne +7 (target=36)
+      [32] iconst_1
+      [33] goto +4 (target=37)
+      [36] iconst_0
+      [37] ireturn
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (0 -> 13: 16):
+      + Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 4):
+        - [16] Var: ..., Stack: [a:java/lang/Exception]
+        - [19] Var: ..., Stack: (empty)
+        - [36] Var: ..., Stack: (empty)
+        - [37] Var: ..., Stack: [i]
+  + Method:       b()Ljava/lang/Class;
+    Access flags: 0x4
+      = protected java.lang.Class b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 3, locals = 1, stack = 1):
+      [0] ldc #9
+        + Class [org/cyanogenmod/oneclick/UnplugDeviceActivity]
+      [2] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: org/cyanogenmod/oneclick/b
+  Superclass:    android/app/Service
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x421
+    = public abstract class org.cyanogenmod.oneclick.b extends android.app.Service
+
+Interfaces (count = 0):
+
+Constant Pool (count = 57):
+  + Class [android/app/Service]
+  + Class [android/os/Handler]
+  + Class [org/cyanogenmod/oneclick/b]
+  + Class [org/cyanogenmod/oneclick/c]
+  + Class [org/cyanogenmod/oneclick/d]
+  + Long [60000]
+  + Fieldref [org/cyanogenmod/oneclick/b.a Landroid/os/Handler;]
+  + Methodref [android/app/Service.<init> ()V]
+  + Methodref [android/app/Service.onCreate ()V]
+  + Methodref [android/app/Service.onStartCommand (Landroid/content/Intent;II)I]
+  + Methodref [android/os/Handler.<init> ()V]
+  + Methodref [android/os/Handler.postDelayed (Ljava/lang/Runnable;J)Z]
+  + Methodref [android/os/Handler.removeCallbacksAndMessages (Ljava/lang/Object;)V]
+  + Methodref [org/cyanogenmod/oneclick/b.c ()V]
+  + Methodref [org/cyanogenmod/oneclick/b.stopSelf ()V]
+  + Methodref [org/cyanogenmod/oneclick/c.<init> (Lorg/cyanogenmod/oneclick/b;)V]
+  + Methodref [org/cyanogenmod/oneclick/c.run ()V]
+  + Methodref [org/cyanogenmod/oneclick/d.<init> (Lorg/cyanogenmod/oneclick/b;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Lorg/cyanogenmod/oneclick/b;)V]
+  + NameAndType [a Landroid/os/Handler;]
+  + NameAndType [c ()V]
+  + NameAndType [onCreate ()V]
+  + NameAndType [onStartCommand (Landroid/content/Intent;II)I]
+  + NameAndType [postDelayed (Ljava/lang/Runnable;J)Z]
+  + NameAndType [removeCallbacksAndMessages (Ljava/lang/Object;)V]
+  + NameAndType [run ()V]
+  + NameAndType [stopSelf ()V]
+  + Utf8 [()Ljava/lang/Class;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(Landroid/content/Intent;)Landroid/os/IBinder;]
+  + Utf8 [(Landroid/content/Intent;II)I]
+  + Utf8 [(Ljava/lang/Object;)V]
+  + Utf8 [(Ljava/lang/Runnable;J)Z]
+  + Utf8 [(Lorg/cyanogenmod/oneclick/b;)Landroid/os/Handler;]
+  + Utf8 [(Lorg/cyanogenmod/oneclick/b;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/os/Handler;]
+  + Utf8 [a]
+  + Utf8 [android/app/Service]
+  + Utf8 [android/os/Handler]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [onBind]
+  + Utf8 [onCreate]
+  + Utf8 [onStartCommand]
+  + Utf8 [org/cyanogenmod/oneclick/b]
+  + Utf8 [org/cyanogenmod/oneclick/c]
+  + Utf8 [org/cyanogenmod/oneclick/d]
+  + Utf8 [postDelayed]
+  + Utf8 [removeCallbacksAndMessages]
+  + Utf8 [run]
+  + Utf8 [stopSelf]
+
+Fields (count = 1):
+  + Field:        a Landroid/os/Handler;
+    Access flags: 0x2
+      = private android.os.Handler a
+
+Methods (count = 9):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #9
+        + Methodref [android/app/Service.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onBind(Landroid/content/Intent;)Landroid/os/IBinder;
+    Access flags: 0x1
+      = public android.os.IBinder onBind(android.content.Intent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 2, locals = 2, stack = 1):
+      [0] aconst_null
+      [1] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onStartCommand(Landroid/content/Intent;II)I
+    Access flags: 0x1
+      = public int onStartCommand(android.content.Intent,int,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 4, stack = 4):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] iload_2 v2
+      [3] iload_3 v3
+      [4] invokespecial #11
+        + Methodref [android/app/Service.onStartCommand (Landroid/content/Intent;II)I]
+      [7] pop
+      [8] iconst_1
+      [9] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       c()V
+    Access flags: 0x2
+      = private void c()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 18, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #8
+        + Fieldref [org/cyanogenmod/oneclick/b.a Landroid/os/Handler;]
+      [4] aconst_null
+      [5] invokevirtual #14
+        + Methodref [android/os/Handler.removeCallbacksAndMessages (Ljava/lang/Object;)V]
+      [8] aload_0 v0
+      [9] aconst_null
+      [10] putfield #8
+        + Fieldref [org/cyanogenmod/oneclick/b.a Landroid/os/Handler;]
+      [13] aload_0 v0
+      [14] invokevirtual #16
+        + Methodref [org/cyanogenmod/oneclick/b.stopSelf ()V]
+      [17] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b()Ljava/lang/Class;
+    Access flags: 0x404
+      = protected abstract java.lang.Class b()
+  + Method:       onCreate()V
+    Access flags: 0x1
+      = public void onCreate()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 46, locals = 1, stack = 4):
+      [0] aload_0 v0
+      [1] invokespecial #10
+        + Methodref [android/app/Service.onCreate ()V]
+      [4] aload_0 v0
+      [5] new #2
+        + Class [android/os/Handler]
+      [8] dup
+      [9] invokespecial #12
+        + Methodref [android/os/Handler.<init> ()V]
+      [12] putfield #8
+        + Fieldref [org/cyanogenmod/oneclick/b.a Landroid/os/Handler;]
+      [15] new #4
+        + Class [org/cyanogenmod/oneclick/c]
+      [18] dup
+      [19] aload_0 v0
+      [20] invokespecial #17
+        + Methodref [org/cyanogenmod/oneclick/c.<init> (Lorg/cyanogenmod/oneclick/b;)V]
+      [23] invokevirtual #18
+        + Methodref [org/cyanogenmod/oneclick/c.run ()V]
+      [26] aload_0 v0
+      [27] getfield #8
+        + Fieldref [org/cyanogenmod/oneclick/b.a Landroid/os/Handler;]
+      [30] new #5
+        + Class [org/cyanogenmod/oneclick/d]
+      [33] dup
+      [34] aload_0 v0
+      [35] invokespecial #19
+        + Methodref [org/cyanogenmod/oneclick/d.<init> (Lorg/cyanogenmod/oneclick/b;)V]
+      [38] ldc2_w #6
+        + Long [60000]
+      [41] invokevirtual #13
+        + Methodref [android/os/Handler.postDelayed (Ljava/lang/Runnable;J)Z]
+      [44] pop
+      [45] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()Z
+    Access flags: 0x404
+      = protected abstract boolean a()
+  + Method:       a(Lorg/cyanogenmod/oneclick/b;)Landroid/os/Handler;
+    Access flags: 0x1008
+      = static synthetic android.os.Handler a(org.cyanogenmod.oneclick.b)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #8
+        + Fieldref [org/cyanogenmod/oneclick/b.a Landroid/os/Handler;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b(Lorg/cyanogenmod/oneclick/b;)V
+    Access flags: 0x1008
+      = static synthetic void b(org.cyanogenmod.oneclick.b)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #15
+        + Methodref [org/cyanogenmod/oneclick/b.c ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: org/cyanogenmod/oneclick/c
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class org.cyanogenmod.oneclick.c extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [java/lang/Runnable]
+
+Constant Pool (count = 59):
+  + Integer [268435456]
+  + Class [android/content/Intent]
+  + Class [android/os/Handler]
+  + Class [java/lang/Object]
+  + Class [java/lang/Runnable]
+  + Class [org/cyanogenmod/oneclick/b]
+  + Class [org/cyanogenmod/oneclick/c]
+  + Long [1000]
+  + Fieldref [org/cyanogenmod/oneclick/c.a Lorg/cyanogenmod/oneclick/b;]
+  + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + Methodref [android/content/Intent.setFlags (I)Landroid/content/Intent;]
+  + Methodref [android/os/Handler.postDelayed (Ljava/lang/Runnable;J)Z]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [org/cyanogenmod/oneclick/b.a ()Z]
+  + Methodref [org/cyanogenmod/oneclick/b.a (Lorg/cyanogenmod/oneclick/b;)Landroid/os/Handler;]
+  + Methodref [org/cyanogenmod/oneclick/b.b ()Ljava/lang/Class;]
+  + Methodref [org/cyanogenmod/oneclick/b.b (Lorg/cyanogenmod/oneclick/b;)V]
+  + Methodref [org/cyanogenmod/oneclick/b.getBaseContext ()Landroid/content/Context;]
+  + Methodref [org/cyanogenmod/oneclick/b.startActivity (Landroid/content/Intent;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + NameAndType [a ()Z]
+  + NameAndType [a (Lorg/cyanogenmod/oneclick/b;)Landroid/os/Handler;]
+  + NameAndType [a Lorg/cyanogenmod/oneclick/b;]
+  + NameAndType [b ()Ljava/lang/Class;]
+  + NameAndType [b (Lorg/cyanogenmod/oneclick/b;)V]
+  + NameAndType [getBaseContext ()Landroid/content/Context;]
+  + NameAndType [postDelayed (Ljava/lang/Runnable;J)Z]
+  + NameAndType [setFlags (I)Landroid/content/Intent;]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + Utf8 [()Landroid/content/Context;]
+  + Utf8 [()Ljava/lang/Class;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(I)Landroid/content/Intent;]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Ljava/lang/Runnable;J)Z]
+  + Utf8 [(Lorg/cyanogenmod/oneclick/b;)Landroid/os/Handler;]
+  + Utf8 [(Lorg/cyanogenmod/oneclick/b;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lorg/cyanogenmod/oneclick/b;]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/os/Handler]
+  + Utf8 [b]
+  + Utf8 [getBaseContext]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/Runnable]
+  + Utf8 [org/cyanogenmod/oneclick/b]
+  + Utf8 [org/cyanogenmod/oneclick/c]
+  + Utf8 [postDelayed]
+  + Utf8 [run]
+  + Utf8 [setFlags]
+  + Utf8 [startActivity]
+
+Fields (count = 1):
+  + Field:        a Lorg/cyanogenmod/oneclick/b;
+    Access flags: 0x1010
+      = final synthetic org.cyanogenmod.oneclick.b a
+
+Methods (count = 2):
+  - Method:       <init>(Lorg/cyanogenmod/oneclick/b;)V
+    Access flags: 0x0
+      = c(org.cyanogenmod.oneclick.b)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #10
+        + Fieldref [org/cyanogenmod/oneclick/c.a Lorg/cyanogenmod/oneclick/b;]
+      [5] aload_0 v0
+      [6] invokespecial #14
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       run()V
+    Access flags: 0x1
+      = public void run()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 82, locals = 2, stack = 4):
+      [0] aload_0 v0
+      [1] getfield #10
+        + Fieldref [org/cyanogenmod/oneclick/c.a Lorg/cyanogenmod/oneclick/b;]
+      [4] invokestatic #16
+        + Methodref [org/cyanogenmod/oneclick/b.a (Lorg/cyanogenmod/oneclick/b;)Landroid/os/Handler;]
+      [7] ifnonnull +4 (target=11)
+      [10] return
+      [11] aload_0 v0
+      [12] getfield #10
+        + Fieldref [org/cyanogenmod/oneclick/c.a Lorg/cyanogenmod/oneclick/b;]
+      [15] invokevirtual #15
+        + Methodref [org/cyanogenmod/oneclick/b.a ()Z]
+      [18] ifeq +48 (target=66)
+      [21] new #2
+        + Class [android/content/Intent]
+      [24] dup
+      [25] aload_0 v0
+      [26] getfield #10
+        + Fieldref [org/cyanogenmod/oneclick/c.a Lorg/cyanogenmod/oneclick/b;]
+      [29] invokevirtual #19
+        + Methodref [org/cyanogenmod/oneclick/b.getBaseContext ()Landroid/content/Context;]
+      [32] aload_0 v0
+      [33] getfield #10
+        + Fieldref [org/cyanogenmod/oneclick/c.a Lorg/cyanogenmod/oneclick/b;]
+      [36] invokevirtual #17
+        + Methodref [org/cyanogenmod/oneclick/b.b ()Ljava/lang/Class;]
+      [39] invokespecial #11
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [42] astore_1 v1
+      [43] aload_1 v1
+      [44] ldc #1
+        + Integer [268435456]
+      [46] invokevirtual #12
+        + Methodref [android/content/Intent.setFlags (I)Landroid/content/Intent;]
+      [49] pop
+      [50] aload_0 v0
+      [51] getfield #10
+        + Fieldref [org/cyanogenmod/oneclick/c.a Lorg/cyanogenmod/oneclick/b;]
+      [54] aload_1 v1
+      [55] invokevirtual #20
+        + Methodref [org/cyanogenmod/oneclick/b.startActivity (Landroid/content/Intent;)V]
+      [58] aload_0 v0
+      [59] getfield #10
+        + Fieldref [org/cyanogenmod/oneclick/c.a Lorg/cyanogenmod/oneclick/b;]
+      [62] invokestatic #18
+        + Methodref [org/cyanogenmod/oneclick/b.b (Lorg/cyanogenmod/oneclick/b;)V]
+      [65] return
+      [66] aload_0 v0
+      [67] getfield #10
+        + Fieldref [org/cyanogenmod/oneclick/c.a Lorg/cyanogenmod/oneclick/b;]
+      [70] invokestatic #16
+        + Methodref [org/cyanogenmod/oneclick/b.a (Lorg/cyanogenmod/oneclick/b;)Landroid/os/Handler;]
+      [73] aload_0 v0
+      [74] ldc2_w #8
+        + Long [1000]
+      [77] invokevirtual #13
+        + Methodref [android/os/Handler.postDelayed (Ljava/lang/Runnable;J)Z]
+      [80] pop
+      [81] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [11] Var: ..., Stack: (empty)
+        - [66] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: org/cyanogenmod/oneclick/d
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class org.cyanogenmod.oneclick.d extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [java/lang/Runnable]
+
+Constant Pool (count = 23):
+  + Class [java/lang/Object]
+  + Class [java/lang/Runnable]
+  + Class [org/cyanogenmod/oneclick/b]
+  + Class [org/cyanogenmod/oneclick/d]
+  + Fieldref [org/cyanogenmod/oneclick/d.a Lorg/cyanogenmod/oneclick/b;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [org/cyanogenmod/oneclick/b.b (Lorg/cyanogenmod/oneclick/b;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Lorg/cyanogenmod/oneclick/b;]
+  + NameAndType [b (Lorg/cyanogenmod/oneclick/b;)V]
+  + Utf8 [()V]
+  + Utf8 [(Lorg/cyanogenmod/oneclick/b;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lorg/cyanogenmod/oneclick/b;]
+  + Utf8 [a]
+  + Utf8 [b]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/Runnable]
+  + Utf8 [org/cyanogenmod/oneclick/b]
+  + Utf8 [org/cyanogenmod/oneclick/d]
+  + Utf8 [run]
+
+Fields (count = 1):
+  + Field:        a Lorg/cyanogenmod/oneclick/b;
+    Access flags: 0x1010
+      = final synthetic org.cyanogenmod.oneclick.b a
+
+Methods (count = 2):
+  - Method:       <init>(Lorg/cyanogenmod/oneclick/b;)V
+    Access flags: 0x0
+      = d(org.cyanogenmod.oneclick.b)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #5
+        + Fieldref [org/cyanogenmod/oneclick/d.a Lorg/cyanogenmod/oneclick/b;]
+      [5] aload_0 v0
+      [6] invokespecial #6
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       run()V
+    Access flags: 0x1
+      = public void run()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 8, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #5
+        + Fieldref [org/cyanogenmod/oneclick/d.a Lorg/cyanogenmod/oneclick/b;]
+      [4] invokestatic #7
+        + Methodref [org/cyanogenmod/oneclick/b.b (Lorg/cyanogenmod/oneclick/b;)V]
+      [7] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: org/cyanogenmod/oneclick/PtpActivity
+  Superclass:    android/app/Activity
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class org.cyanogenmod.oneclick.PtpActivity extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 135):
+  + Integer [2130903041]
+  + Integer [2131165185]
+  + Integer [2131165186]
+  + Float [250.0]
+  + String [mtp]
+  + String [persist.sys.usb.config]
+  + Class [android/app/Activity]
+  + Class [android/content/Intent]
+  + Class [android/os/SystemProperties]
+  + Class [android/view/View]
+  + Class [android/view/animation/AlphaAnimation]
+  + Class [android/view/animation/AnimationSet]
+  + Class [android/view/animation/DecelerateInterpolator]
+  + Class [android/view/animation/TranslateAnimation]
+  + Class [android/widget/ImageView]
+  + Class [java/lang/String]
+  + Class [org/cyanogenmod/oneclick/HTCFastBootActivity]
+  + Class [org/cyanogenmod/oneclick/PtpActivity]
+  + Class [org/cyanogenmod/oneclick/UnplugDeviceActivity]
+  + Class [org/cyanogenmod/oneclick/e]
+  + Long [-1]
+  + Long [500]
+  + Long [750]
+  + Long [1000]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/app/Activity.onResume ()V]
+  + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + Methodref [android/os/SystemProperties.get (Ljava/lang/String;)Ljava/lang/String;]
+  + Methodref [android/view/View.setAnimation (Landroid/view/animation/Animation;)V]
+  + Methodref [android/view/View.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  + Methodref [android/view/animation/AlphaAnimation.<init> (FF)V]
+  + Methodref [android/view/animation/AlphaAnimation.setDuration (J)V]
+  + Methodref [android/view/animation/AlphaAnimation.setStartOffset (J)V]
+  + Methodref [android/view/animation/AlphaAnimation.setStartTime (J)V]
+  + Methodref [android/view/animation/AnimationSet.<init> (Z)V]
+  + Methodref [android/view/animation/AnimationSet.addAnimation (Landroid/view/animation/Animation;)V]
+  + Methodref [android/view/animation/AnimationSet.setInterpolator (Landroid/view/animation/Interpolator;)V]
+  + Methodref [android/view/animation/DecelerateInterpolator.<init> (F)V]
+  + Methodref [android/view/animation/TranslateAnimation.<init> (FFFF)V]
+  + Methodref [android/view/animation/TranslateAnimation.setDuration (J)V]
+  + Methodref [android/view/animation/TranslateAnimation.setStartTime (J)V]
+  + Methodref [android/widget/ImageView.setAnimation (Landroid/view/animation/Animation;)V]
+  + Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+  + Methodref [org/cyanogenmod/oneclick/PtpActivity.a ()Z]
+  + Methodref [org/cyanogenmod/oneclick/PtpActivity.findViewById (I)Landroid/view/View;]
+  + Methodref [org/cyanogenmod/oneclick/PtpActivity.finish ()V]
+  + Methodref [org/cyanogenmod/oneclick/PtpActivity.getBaseContext ()Landroid/content/Context;]
+  + Methodref [org/cyanogenmod/oneclick/PtpActivity.setContentView (I)V]
+  + Methodref [org/cyanogenmod/oneclick/PtpActivity.startActivity (Landroid/content/Intent;)V]
+  + Methodref [org/cyanogenmod/oneclick/e.<init> (Lorg/cyanogenmod/oneclick/PtpActivity;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (F)V]
+  + NameAndType [<init> (FF)V]
+  + NameAndType [<init> (FFFF)V]
+  + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + NameAndType [<init> (Lorg/cyanogenmod/oneclick/PtpActivity;)V]
+  + NameAndType [<init> (Z)V]
+  + NameAndType [a ()Z]
+  + NameAndType [addAnimation (Landroid/view/animation/Animation;)V]
+  + NameAndType [contains (Ljava/lang/CharSequence;)Z]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [finish ()V]
+  + NameAndType [get (Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [getBaseContext ()Landroid/content/Context;]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [onResume ()V]
+  + NameAndType [setAnimation (Landroid/view/animation/Animation;)V]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setDuration (J)V]
+  + NameAndType [setInterpolator (Landroid/view/animation/Interpolator;)V]
+  + NameAndType [setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  + NameAndType [setStartOffset (J)V]
+  + NameAndType [setStartTime (J)V]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + Utf8 [()Landroid/content/Context;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(F)V]
+  + Utf8 [(FF)V]
+  + Utf8 [(FFFF)V]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(I)V]
+  + Utf8 [(J)V]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/view/View$OnClickListener;)V]
+  + Utf8 [(Landroid/view/animation/Animation;)V]
+  + Utf8 [(Landroid/view/animation/Interpolator;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)Z]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Lorg/cyanogenmod/oneclick/PtpActivity;)V]
+  + Utf8 [(Z)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [addAnimation]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/os/SystemProperties]
+  + Utf8 [android/view/View]
+  + Utf8 [android/view/animation/AlphaAnimation]
+  + Utf8 [android/view/animation/AnimationSet]
+  + Utf8 [android/view/animation/DecelerateInterpolator]
+  + Utf8 [android/view/animation/TranslateAnimation]
+  + Utf8 [android/widget/ImageView]
+  + Utf8 [contains]
+  + Utf8 [findViewById]
+  + Utf8 [finish]
+  + Utf8 [get]
+  + Utf8 [getBaseContext]
+  + Utf8 [java/lang/String]
+  + Utf8 [mtp]
+  + Utf8 [onCreate]
+  + Utf8 [onResume]
+  + Utf8 [org/cyanogenmod/oneclick/HTCFastBootActivity]
+  + Utf8 [org/cyanogenmod/oneclick/PtpActivity]
+  + Utf8 [org/cyanogenmod/oneclick/UnplugDeviceActivity]
+  + Utf8 [org/cyanogenmod/oneclick/e]
+  + Utf8 [persist.sys.usb.config]
+  + Utf8 [setAnimation]
+  + Utf8 [setContentView]
+  + Utf8 [setDuration]
+  + Utf8 [setInterpolator]
+  + Utf8 [setOnClickListener]
+  + Utf8 [setStartOffset]
+  + Utf8 [setStartTime]
+  + Utf8 [startActivity]
+
+Fields (count = 0):
+
+Methods (count = 4):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public PtpActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #29
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 228, locals = 9, stack = 6):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #30
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] invokespecial #49
+        + Methodref [org/cyanogenmod/oneclick/PtpActivity.a ()Z]
+      [9] ifeq +25 (target=34)
+      [12] aload_0 v0
+      [13] new #8
+        + Class [android/content/Intent]
+      [16] dup
+      [17] aload_0 v0
+      [18] invokevirtual #52
+        + Methodref [org/cyanogenmod/oneclick/PtpActivity.getBaseContext ()Landroid/content/Context;]
+      [21] ldc #17
+        + Class [org/cyanogenmod/oneclick/HTCFastBootActivity]
+      [23] invokespecial #32
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [26] invokevirtual #54
+        + Methodref [org/cyanogenmod/oneclick/PtpActivity.startActivity (Landroid/content/Intent;)V]
+      [29] aload_0 v0
+      [30] invokevirtual #51
+        + Methodref [org/cyanogenmod/oneclick/PtpActivity.finish ()V]
+      [33] return
+      [34] aload_0 v0
+      [35] ldc #1
+        + Integer [2130903041]
+      [37] invokevirtual #53
+        + Methodref [org/cyanogenmod/oneclick/PtpActivity.setContentView (I)V]
+      [40] aload_0 v0
+      [41] ldc #3
+        + Integer [2131165186]
+      [43] invokevirtual #50
+        + Methodref [org/cyanogenmod/oneclick/PtpActivity.findViewById (I)Landroid/view/View;]
+      [46] checkcast #15
+        + Class [android/widget/ImageView]
+      [49] astore_2 v2
+      [50] new #13
+        + Class [android/view/animation/DecelerateInterpolator]
+      [53] dup
+      [54] fconst_2
+      [55] invokespecial #43
+        + Methodref [android/view/animation/DecelerateInterpolator.<init> (F)V]
+      [58] astore_3 v3
+      [59] new #12
+        + Class [android/view/animation/AnimationSet]
+      [62] dup
+      [63] iconst_1
+      [64] invokespecial #40
+        + Methodref [android/view/animation/AnimationSet.<init> (Z)V]
+      [67] astore v4
+      [69] aload v4
+      [71] aload_3 v3
+      [72] invokevirtual #42
+        + Methodref [android/view/animation/AnimationSet.setInterpolator (Landroid/view/animation/Interpolator;)V]
+      [75] new #14
+        + Class [android/view/animation/TranslateAnimation]
+      [78] dup
+      [79] fconst_0
+      [80] fconst_0
+      [81] ldc #4
+        + Float [250.0]
+      [83] fconst_0
+      [84] invokespecial #44
+        + Methodref [android/view/animation/TranslateAnimation.<init> (FFFF)V]
+      [87] astore v5
+      [89] aload v5
+      [91] ldc2_w #27
+        + Long [1000]
+      [94] invokevirtual #45
+        + Methodref [android/view/animation/TranslateAnimation.setDuration (J)V]
+      [97] aload v5
+      [99] ldc2_w #21
+        + Long [-1]
+      [102] invokevirtual #46
+        + Methodref [android/view/animation/TranslateAnimation.setStartTime (J)V]
+      [105] aload v4
+      [107] aload v5
+      [109] invokevirtual #41
+        + Methodref [android/view/animation/AnimationSet.addAnimation (Landroid/view/animation/Animation;)V]
+      [112] new #11
+        + Class [android/view/animation/AlphaAnimation]
+      [115] dup
+      [116] fconst_0
+      [117] fconst_1
+      [118] invokespecial #36
+        + Methodref [android/view/animation/AlphaAnimation.<init> (FF)V]
+      [121] astore v6
+      [123] aload v6
+      [125] ldc2_w #27
+        + Long [1000]
+      [128] invokevirtual #37
+        + Methodref [android/view/animation/AlphaAnimation.setDuration (J)V]
+      [131] aload v6
+      [133] ldc2_w #23
+        + Long [500]
+      [136] invokevirtual #38
+        + Methodref [android/view/animation/AlphaAnimation.setStartOffset (J)V]
+      [139] aload v6
+      [141] ldc2_w #21
+        + Long [-1]
+      [144] invokevirtual #39
+        + Methodref [android/view/animation/AlphaAnimation.setStartTime (J)V]
+      [147] aload v4
+      [149] aload v6
+      [151] invokevirtual #41
+        + Methodref [android/view/animation/AnimationSet.addAnimation (Landroid/view/animation/Animation;)V]
+      [154] aload_2 v2
+      [155] aload v4
+      [157] invokevirtual #47
+        + Methodref [android/widget/ImageView.setAnimation (Landroid/view/animation/Animation;)V]
+      [160] new #11
+        + Class [android/view/animation/AlphaAnimation]
+      [163] dup
+      [164] fconst_0
+      [165] fconst_1
+      [166] invokespecial #36
+        + Methodref [android/view/animation/AlphaAnimation.<init> (FF)V]
+      [169] astore v7
+      [171] aload v7
+      [173] ldc2_w #25
+        + Long [750]
+      [176] invokevirtual #37
+        + Methodref [android/view/animation/AlphaAnimation.setDuration (J)V]
+      [179] aload v7
+      [181] ldc2_w #21
+        + Long [-1]
+      [184] invokevirtual #39
+        + Methodref [android/view/animation/AlphaAnimation.setStartTime (J)V]
+      [187] aload v7
+      [189] ldc2_w #27
+        + Long [1000]
+      [192] invokevirtual #38
+        + Methodref [android/view/animation/AlphaAnimation.setStartOffset (J)V]
+      [195] aload_0 v0
+      [196] ldc #2
+        + Integer [2131165185]
+      [198] invokevirtual #50
+        + Methodref [org/cyanogenmod/oneclick/PtpActivity.findViewById (I)Landroid/view/View;]
+      [201] aload v7
+      [203] invokevirtual #34
+        + Methodref [android/view/View.setAnimation (Landroid/view/animation/Animation;)V]
+      [206] new #20
+        + Class [org/cyanogenmod/oneclick/e]
+      [209] dup
+      [210] aload_0 v0
+      [211] invokespecial #55
+        + Methodref [org/cyanogenmod/oneclick/e.<init> (Lorg/cyanogenmod/oneclick/PtpActivity;)V]
+      [214] astore v8
+      [216] aload_0 v0
+      [217] ldc #2
+        + Integer [2131165185]
+      [219] invokevirtual #50
+        + Methodref [org/cyanogenmod/oneclick/PtpActivity.findViewById (I)Landroid/view/View;]
+      [222] aload v8
+      [224] invokevirtual #35
+        + Methodref [android/view/View.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+      [227] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [34] Var: ..., Stack: (empty)
+  + Method:       onResume()V
+    Access flags: 0x1
+      = public void onResume()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 33, locals = 1, stack = 5):
+      [0] aload_0 v0
+      [1] invokespecial #31
+        + Methodref [android/app/Activity.onResume ()V]
+      [4] aload_0 v0
+      [5] invokespecial #49
+        + Methodref [org/cyanogenmod/oneclick/PtpActivity.a ()Z]
+      [8] ifeq +24 (target=32)
+      [11] aload_0 v0
+      [12] new #8
+        + Class [android/content/Intent]
+      [15] dup
+      [16] aload_0 v0
+      [17] invokevirtual #52
+        + Methodref [org/cyanogenmod/oneclick/PtpActivity.getBaseContext ()Landroid/content/Context;]
+      [20] ldc #19
+        + Class [org/cyanogenmod/oneclick/UnplugDeviceActivity]
+      [22] invokespecial #32
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [25] invokevirtual #54
+        + Methodref [org/cyanogenmod/oneclick/PtpActivity.startActivity (Landroid/content/Intent;)V]
+      [28] aload_0 v0
+      [29] invokevirtual #51
+        + Methodref [org/cyanogenmod/oneclick/PtpActivity.finish ()V]
+      [32] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [32] Var: ..., Stack: (empty)
+  + Method:       a()Z
+    Access flags: 0x2
+      = private boolean a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 23, locals = 2, stack = 2):
+      [0] ldc #6
+        + String [persist.sys.usb.config]
+      [2] invokestatic #33
+        + Methodref [android/os/SystemProperties.get (Ljava/lang/String;)Ljava/lang/String;]
+      [5] astore_1 v1
+      [6] aload_1 v1
+      [7] ifnull +14 (target=21)
+      [10] aload_1 v1
+      [11] ldc #5
+        + String [mtp]
+      [13] invokevirtual #48
+        + Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [16] ifeq +5 (target=21)
+      [19] iconst_0
+      [20] ireturn
+      [21] iconst_1
+      [22] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [21] Var: ...[a:java/lang/String], Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: org/cyanogenmod/oneclick/e
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class org.cyanogenmod.oneclick.e extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/view/View$OnClickListener]
+
+Constant Pool (count = 54):
+  + String [com.android.settings]
+  + String [com.android.settings.UsbSettings]
+  + Class [android/content/ActivityNotFoundException]
+  + Class [android/content/Intent]
+  + Class [android/view/View]
+  + Class [android/view/View$OnClickListener]
+  + Class [java/lang/Object]
+  + Class [org/cyanogenmod/oneclick/PtpActivity]
+  + Class [org/cyanogenmod/oneclick/PtpMonitorService]
+  + Class [org/cyanogenmod/oneclick/e]
+  + Fieldref [org/cyanogenmod/oneclick/e.a Lorg/cyanogenmod/oneclick/PtpActivity;]
+  + Methodref [android/content/Intent.<init> ()V]
+  + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + Methodref [android/content/Intent.setClassName (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [org/cyanogenmod/oneclick/PtpActivity.getBaseContext ()Landroid/content/Context;]
+  + Methodref [org/cyanogenmod/oneclick/PtpActivity.startActivity (Landroid/content/Intent;)V]
+  + Methodref [org/cyanogenmod/oneclick/PtpActivity.startService (Landroid/content/Intent;)Landroid/content/ComponentName;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + NameAndType [a Lorg/cyanogenmod/oneclick/PtpActivity;]
+  + NameAndType [getBaseContext ()Landroid/content/Context;]
+  + NameAndType [setClassName (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + NameAndType [startService (Landroid/content/Intent;)Landroid/content/ComponentName;]
+  + Utf8 [()Landroid/content/Context;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)V]
+  + Utf8 [(Landroid/content/Intent;)Landroid/content/ComponentName;]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [(Lorg/cyanogenmod/oneclick/PtpActivity;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lorg/cyanogenmod/oneclick/PtpActivity;]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android/content/ActivityNotFoundException]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/view/View]
+  + Utf8 [android/view/View$OnClickListener]
+  + Utf8 [com.android.settings]
+  + Utf8 [com.android.settings.UsbSettings]
+  + Utf8 [getBaseContext]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onClick]
+  + Utf8 [org/cyanogenmod/oneclick/PtpActivity]
+  + Utf8 [org/cyanogenmod/oneclick/PtpMonitorService]
+  + Utf8 [org/cyanogenmod/oneclick/e]
+  + Utf8 [setClassName]
+  + Utf8 [startActivity]
+  + Utf8 [startService]
+
+Fields (count = 1):
+  + Field:        a Lorg/cyanogenmod/oneclick/PtpActivity;
+    Access flags: 0x1010
+      = final synthetic org.cyanogenmod.oneclick.PtpActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lorg/cyanogenmod/oneclick/PtpActivity;)V
+    Access flags: 0x0
+      = e(org.cyanogenmod.oneclick.PtpActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #11
+        + Fieldref [org/cyanogenmod/oneclick/e.a Lorg/cyanogenmod/oneclick/PtpActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #15
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/view/View;)V
+    Access flags: 0x1
+      = public void onClick(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 54, locals = 4, stack = 5):
+      [0] new #4
+        + Class [android/content/Intent]
+      [3] dup
+      [4] invokespecial #12
+        + Methodref [android/content/Intent.<init> ()V]
+      [7] astore_2 v2
+      [8] aload_2 v2
+      [9] ldc #1
+        + String [com.android.settings]
+      [11] ldc #2
+        + String [com.android.settings.UsbSettings]
+      [13] invokevirtual #14
+        + Methodref [android/content/Intent.setClassName (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+      [16] pop
+      [17] aload_0 v0
+      [18] getfield #11
+        + Fieldref [org/cyanogenmod/oneclick/e.a Lorg/cyanogenmod/oneclick/PtpActivity;]
+      [21] aload_2 v2
+      [22] invokevirtual #17
+        + Methodref [org/cyanogenmod/oneclick/PtpActivity.startActivity (Landroid/content/Intent;)V]
+      [25] aload_0 v0
+      [26] getfield #11
+        + Fieldref [org/cyanogenmod/oneclick/e.a Lorg/cyanogenmod/oneclick/PtpActivity;]
+      [29] new #4
+        + Class [android/content/Intent]
+      [32] dup
+      [33] aload_0 v0
+      [34] getfield #11
+        + Fieldref [org/cyanogenmod/oneclick/e.a Lorg/cyanogenmod/oneclick/PtpActivity;]
+      [37] invokevirtual #16
+        + Methodref [org/cyanogenmod/oneclick/PtpActivity.getBaseContext ()Landroid/content/Context;]
+      [40] ldc #9
+        + Class [org/cyanogenmod/oneclick/PtpMonitorService]
+      [42] invokespecial #13
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [45] invokevirtual #18
+        + Methodref [org/cyanogenmod/oneclick/PtpActivity.startService (Landroid/content/Intent;)Landroid/content/ComponentName;]
+      [48] pop
+      [49] goto +4 (target=53)
+      [52] astore_3 v3
+      [53] return
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (17 -> 49: 52):
+      + Class [android/content/ActivityNotFoundException]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [52] Var: [a:org/cyanogenmod/oneclick/e][a:android/view/View][a:android/content/Intent], Stack: [a:android/content/ActivityNotFoundException]
+        - [53] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: org/cyanogenmod/oneclick/PtpMonitorService
+  Superclass:    org/cyanogenmod/oneclick/b
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class org.cyanogenmod.oneclick.PtpMonitorService extends org.cyanogenmod.oneclick.b
+
+Interfaces (count = 0):
+
+Constant Pool (count = 33):
+  + String [mtp]
+  + String [persist.sys.usb.config]
+  + Class [android/os/SystemProperties]
+  + Class [java/lang/String]
+  + Class [org/cyanogenmod/oneclick/HTCFastBootActivity]
+  + Class [org/cyanogenmod/oneclick/PtpMonitorService]
+  + Class [org/cyanogenmod/oneclick/b]
+  + Methodref [android/os/SystemProperties.get (Ljava/lang/String;)Ljava/lang/String;]
+  + Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+  + Methodref [org/cyanogenmod/oneclick/b.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [contains (Ljava/lang/CharSequence;)Z]
+  + NameAndType [get (Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [()Ljava/lang/Class;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(Ljava/lang/CharSequence;)Z]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android/os/SystemProperties]
+  + Utf8 [b]
+  + Utf8 [contains]
+  + Utf8 [get]
+  + Utf8 [java/lang/String]
+  + Utf8 [mtp]
+  + Utf8 [org/cyanogenmod/oneclick/HTCFastBootActivity]
+  + Utf8 [org/cyanogenmod/oneclick/PtpMonitorService]
+  + Utf8 [org/cyanogenmod/oneclick/b]
+  + Utf8 [persist.sys.usb.config]
+
+Fields (count = 0):
+
+Methods (count = 3):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public PtpMonitorService()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #10
+        + Methodref [org/cyanogenmod/oneclick/b.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()Z
+    Access flags: 0x4
+      = protected boolean a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 23, locals = 2, stack = 2):
+      [0] ldc #2
+        + String [persist.sys.usb.config]
+      [2] invokestatic #8
+        + Methodref [android/os/SystemProperties.get (Ljava/lang/String;)Ljava/lang/String;]
+      [5] astore_1 v1
+      [6] aload_1 v1
+      [7] ifnull +14 (target=21)
+      [10] aload_1 v1
+      [11] ldc #1
+        + String [mtp]
+      [13] invokevirtual #9
+        + Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [16] ifeq +5 (target=21)
+      [19] iconst_0
+      [20] ireturn
+      [21] iconst_1
+      [22] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [21] Var: ...[a:java/lang/String], Stack: (empty)
+  + Method:       b()Ljava/lang/Class;
+    Access flags: 0x4
+      = protected java.lang.Class b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 3, locals = 1, stack = 1):
+      [0] ldc #5
+        + Class [org/cyanogenmod/oneclick/HTCFastBootActivity]
+      [2] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: org/cyanogenmod/oneclick/ReturnToWindowsActivity
+  Superclass:    android/app/Activity
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class org.cyanogenmod.oneclick.ReturnToWindowsActivity extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 19):
+  + Integer [2130903042]
+  + Class [android/app/Activity]
+  + Class [org/cyanogenmod/oneclick/ReturnToWindowsActivity]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [org/cyanogenmod/oneclick/ReturnToWindowsActivity.setContentView (I)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [setContentView (I)V]
+  + Utf8 [()V]
+  + Utf8 [(I)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [android/app/Activity]
+  + Utf8 [onCreate]
+  + Utf8 [org/cyanogenmod/oneclick/ReturnToWindowsActivity]
+  + Utf8 [setContentView]
+
+Fields (count = 0):
+
+Methods (count = 2):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public ReturnToWindowsActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #4
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 12, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #5
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] ldc #1
+        + Integer [2130903042]
+      [8] invokevirtual #6
+        + Methodref [org/cyanogenmod/oneclick/ReturnToWindowsActivity.setContentView (I)V]
+      [11] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: org/cyanogenmod/oneclick/StartActivity
+  Superclass:    android/app/Activity
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class org.cyanogenmod.oneclick.StartActivity extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 35):
+  + Integer [2130903045]
+  + Integer [2131165189]
+  + Class [android/app/Activity]
+  + Class [android/view/View]
+  + Class [org/cyanogenmod/oneclick/StartActivity]
+  + Class [org/cyanogenmod/oneclick/f]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/view/View.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  + Methodref [org/cyanogenmod/oneclick/StartActivity.findViewById (I)Landroid/view/View;]
+  + Methodref [org/cyanogenmod/oneclick/StartActivity.setContentView (I)V]
+  + Methodref [org/cyanogenmod/oneclick/f.<init> (Lorg/cyanogenmod/oneclick/StartActivity;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Lorg/cyanogenmod/oneclick/StartActivity;)V]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  + Utf8 [()V]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(I)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/view/View$OnClickListener;)V]
+  + Utf8 [(Lorg/cyanogenmod/oneclick/StartActivity;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/view/View]
+  + Utf8 [findViewById]
+  + Utf8 [onCreate]
+  + Utf8 [org/cyanogenmod/oneclick/StartActivity]
+  + Utf8 [org/cyanogenmod/oneclick/f]
+  + Utf8 [setContentView]
+  + Utf8 [setOnClickListener]
+
+Fields (count = 0):
+
+Methods (count = 2):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public StartActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #7
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 29, locals = 2, stack = 4):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #8
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] ldc #1
+        + Integer [2130903045]
+      [8] invokevirtual #11
+        + Methodref [org/cyanogenmod/oneclick/StartActivity.setContentView (I)V]
+      [11] aload_0 v0
+      [12] ldc #2
+        + Integer [2131165189]
+      [14] invokevirtual #10
+        + Methodref [org/cyanogenmod/oneclick/StartActivity.findViewById (I)Landroid/view/View;]
+      [17] new #6
+        + Class [org/cyanogenmod/oneclick/f]
+      [20] dup
+      [21] aload_0 v0
+      [22] invokespecial #12
+        + Methodref [org/cyanogenmod/oneclick/f.<init> (Lorg/cyanogenmod/oneclick/StartActivity;)V]
+      [25] invokevirtual #9
+        + Methodref [android/view/View.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+      [28] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: org/cyanogenmod/oneclick/f
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class org.cyanogenmod.oneclick.f extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/view/View$OnClickListener]
+
+Constant Pool (count = 32):
+  + Class [android/content/Intent]
+  + Class [android/view/View$OnClickListener]
+  + Class [java/lang/Object]
+  + Class [org/cyanogenmod/oneclick/StartActivity]
+  + Class [org/cyanogenmod/oneclick/UsbActivity]
+  + Class [org/cyanogenmod/oneclick/f]
+  + Fieldref [org/cyanogenmod/oneclick/f.a Lorg/cyanogenmod/oneclick/StartActivity;]
+  + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [org/cyanogenmod/oneclick/StartActivity.startActivity (Landroid/content/Intent;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + NameAndType [a Lorg/cyanogenmod/oneclick/StartActivity;]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [(Lorg/cyanogenmod/oneclick/StartActivity;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lorg/cyanogenmod/oneclick/StartActivity;]
+  + Utf8 [a]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/view/View$OnClickListener]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onClick]
+  + Utf8 [org/cyanogenmod/oneclick/StartActivity]
+  + Utf8 [org/cyanogenmod/oneclick/UsbActivity]
+  + Utf8 [org/cyanogenmod/oneclick/f]
+  + Utf8 [startActivity]
+
+Fields (count = 1):
+  + Field:        a Lorg/cyanogenmod/oneclick/StartActivity;
+    Access flags: 0x1010
+      = final synthetic org.cyanogenmod.oneclick.StartActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lorg/cyanogenmod/oneclick/StartActivity;)V
+    Access flags: 0x0
+      = f(org.cyanogenmod.oneclick.StartActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #7
+        + Fieldref [org/cyanogenmod/oneclick/f.a Lorg/cyanogenmod/oneclick/StartActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #9
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/view/View;)V
+    Access flags: 0x1
+      = public void onClick(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 21, locals = 2, stack = 5):
+      [0] aload_0 v0
+      [1] getfield #7
+        + Fieldref [org/cyanogenmod/oneclick/f.a Lorg/cyanogenmod/oneclick/StartActivity;]
+      [4] new #1
+        + Class [android/content/Intent]
+      [7] dup
+      [8] aload_0 v0
+      [9] getfield #7
+        + Fieldref [org/cyanogenmod/oneclick/f.a Lorg/cyanogenmod/oneclick/StartActivity;]
+      [12] ldc #5
+        + Class [org/cyanogenmod/oneclick/UsbActivity]
+      [14] invokespecial #8
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [17] invokevirtual #10
+        + Methodref [org/cyanogenmod/oneclick/StartActivity.startActivity (Landroid/content/Intent;)V]
+      [20] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: org/cyanogenmod/oneclick/UnplugDeviceActivity
+  Superclass:    android/app/Activity
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class org.cyanogenmod.oneclick.UnplugDeviceActivity extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 70):
+  + Integer [2130903043]
+  + String [android.intent.action.BATTERY_CHANGED]
+  + String [plugged]
+  + Class [android/app/Activity]
+  + Class [android/content/Context]
+  + Class [android/content/Intent]
+  + Class [android/content/IntentFilter]
+  + Class [org/cyanogenmod/oneclick/FinishActivity]
+  + Class [org/cyanogenmod/oneclick/UnplugDeviceActivity]
+  + Class [org/cyanogenmod/oneclick/UnplugDeviceMonitorService]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/app/Activity.onResume ()V]
+  + Methodref [android/content/Context.registerReceiver (Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + Methodref [android/content/Intent.getIntExtra (Ljava/lang/String;I)I]
+  + Methodref [android/content/IntentFilter.<init> (Ljava/lang/String;)V]
+  + Methodref [org/cyanogenmod/oneclick/UnplugDeviceActivity.a ()Z]
+  + Methodref [org/cyanogenmod/oneclick/UnplugDeviceActivity.finish ()V]
+  + Methodref [org/cyanogenmod/oneclick/UnplugDeviceActivity.getBaseContext ()Landroid/content/Context;]
+  + Methodref [org/cyanogenmod/oneclick/UnplugDeviceActivity.setContentView (I)V]
+  + Methodref [org/cyanogenmod/oneclick/UnplugDeviceActivity.startActivity (Landroid/content/Intent;)V]
+  + Methodref [org/cyanogenmod/oneclick/UnplugDeviceActivity.startService (Landroid/content/Intent;)Landroid/content/ComponentName;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [a ()Z]
+  + NameAndType [finish ()V]
+  + NameAndType [getBaseContext ()Landroid/content/Context;]
+  + NameAndType [getIntExtra (Ljava/lang/String;I)I]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [onResume ()V]
+  + NameAndType [registerReceiver (Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + NameAndType [startService (Landroid/content/Intent;)Landroid/content/ComponentName;]
+  + Utf8 [()Landroid/content/Context;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(I)V]
+  + Utf8 [(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)V]
+  + Utf8 [(Landroid/content/Intent;)Landroid/content/ComponentName;]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;I)I]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android.intent.action.BATTERY_CHANGED]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/content/Context]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/content/IntentFilter]
+  + Utf8 [finish]
+  + Utf8 [getBaseContext]
+  + Utf8 [getIntExtra]
+  + Utf8 [onCreate]
+  + Utf8 [onResume]
+  + Utf8 [org/cyanogenmod/oneclick/FinishActivity]
+  + Utf8 [org/cyanogenmod/oneclick/UnplugDeviceActivity]
+  + Utf8 [org/cyanogenmod/oneclick/UnplugDeviceMonitorService]
+  + Utf8 [plugged]
+  + Utf8 [registerReceiver]
+  + Utf8 [setContentView]
+  + Utf8 [startActivity]
+  + Utf8 [startService]
+
+Fields (count = 0):
+
+Methods (count = 4):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public UnplugDeviceActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #11
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 59, locals = 2, stack = 5):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #12
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] invokespecial #18
+        + Methodref [org/cyanogenmod/oneclick/UnplugDeviceActivity.a ()Z]
+      [9] ifne +25 (target=34)
+      [12] aload_0 v0
+      [13] new #6
+        + Class [android/content/Intent]
+      [16] dup
+      [17] aload_0 v0
+      [18] invokevirtual #20
+        + Methodref [org/cyanogenmod/oneclick/UnplugDeviceActivity.getBaseContext ()Landroid/content/Context;]
+      [21] ldc #8
+        + Class [org/cyanogenmod/oneclick/FinishActivity]
+      [23] invokespecial #15
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [26] invokevirtual #22
+        + Methodref [org/cyanogenmod/oneclick/UnplugDeviceActivity.startActivity (Landroid/content/Intent;)V]
+      [29] aload_0 v0
+      [30] invokevirtual #19
+        + Methodref [org/cyanogenmod/oneclick/UnplugDeviceActivity.finish ()V]
+      [33] return
+      [34] aload_0 v0
+      [35] ldc #1
+        + Integer [2130903043]
+      [37] invokevirtual #21
+        + Methodref [org/cyanogenmod/oneclick/UnplugDeviceActivity.setContentView (I)V]
+      [40] aload_0 v0
+      [41] new #6
+        + Class [android/content/Intent]
+      [44] dup
+      [45] aload_0 v0
+      [46] invokevirtual #20
+        + Methodref [org/cyanogenmod/oneclick/UnplugDeviceActivity.getBaseContext ()Landroid/content/Context;]
+      [49] ldc #10
+        + Class [org/cyanogenmod/oneclick/UnplugDeviceMonitorService]
+      [51] invokespecial #15
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [54] invokevirtual #23
+        + Methodref [org/cyanogenmod/oneclick/UnplugDeviceActivity.startService (Landroid/content/Intent;)Landroid/content/ComponentName;]
+      [57] pop
+      [58] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [34] Var: ..., Stack: (empty)
+  + Method:       onResume()V
+    Access flags: 0x1
+      = public void onResume()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 16, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #13
+        + Methodref [android/app/Activity.onResume ()V]
+      [4] aload_0 v0
+      [5] invokespecial #18
+        + Methodref [org/cyanogenmod/oneclick/UnplugDeviceActivity.a ()Z]
+      [8] ifne +7 (target=15)
+      [11] aload_0 v0
+      [12] invokevirtual #19
+        + Methodref [org/cyanogenmod/oneclick/UnplugDeviceActivity.finish ()V]
+      [15] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [15] Var: ..., Stack: (empty)
+  + Method:       a()Z
+    Access flags: 0x2
+      = private boolean a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 42, locals = 3, stack = 5):
+      [0] aload_0 v0
+      [1] invokevirtual #20
+        + Methodref [org/cyanogenmod/oneclick/UnplugDeviceActivity.getBaseContext ()Landroid/content/Context;]
+      [4] aconst_null
+      [5] new #7
+        + Class [android/content/IntentFilter]
+      [8] dup
+      [9] ldc #2
+        + String [android.intent.action.BATTERY_CHANGED]
+      [11] invokespecial #17
+        + Methodref [android/content/IntentFilter.<init> (Ljava/lang/String;)V]
+      [14] invokevirtual #14
+        + Methodref [android/content/Context.registerReceiver (Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;]
+      [17] astore_1 v1
+      [18] aload_1 v1
+      [19] ldc #3
+        + String [plugged]
+      [21] iconst_m1
+      [22] invokevirtual #16
+        + Methodref [android/content/Intent.getIntExtra (Ljava/lang/String;I)I]
+      [25] istore_2 v2
+      [26] iload_2 v2
+      [27] iconst_2
+      [28] ificmpeq +8 (target=36)
+      [31] iload_2 v2
+      [32] iconst_1
+      [33] ificmpne +7 (target=40)
+      [36] iconst_1
+      [37] goto +4 (target=41)
+      [40] iconst_0
+      [41] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 3):
+        - [36] Var: ...[a:android/content/Intent][i], Stack: (empty)
+        - [40] Var: ..., Stack: (empty)
+        - [41] Var: ..., Stack: [i]
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: org/cyanogenmod/oneclick/UnplugDeviceMonitorService
+  Superclass:    org/cyanogenmod/oneclick/b
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class org.cyanogenmod.oneclick.UnplugDeviceMonitorService extends org.cyanogenmod.oneclick.b
+
+Interfaces (count = 0):
+
+Constant Pool (count = 42):
+  + String [android.intent.action.BATTERY_CHANGED]
+  + String [plugged]
+  + Class [android/content/Context]
+  + Class [android/content/Intent]
+  + Class [android/content/IntentFilter]
+  + Class [org/cyanogenmod/oneclick/FinishActivity]
+  + Class [org/cyanogenmod/oneclick/UnplugDeviceMonitorService]
+  + Class [org/cyanogenmod/oneclick/b]
+  + Methodref [android/content/Context.registerReceiver (Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.getIntExtra (Ljava/lang/String;I)I]
+  + Methodref [android/content/IntentFilter.<init> (Ljava/lang/String;)V]
+  + Methodref [org/cyanogenmod/oneclick/UnplugDeviceMonitorService.getBaseContext ()Landroid/content/Context;]
+  + Methodref [org/cyanogenmod/oneclick/b.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [getBaseContext ()Landroid/content/Context;]
+  + NameAndType [getIntExtra (Ljava/lang/String;I)I]
+  + NameAndType [registerReceiver (Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;]
+  + Utf8 [()Landroid/content/Context;]
+  + Utf8 [()Ljava/lang/Class;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;I)I]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android.intent.action.BATTERY_CHANGED]
+  + Utf8 [android/content/Context]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/content/IntentFilter]
+  + Utf8 [b]
+  + Utf8 [getBaseContext]
+  + Utf8 [getIntExtra]
+  + Utf8 [org/cyanogenmod/oneclick/FinishActivity]
+  + Utf8 [org/cyanogenmod/oneclick/UnplugDeviceMonitorService]
+  + Utf8 [org/cyanogenmod/oneclick/b]
+  + Utf8 [plugged]
+  + Utf8 [registerReceiver]
+
+Fields (count = 0):
+
+Methods (count = 3):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public UnplugDeviceMonitorService()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #13
+        + Methodref [org/cyanogenmod/oneclick/b.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()Z
+    Access flags: 0x4
+      = protected boolean a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 52, locals = 4, stack = 5):
+      [0] aload_0 v0
+      [1] invokevirtual #12
+        + Methodref [org/cyanogenmod/oneclick/UnplugDeviceMonitorService.getBaseContext ()Landroid/content/Context;]
+      [4] aconst_null
+      [5] new #5
+        + Class [android/content/IntentFilter]
+      [8] dup
+      [9] ldc #1
+        + String [android.intent.action.BATTERY_CHANGED]
+      [11] invokespecial #11
+        + Methodref [android/content/IntentFilter.<init> (Ljava/lang/String;)V]
+      [14] invokevirtual #9
+        + Methodref [android/content/Context.registerReceiver (Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;]
+      [17] astore_1 v1
+      [18] aload_1 v1
+      [19] ldc #2
+        + String [plugged]
+      [21] iconst_m1
+      [22] invokevirtual #10
+        + Methodref [android/content/Intent.getIntExtra (Ljava/lang/String;I)I]
+      [25] istore_2 v2
+      [26] iload_2 v2
+      [27] iconst_2
+      [28] ificmpeq +8 (target=36)
+      [31] iload_2 v2
+      [32] iconst_1
+      [33] ificmpne +7 (target=40)
+      [36] iconst_1
+      [37] goto +4 (target=41)
+      [40] iconst_0
+      [41] istore_3 v3
+      [42] iload_3 v3
+      [43] ifne +7 (target=50)
+      [46] iconst_1
+      [47] goto +4 (target=51)
+      [50] iconst_0
+      [51] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 5):
+        - [36] Var: ...[a:android/content/Intent][i], Stack: (empty)
+        - [40] Var: ..., Stack: (empty)
+        - [41] Var: ..., Stack: [i]
+        - [50] Var: ...[i], Stack: (empty)
+        - [51] Var: ..., Stack: [i]
+  + Method:       b()Ljava/lang/Class;
+    Access flags: 0x4
+      = protected java.lang.Class b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 3, locals = 1, stack = 1):
+      [0] ldc #6
+        + Class [org/cyanogenmod/oneclick/FinishActivity]
+      [2] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: org/cyanogenmod/oneclick/UsbActivity
+  Superclass:    android/app/Activity
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class org.cyanogenmod.oneclick.UsbActivity extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 129):
+  + Integer [2130903044]
+  + Integer [2131165185]
+  + Integer [2131165187]
+  + Float [250.0]
+  + String [adb_enabled]
+  + Class [android/app/Activity]
+  + Class [android/content/Intent]
+  + Class [android/provider/Settings$Secure]
+  + Class [android/view/View]
+  + Class [android/view/animation/AlphaAnimation]
+  + Class [android/view/animation/AnimationSet]
+  + Class [android/view/animation/DecelerateInterpolator]
+  + Class [android/view/animation/TranslateAnimation]
+  + Class [android/widget/ImageView]
+  + Class [org/cyanogenmod/oneclick/PtpActivity]
+  + Class [org/cyanogenmod/oneclick/UsbActivity]
+  + Class [org/cyanogenmod/oneclick/g]
+  + Long [-1]
+  + Long [500]
+  + Long [750]
+  + Long [1000]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/app/Activity.onResume ()V]
+  + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + Methodref [android/provider/Settings$Secure.getInt (Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+  + Methodref [android/view/View.setAnimation (Landroid/view/animation/Animation;)V]
+  + Methodref [android/view/View.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  + Methodref [android/view/animation/AlphaAnimation.<init> (FF)V]
+  + Methodref [android/view/animation/AlphaAnimation.setDuration (J)V]
+  + Methodref [android/view/animation/AlphaAnimation.setStartOffset (J)V]
+  + Methodref [android/view/animation/AlphaAnimation.setStartTime (J)V]
+  + Methodref [android/view/animation/AnimationSet.<init> (Z)V]
+  + Methodref [android/view/animation/AnimationSet.addAnimation (Landroid/view/animation/Animation;)V]
+  + Methodref [android/view/animation/AnimationSet.setInterpolator (Landroid/view/animation/Interpolator;)V]
+  + Methodref [android/view/animation/DecelerateInterpolator.<init> (F)V]
+  + Methodref [android/view/animation/TranslateAnimation.<init> (FFFF)V]
+  + Methodref [android/view/animation/TranslateAnimation.setDuration (J)V]
+  + Methodref [android/view/animation/TranslateAnimation.setStartTime (J)V]
+  + Methodref [android/widget/ImageView.setAnimation (Landroid/view/animation/Animation;)V]
+  + Methodref [org/cyanogenmod/oneclick/UsbActivity.a ()Z]
+  + Methodref [org/cyanogenmod/oneclick/UsbActivity.findViewById (I)Landroid/view/View;]
+  + Methodref [org/cyanogenmod/oneclick/UsbActivity.finish ()V]
+  + Methodref [org/cyanogenmod/oneclick/UsbActivity.getBaseContext ()Landroid/content/Context;]
+  + Methodref [org/cyanogenmod/oneclick/UsbActivity.getContentResolver ()Landroid/content/ContentResolver;]
+  + Methodref [org/cyanogenmod/oneclick/UsbActivity.setContentView (I)V]
+  + Methodref [org/cyanogenmod/oneclick/UsbActivity.startActivity (Landroid/content/Intent;)V]
+  + Methodref [org/cyanogenmod/oneclick/g.<init> (Lorg/cyanogenmod/oneclick/UsbActivity;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (F)V]
+  + NameAndType [<init> (FF)V]
+  + NameAndType [<init> (FFFF)V]
+  + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + NameAndType [<init> (Lorg/cyanogenmod/oneclick/UsbActivity;)V]
+  + NameAndType [<init> (Z)V]
+  + NameAndType [a ()Z]
+  + NameAndType [addAnimation (Landroid/view/animation/Animation;)V]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [finish ()V]
+  + NameAndType [getBaseContext ()Landroid/content/Context;]
+  + NameAndType [getContentResolver ()Landroid/content/ContentResolver;]
+  + NameAndType [getInt (Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [onResume ()V]
+  + NameAndType [setAnimation (Landroid/view/animation/Animation;)V]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setDuration (J)V]
+  + NameAndType [setInterpolator (Landroid/view/animation/Interpolator;)V]
+  + NameAndType [setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  + NameAndType [setStartOffset (J)V]
+  + NameAndType [setStartTime (J)V]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + Utf8 [()Landroid/content/ContentResolver;]
+  + Utf8 [()Landroid/content/Context;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(F)V]
+  + Utf8 [(FF)V]
+  + Utf8 [(FFFF)V]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(I)V]
+  + Utf8 [(J)V]
+  + Utf8 [(Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/view/View$OnClickListener;)V]
+  + Utf8 [(Landroid/view/animation/Animation;)V]
+  + Utf8 [(Landroid/view/animation/Interpolator;)V]
+  + Utf8 [(Lorg/cyanogenmod/oneclick/UsbActivity;)V]
+  + Utf8 [(Z)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [adb_enabled]
+  + Utf8 [addAnimation]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/provider/Settings$Secure]
+  + Utf8 [android/view/View]
+  + Utf8 [android/view/animation/AlphaAnimation]
+  + Utf8 [android/view/animation/AnimationSet]
+  + Utf8 [android/view/animation/DecelerateInterpolator]
+  + Utf8 [android/view/animation/TranslateAnimation]
+  + Utf8 [android/widget/ImageView]
+  + Utf8 [findViewById]
+  + Utf8 [finish]
+  + Utf8 [getBaseContext]
+  + Utf8 [getContentResolver]
+  + Utf8 [getInt]
+  + Utf8 [onCreate]
+  + Utf8 [onResume]
+  + Utf8 [org/cyanogenmod/oneclick/PtpActivity]
+  + Utf8 [org/cyanogenmod/oneclick/UsbActivity]
+  + Utf8 [org/cyanogenmod/oneclick/g]
+  + Utf8 [setAnimation]
+  + Utf8 [setContentView]
+  + Utf8 [setDuration]
+  + Utf8 [setInterpolator]
+  + Utf8 [setOnClickListener]
+  + Utf8 [setStartOffset]
+  + Utf8 [setStartTime]
+  + Utf8 [startActivity]
+
+Fields (count = 0):
+
+Methods (count = 4):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public UsbActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #26
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 228, locals = 9, stack = 6):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #27
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] invokespecial #45
+        + Methodref [org/cyanogenmod/oneclick/UsbActivity.a ()Z]
+      [9] ifeq +25 (target=34)
+      [12] aload_0 v0
+      [13] new #7
+        + Class [android/content/Intent]
+      [16] dup
+      [17] aload_0 v0
+      [18] invokevirtual #48
+        + Methodref [org/cyanogenmod/oneclick/UsbActivity.getBaseContext ()Landroid/content/Context;]
+      [21] ldc #15
+        + Class [org/cyanogenmod/oneclick/PtpActivity]
+      [23] invokespecial #29
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [26] invokevirtual #51
+        + Methodref [org/cyanogenmod/oneclick/UsbActivity.startActivity (Landroid/content/Intent;)V]
+      [29] aload_0 v0
+      [30] invokevirtual #47
+        + Methodref [org/cyanogenmod/oneclick/UsbActivity.finish ()V]
+      [33] return
+      [34] aload_0 v0
+      [35] ldc #1
+        + Integer [2130903044]
+      [37] invokevirtual #50
+        + Methodref [org/cyanogenmod/oneclick/UsbActivity.setContentView (I)V]
+      [40] aload_0 v0
+      [41] ldc #3
+        + Integer [2131165187]
+      [43] invokevirtual #46
+        + Methodref [org/cyanogenmod/oneclick/UsbActivity.findViewById (I)Landroid/view/View;]
+      [46] checkcast #14
+        + Class [android/widget/ImageView]
+      [49] astore_2 v2
+      [50] new #12
+        + Class [android/view/animation/DecelerateInterpolator]
+      [53] dup
+      [54] fconst_2
+      [55] invokespecial #40
+        + Methodref [android/view/animation/DecelerateInterpolator.<init> (F)V]
+      [58] astore_3 v3
+      [59] new #11
+        + Class [android/view/animation/AnimationSet]
+      [62] dup
+      [63] iconst_1
+      [64] invokespecial #37
+        + Methodref [android/view/animation/AnimationSet.<init> (Z)V]
+      [67] astore v4
+      [69] aload v4
+      [71] aload_3 v3
+      [72] invokevirtual #39
+        + Methodref [android/view/animation/AnimationSet.setInterpolator (Landroid/view/animation/Interpolator;)V]
+      [75] new #13
+        + Class [android/view/animation/TranslateAnimation]
+      [78] dup
+      [79] fconst_0
+      [80] fconst_0
+      [81] ldc #4
+        + Float [250.0]
+      [83] fconst_0
+      [84] invokespecial #41
+        + Methodref [android/view/animation/TranslateAnimation.<init> (FFFF)V]
+      [87] astore v5
+      [89] aload v5
+      [91] ldc2_w #24
+        + Long [1000]
+      [94] invokevirtual #42
+        + Methodref [android/view/animation/TranslateAnimation.setDuration (J)V]
+      [97] aload v5
+      [99] ldc2_w #18
+        + Long [-1]
+      [102] invokevirtual #43
+        + Methodref [android/view/animation/TranslateAnimation.setStartTime (J)V]
+      [105] aload v4
+      [107] aload v5
+      [109] invokevirtual #38
+        + Methodref [android/view/animation/AnimationSet.addAnimation (Landroid/view/animation/Animation;)V]
+      [112] new #10
+        + Class [android/view/animation/AlphaAnimation]
+      [115] dup
+      [116] fconst_0
+      [117] fconst_1
+      [118] invokespecial #33
+        + Methodref [android/view/animation/AlphaAnimation.<init> (FF)V]
+      [121] astore v6
+      [123] aload v6
+      [125] ldc2_w #24
+        + Long [1000]
+      [128] invokevirtual #34
+        + Methodref [android/view/animation/AlphaAnimation.setDuration (J)V]
+      [131] aload v6
+      [133] ldc2_w #20
+        + Long [500]
+      [136] invokevirtual #35
+        + Methodref [android/view/animation/AlphaAnimation.setStartOffset (J)V]
+      [139] aload v6
+      [141] ldc2_w #18
+        + Long [-1]
+      [144] invokevirtual #36
+        + Methodref [android/view/animation/AlphaAnimation.setStartTime (J)V]
+      [147] aload v4
+      [149] aload v6
+      [151] invokevirtual #38
+        + Methodref [android/view/animation/AnimationSet.addAnimation (Landroid/view/animation/Animation;)V]
+      [154] aload_2 v2
+      [155] aload v4
+      [157] invokevirtual #44
+        + Methodref [android/widget/ImageView.setAnimation (Landroid/view/animation/Animation;)V]
+      [160] new #10
+        + Class [android/view/animation/AlphaAnimation]
+      [163] dup
+      [164] fconst_0
+      [165] fconst_1
+      [166] invokespecial #33
+        + Methodref [android/view/animation/AlphaAnimation.<init> (FF)V]
+      [169] astore v7
+      [171] aload v7
+      [173] ldc2_w #22
+        + Long [750]
+      [176] invokevirtual #34
+        + Methodref [android/view/animation/AlphaAnimation.setDuration (J)V]
+      [179] aload v7
+      [181] ldc2_w #18
+        + Long [-1]
+      [184] invokevirtual #36
+        + Methodref [android/view/animation/AlphaAnimation.setStartTime (J)V]
+      [187] aload v7
+      [189] ldc2_w #24
+        + Long [1000]
+      [192] invokevirtual #35
+        + Methodref [android/view/animation/AlphaAnimation.setStartOffset (J)V]
+      [195] aload_0 v0
+      [196] ldc #2
+        + Integer [2131165185]
+      [198] invokevirtual #46
+        + Methodref [org/cyanogenmod/oneclick/UsbActivity.findViewById (I)Landroid/view/View;]
+      [201] aload v7
+      [203] invokevirtual #31
+        + Methodref [android/view/View.setAnimation (Landroid/view/animation/Animation;)V]
+      [206] new #17
+        + Class [org/cyanogenmod/oneclick/g]
+      [209] dup
+      [210] aload_0 v0
+      [211] invokespecial #52
+        + Methodref [org/cyanogenmod/oneclick/g.<init> (Lorg/cyanogenmod/oneclick/UsbActivity;)V]
+      [214] astore v8
+      [216] aload_0 v0
+      [217] ldc #2
+        + Integer [2131165185]
+      [219] invokevirtual #46
+        + Methodref [org/cyanogenmod/oneclick/UsbActivity.findViewById (I)Landroid/view/View;]
+      [222] aload v8
+      [224] invokevirtual #32
+        + Methodref [android/view/View.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+      [227] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [34] Var: ..., Stack: (empty)
+  + Method:       onResume()V
+    Access flags: 0x1
+      = public void onResume()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 16, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #28
+        + Methodref [android/app/Activity.onResume ()V]
+      [4] aload_0 v0
+      [5] invokespecial #45
+        + Methodref [org/cyanogenmod/oneclick/UsbActivity.a ()Z]
+      [8] ifeq +7 (target=15)
+      [11] aload_0 v0
+      [12] invokevirtual #47
+        + Methodref [org/cyanogenmod/oneclick/UsbActivity.finish ()V]
+      [15] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [15] Var: ..., Stack: (empty)
+  + Method:       a()Z
+    Access flags: 0x2
+      = private boolean a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 20, locals = 1, stack = 3):
+      [0] aload_0 v0
+      [1] invokevirtual #49
+        + Methodref [org/cyanogenmod/oneclick/UsbActivity.getContentResolver ()Landroid/content/ContentResolver;]
+      [4] ldc #5
+        + String [adb_enabled]
+      [6] iconst_0
+      [7] invokestatic #30
+        + Methodref [android/provider/Settings$Secure.getInt (Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+      [10] iconst_1
+      [11] ificmpne +7 (target=18)
+      [14] iconst_1
+      [15] goto +4 (target=19)
+      [18] iconst_0
+      [19] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [18] Var: ..., Stack: (empty)
+        - [19] Var: ..., Stack: [i]
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: org/cyanogenmod/oneclick/g
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class org.cyanogenmod.oneclick.g extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/view/View$OnClickListener]
+
+Constant Pool (count = 54):
+  + String [com.android.settings]
+  + String [com.android.settings.DevelopmentSettings]
+  + Class [android/content/ActivityNotFoundException]
+  + Class [android/content/Intent]
+  + Class [android/view/View]
+  + Class [android/view/View$OnClickListener]
+  + Class [java/lang/Object]
+  + Class [org/cyanogenmod/oneclick/UsbActivity]
+  + Class [org/cyanogenmod/oneclick/UsbDebuggingMonitorService]
+  + Class [org/cyanogenmod/oneclick/g]
+  + Fieldref [org/cyanogenmod/oneclick/g.a Lorg/cyanogenmod/oneclick/UsbActivity;]
+  + Methodref [android/content/Intent.<init> ()V]
+  + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + Methodref [android/content/Intent.setClassName (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [org/cyanogenmod/oneclick/UsbActivity.getBaseContext ()Landroid/content/Context;]
+  + Methodref [org/cyanogenmod/oneclick/UsbActivity.startActivity (Landroid/content/Intent;)V]
+  + Methodref [org/cyanogenmod/oneclick/UsbActivity.startService (Landroid/content/Intent;)Landroid/content/ComponentName;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + NameAndType [a Lorg/cyanogenmod/oneclick/UsbActivity;]
+  + NameAndType [getBaseContext ()Landroid/content/Context;]
+  + NameAndType [setClassName (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + NameAndType [startService (Landroid/content/Intent;)Landroid/content/ComponentName;]
+  + Utf8 [()Landroid/content/Context;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)V]
+  + Utf8 [(Landroid/content/Intent;)Landroid/content/ComponentName;]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [(Lorg/cyanogenmod/oneclick/UsbActivity;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lorg/cyanogenmod/oneclick/UsbActivity;]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android/content/ActivityNotFoundException]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/view/View]
+  + Utf8 [android/view/View$OnClickListener]
+  + Utf8 [com.android.settings]
+  + Utf8 [com.android.settings.DevelopmentSettings]
+  + Utf8 [getBaseContext]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onClick]
+  + Utf8 [org/cyanogenmod/oneclick/UsbActivity]
+  + Utf8 [org/cyanogenmod/oneclick/UsbDebuggingMonitorService]
+  + Utf8 [org/cyanogenmod/oneclick/g]
+  + Utf8 [setClassName]
+  + Utf8 [startActivity]
+  + Utf8 [startService]
+
+Fields (count = 1):
+  + Field:        a Lorg/cyanogenmod/oneclick/UsbActivity;
+    Access flags: 0x1010
+      = final synthetic org.cyanogenmod.oneclick.UsbActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lorg/cyanogenmod/oneclick/UsbActivity;)V
+    Access flags: 0x0
+      = g(org.cyanogenmod.oneclick.UsbActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #11
+        + Fieldref [org/cyanogenmod/oneclick/g.a Lorg/cyanogenmod/oneclick/UsbActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #15
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/view/View;)V
+    Access flags: 0x1
+      = public void onClick(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 54, locals = 4, stack = 5):
+      [0] new #4
+        + Class [android/content/Intent]
+      [3] dup
+      [4] invokespecial #12
+        + Methodref [android/content/Intent.<init> ()V]
+      [7] astore_2 v2
+      [8] aload_2 v2
+      [9] ldc #1
+        + String [com.android.settings]
+      [11] ldc #2
+        + String [com.android.settings.DevelopmentSettings]
+      [13] invokevirtual #14
+        + Methodref [android/content/Intent.setClassName (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+      [16] pop
+      [17] aload_0 v0
+      [18] getfield #11
+        + Fieldref [org/cyanogenmod/oneclick/g.a Lorg/cyanogenmod/oneclick/UsbActivity;]
+      [21] aload_2 v2
+      [22] invokevirtual #17
+        + Methodref [org/cyanogenmod/oneclick/UsbActivity.startActivity (Landroid/content/Intent;)V]
+      [25] aload_0 v0
+      [26] getfield #11
+        + Fieldref [org/cyanogenmod/oneclick/g.a Lorg/cyanogenmod/oneclick/UsbActivity;]
+      [29] new #4
+        + Class [android/content/Intent]
+      [32] dup
+      [33] aload_0 v0
+      [34] getfield #11
+        + Fieldref [org/cyanogenmod/oneclick/g.a Lorg/cyanogenmod/oneclick/UsbActivity;]
+      [37] invokevirtual #16
+        + Methodref [org/cyanogenmod/oneclick/UsbActivity.getBaseContext ()Landroid/content/Context;]
+      [40] ldc #9
+        + Class [org/cyanogenmod/oneclick/UsbDebuggingMonitorService]
+      [42] invokespecial #13
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [45] invokevirtual #18
+        + Methodref [org/cyanogenmod/oneclick/UsbActivity.startService (Landroid/content/Intent;)Landroid/content/ComponentName;]
+      [48] pop
+      [49] goto +4 (target=53)
+      [52] astore_3 v3
+      [53] return
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (17 -> 49: 52):
+      + Class [android/content/ActivityNotFoundException]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [52] Var: [a:org/cyanogenmod/oneclick/g][a:android/view/View][a:android/content/Intent], Stack: [a:android/content/ActivityNotFoundException]
+        - [53] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: org/cyanogenmod/oneclick/UsbDebuggingMonitorService
+  Superclass:    org/cyanogenmod/oneclick/b
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class org.cyanogenmod.oneclick.UsbDebuggingMonitorService extends org.cyanogenmod.oneclick.b
+
+Interfaces (count = 0):
+
+Constant Pool (count = 29):
+  + String [adb_enabled]
+  + Class [android/provider/Settings$Secure]
+  + Class [org/cyanogenmod/oneclick/PtpActivity]
+  + Class [org/cyanogenmod/oneclick/UsbDebuggingMonitorService]
+  + Class [org/cyanogenmod/oneclick/b]
+  + Methodref [android/provider/Settings$Secure.getInt (Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+  + Methodref [org/cyanogenmod/oneclick/UsbDebuggingMonitorService.getContentResolver ()Landroid/content/ContentResolver;]
+  + Methodref [org/cyanogenmod/oneclick/b.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [getContentResolver ()Landroid/content/ContentResolver;]
+  + NameAndType [getInt (Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+  + Utf8 [()Landroid/content/ContentResolver;]
+  + Utf8 [()Ljava/lang/Class;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [adb_enabled]
+  + Utf8 [android/provider/Settings$Secure]
+  + Utf8 [b]
+  + Utf8 [getContentResolver]
+  + Utf8 [getInt]
+  + Utf8 [org/cyanogenmod/oneclick/PtpActivity]
+  + Utf8 [org/cyanogenmod/oneclick/UsbDebuggingMonitorService]
+  + Utf8 [org/cyanogenmod/oneclick/b]
+
+Fields (count = 0):
+
+Methods (count = 3):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public UsbDebuggingMonitorService()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #8
+        + Methodref [org/cyanogenmod/oneclick/b.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()Z
+    Access flags: 0x4
+      = protected boolean a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 20, locals = 1, stack = 3):
+      [0] aload_0 v0
+      [1] invokevirtual #7
+        + Methodref [org/cyanogenmod/oneclick/UsbDebuggingMonitorService.getContentResolver ()Landroid/content/ContentResolver;]
+      [4] ldc #1
+        + String [adb_enabled]
+      [6] iconst_0
+      [7] invokestatic #6
+        + Methodref [android/provider/Settings$Secure.getInt (Landroid/content/ContentResolver;Ljava/lang/String;I)I]
+      [10] iconst_1
+      [11] ificmpne +7 (target=18)
+      [14] iconst_1
+      [15] goto +4 (target=19)
+      [18] iconst_0
+      [19] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [18] Var: ..., Stack: (empty)
+        - [19] Var: ..., Stack: [i]
+  + Method:       b()Ljava/lang/Class;
+    Access flags: 0x4
+      = protected java.lang.Class b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 3, locals = 1, stack = 1):
+      [0] ldc #3
+        + Class [org/cyanogenmod/oneclick/PtpActivity]
+      [2] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+

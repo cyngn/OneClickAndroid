@@ -1,0 +1,81 @@
+android.os.SystemProperties -> android.os.SystemProperties:
+    int PROP_NAME_MAX -> PROP_NAME_MAX
+    int PROP_VALUE_MAX -> PROP_VALUE_MAX
+    java.lang.String native_get(java.lang.String) -> native_get
+    java.lang.String native_get(java.lang.String,java.lang.String) -> native_get
+    int native_get_int(java.lang.String,int) -> native_get_int
+    long native_get_long(java.lang.String,long) -> native_get_long
+    boolean native_get_boolean(java.lang.String,boolean) -> native_get_boolean
+    void native_set(java.lang.String,java.lang.String) -> native_set
+    java.lang.String get(java.lang.String) -> get
+    java.lang.String get(java.lang.String,java.lang.String) -> get
+    int getInt(java.lang.String,int) -> getInt
+    long getLong(java.lang.String,long) -> getLong
+    boolean getBoolean(java.lang.String,boolean) -> getBoolean
+    void set(java.lang.String,java.lang.String) -> set
+org.cyanogenmod.oneclick.FinishActivity -> org.cyanogenmod.oneclick.FinishActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    boolean adbIsEnabled() -> a
+org.cyanogenmod.oneclick.HTCFastBootActivity -> org.cyanogenmod.oneclick.HTCFastBootActivity:
+    android.content.ComponentName htcPowerManager -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    boolean fastBootIsDisabled() -> a
+org.cyanogenmod.oneclick.HTCFastBootActivity$1 -> org.cyanogenmod.oneclick.a:
+    org.cyanogenmod.oneclick.HTCFastBootActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+org.cyanogenmod.oneclick.HTCFastBootMonitorService -> org.cyanogenmod.oneclick.HTCFastBootMonitorService:
+    android.content.ComponentName htcPowerManager -> a
+    boolean canContinue() -> a
+    java.lang.Class getNextActivityClass() -> b
+org.cyanogenmod.oneclick.MonitorService -> org.cyanogenmod.oneclick.b:
+    android.os.Handler mHandler -> a
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    void cleanupAndShutdown() -> c
+    java.lang.Class getNextActivityClass() -> b
+    void onCreate() -> onCreate
+    boolean canContinue() -> a
+    android.os.Handler access$000(org.cyanogenmod.oneclick.MonitorService) -> a
+    void access$100(org.cyanogenmod.oneclick.MonitorService) -> b
+org.cyanogenmod.oneclick.MonitorService$1 -> org.cyanogenmod.oneclick.c:
+    org.cyanogenmod.oneclick.MonitorService this$0 -> a
+    void run() -> run
+org.cyanogenmod.oneclick.MonitorService$2 -> org.cyanogenmod.oneclick.d:
+    org.cyanogenmod.oneclick.MonitorService this$0 -> a
+    void run() -> run
+org.cyanogenmod.oneclick.PtpActivity -> org.cyanogenmod.oneclick.PtpActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    boolean ptpIsEnabled() -> a
+org.cyanogenmod.oneclick.PtpActivity$1 -> org.cyanogenmod.oneclick.e:
+    org.cyanogenmod.oneclick.PtpActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+org.cyanogenmod.oneclick.PtpMonitorService -> org.cyanogenmod.oneclick.PtpMonitorService:
+    boolean canContinue() -> a
+    java.lang.Class getNextActivityClass() -> b
+org.cyanogenmod.oneclick.ReturnToWindowsActivity -> org.cyanogenmod.oneclick.ReturnToWindowsActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+org.cyanogenmod.oneclick.StartActivity -> org.cyanogenmod.oneclick.StartActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+org.cyanogenmod.oneclick.StartActivity$1 -> org.cyanogenmod.oneclick.f:
+    org.cyanogenmod.oneclick.StartActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+org.cyanogenmod.oneclick.UnplugDeviceActivity -> org.cyanogenmod.oneclick.UnplugDeviceActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    boolean deviceIsPluggedIn() -> a
+org.cyanogenmod.oneclick.UnplugDeviceMonitorService -> org.cyanogenmod.oneclick.UnplugDeviceMonitorService:
+    boolean canContinue() -> a
+    java.lang.Class getNextActivityClass() -> b
+org.cyanogenmod.oneclick.UsbActivity -> org.cyanogenmod.oneclick.UsbActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    boolean adbIsEnabled() -> a
+org.cyanogenmod.oneclick.UsbActivity$1 -> org.cyanogenmod.oneclick.g:
+    org.cyanogenmod.oneclick.UsbActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+org.cyanogenmod.oneclick.UsbDebuggingMonitorService -> org.cyanogenmod.oneclick.UsbDebuggingMonitorService:
+    boolean canContinue() -> a
+    java.lang.Class getNextActivityClass() -> b

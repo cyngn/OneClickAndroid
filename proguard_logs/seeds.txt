@@ -1,0 +1,86 @@
+android.os.SystemProperties
+android.os.SystemProperties: int PROP_NAME_MAX
+android.os.SystemProperties: int PROP_VALUE_MAX
+android.os.SystemProperties: SystemProperties()
+android.os.SystemProperties: java.lang.String native_get(java.lang.String)
+android.os.SystemProperties: java.lang.String native_get(java.lang.String,java.lang.String)
+android.os.SystemProperties: int native_get_int(java.lang.String,int)
+android.os.SystemProperties: long native_get_long(java.lang.String,long)
+android.os.SystemProperties: boolean native_get_boolean(java.lang.String,boolean)
+android.os.SystemProperties: void native_set(java.lang.String,java.lang.String)
+android.os.SystemProperties: java.lang.String get(java.lang.String)
+android.os.SystemProperties: java.lang.String get(java.lang.String,java.lang.String)
+android.os.SystemProperties: int getInt(java.lang.String,int)
+android.os.SystemProperties: long getLong(java.lang.String,long)
+android.os.SystemProperties: boolean getBoolean(java.lang.String,boolean)
+android.os.SystemProperties: void set(java.lang.String,java.lang.String)
+org.cyanogenmod.oneclick.FinishActivity
+org.cyanogenmod.oneclick.FinishActivity: FinishActivity()
+org.cyanogenmod.oneclick.HTCFastBootActivity
+org.cyanogenmod.oneclick.HTCFastBootActivity: HTCFastBootActivity()
+org.cyanogenmod.oneclick.HTCFastBootMonitorService
+org.cyanogenmod.oneclick.HTCFastBootMonitorService: HTCFastBootMonitorService()
+org.cyanogenmod.oneclick.MonitorService: MonitorService()
+org.cyanogenmod.oneclick.PtpActivity
+org.cyanogenmod.oneclick.PtpActivity: PtpActivity()
+org.cyanogenmod.oneclick.PtpMonitorService
+org.cyanogenmod.oneclick.PtpMonitorService: PtpMonitorService()
+org.cyanogenmod.oneclick.R$color: int cyanogen_blue
+org.cyanogenmod.oneclick.R$drawable: int adb_enable
+org.cyanogenmod.oneclick.R$drawable: int bg_goodbye
+org.cyanogenmod.oneclick.R$drawable: int bg_welcome
+org.cyanogenmod.oneclick.R$drawable: int button_default
+org.cyanogenmod.oneclick.R$drawable: int button_flat
+org.cyanogenmod.oneclick.R$drawable: int button_flat_pressed
+org.cyanogenmod.oneclick.R$drawable: int htc_fast_boot_disable
+org.cyanogenmod.oneclick.R$drawable: int ic_launcher
+org.cyanogenmod.oneclick.R$drawable: int ptp_enable
+org.cyanogenmod.oneclick.R$id: int begin
+org.cyanogenmod.oneclick.R$id: int htc_fast_boot_instructions
+org.cyanogenmod.oneclick.R$id: int next
+org.cyanogenmod.oneclick.R$id: int ptp_instructions
+org.cyanogenmod.oneclick.R$id: int usb_instructions
+org.cyanogenmod.oneclick.R$id: int welcome_background
+org.cyanogenmod.oneclick.R$id: int welcome_text
+org.cyanogenmod.oneclick.R$layout: int htc_fast_boot
+org.cyanogenmod.oneclick.R$layout: int ptp
+org.cyanogenmod.oneclick.R$layout: int returntowindows
+org.cyanogenmod.oneclick.R$layout: int unplugdevice
+org.cyanogenmod.oneclick.R$layout: int usb
+org.cyanogenmod.oneclick.R$layout: int welcome
+org.cyanogenmod.oneclick.R$layout: int windows
+org.cyanogenmod.oneclick.R$string: int app_name
+org.cyanogenmod.oneclick.R$string: int begin
+org.cyanogenmod.oneclick.R$string: int continue_on_windows
+org.cyanogenmod.oneclick.R$string: int device_ready
+org.cyanogenmod.oneclick.R$string: int device_ready_windows
+org.cyanogenmod.oneclick.R$string: int disable_fast_boot_help
+org.cyanogenmod.oneclick.R$string: int enable_ptp_help
+org.cyanogenmod.oneclick.R$string: int enable_usb_help
+org.cyanogenmod.oneclick.R$string: int intro
+org.cyanogenmod.oneclick.R$string: int open_developer_options
+org.cyanogenmod.oneclick.R$string: int unplug_device
+org.cyanogenmod.oneclick.R$string: int unplug_device_instructions
+org.cyanogenmod.oneclick.R$string: int website_link
+org.cyanogenmod.oneclick.R$string: int welcome
+org.cyanogenmod.oneclick.R$style: int AppTheme
+org.cyanogenmod.oneclick.R$style: int Body
+org.cyanogenmod.oneclick.R$style: int ContinueButton
+org.cyanogenmod.oneclick.R$style: int DefaultLayout
+org.cyanogenmod.oneclick.R$style: int FlatButton
+org.cyanogenmod.oneclick.R$style: int Header
+org.cyanogenmod.oneclick.R$style: int ModSeparator
+org.cyanogenmod.oneclick.R$style: int Separator
+org.cyanogenmod.oneclick.R$style: int Title
+org.cyanogenmod.oneclick.ReturnToWindowsActivity
+org.cyanogenmod.oneclick.ReturnToWindowsActivity: ReturnToWindowsActivity()
+org.cyanogenmod.oneclick.StartActivity
+org.cyanogenmod.oneclick.StartActivity: StartActivity()
+org.cyanogenmod.oneclick.UnplugDeviceActivity
+org.cyanogenmod.oneclick.UnplugDeviceActivity: UnplugDeviceActivity()
+org.cyanogenmod.oneclick.UnplugDeviceMonitorService
+org.cyanogenmod.oneclick.UnplugDeviceMonitorService: UnplugDeviceMonitorService()
+org.cyanogenmod.oneclick.UsbActivity
+org.cyanogenmod.oneclick.UsbActivity: UsbActivity()
+org.cyanogenmod.oneclick.UsbDebuggingMonitorService
+org.cyanogenmod.oneclick.UsbDebuggingMonitorService: UsbDebuggingMonitorService()
