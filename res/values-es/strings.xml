@@ -21,5 +21,10 @@
     <string name="website_link">http://get.cm</string>
         <string name="unplug_device_instructions">Desconecta tu dispositivo de tu computadora para continuar con la instalación.\n\nNo vuelvas a conectar tu dispositivo hasta que se te sea pedido por el instalador de Windows.</string>
 
-    <string name="disable_fast_boot_help">Para continuar, desactiva Inicio Rápido como se muestra abajo.</string>
+    <string name="disable_fast_boot_help">Para continuar, desactiva Inicio Rápido en la siguiente pantalla como se muestra abajo.</string>
+    
+    <string name="i_agree">Acepto</string>
+    <string name="warning">¡Advertencia!</string>
+    <string name="disclaimer">Instalar CyanogenMod reemplazará completamente el sistema operativo de tu dispositivo, y, en raros casos, puede provocar que se vuelva no-funcional.\n\nPero hemos trabajado muy duro para asegurarnos que la instalación sea lo más confiable y segura posible.\n\nSi continúas, entiendes los posibles riesgos.</string>
+    
 </resources>
