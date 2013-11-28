@@ -4,7 +4,7 @@
           android:versionCode="1009"
           android:versionName="1.0.0.9">
 
-    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="18"/>
+    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="19"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application
