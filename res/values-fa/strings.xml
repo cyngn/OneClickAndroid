@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">نصب گر سیانوژنماد</string>
+    <string name="app_name">نصاب سیانوژن‌مد</string>
 
-    <string name="unsupported_title">دستگاه پشتیبانی نشده</string>
-    <string name="unsupported_text">.اگر مایل به قبول خطر هستید می تنوانید به آماده کردن دستگاهتان ادامه بدهید\n\n.مراجعه فرمایید <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices" >لیست دستگاه های پشتیبانی شده</a> برای اطلاع بیشتر لطفا به \n\n.با عزض پوزش، نصب گر سیانوژنماد در حال حاضر دستگاه شما را پشتیبانی نمی کند</string>
-    <string name="continue_anyway">به هر حال ادامه دهید</string>
+    <string name="unsupported_title">دستگاه پشتیبانی‌نشده</string>
+    <string name="unsupported_text">شرمنده، دستگاه شما توسط نصاب سیانوژن‌مد پشتیبانی نمی‌شود.\n\nبرای اطلاعات بیشتر لطفاً <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">فهرست دستگاه‌های پشتیبانی‌شده</a> را بررسی کنید.\n\nاگر مایل به قبول خطر هستید می‌توانید به آماده‌کردن دستگاهتان ادامه بدهید.</string>
+    <string name="continue_anyway">به هر حال ادامه بده</string>
 
-    <string name="welcome">خوش آمدید</string>
-    <string name="intro">این برنامه در نصب تجربه سیانوژنمد به شما کمک می کند. برای این کار به یک رایانه با سیستم عامل ویندوز ویستا یا جدید تر نیاز خواهید داشت.\n\nدر طی این فرایند، دستگاه شما به تنظیمات اولیه کارخانه برگردانده خواهد شد. قبل از ادامه دادن لطفا اطمینان حاصل فرمایید که اطلاعات مهم شما پشتیبانی شده است.</string>
-    
+    <string name="welcome">خوش‌آمدید</string>
+    <string name="intro">این برنامه در نصب تجربه سیانوژن‌مد به شما کمک می‌کند. برای این کار به یک رایانه با سیستم‌عامل ویندوز ویستا یا جدیدتر نیاز خواهید داشت.\n\nدر طی این فرایند، دستگاه شما به تنظیمات اولیه کارخانه برگردانده خواهد شد. قبل از ادامه‌دادن لطفاً اطمینان حاصل کنید که از داده‌های با ارزشتان پشتیبان تهیه کرده‌اید.</string>
+
     <string name="begin">شروع</string>
     <string name="open_developer_options">ادامه</string>
     <string name="continue_on_windows">ادامه نصب را در ویندوز انجام دهید</string>
-    <string name="unplug_device">دستگاهتان را از USB قطع کنید</string>
+    <string name="unplug_device">دستگاه‌تان را جدا کنید</string>
 
-    <string name="enable_usb_help">برای ادامه، لطفا گزینه رفع عیب USB را در صفحه بعدی به شکل زیر روشن کنید.</string>
-    <string name="enable_ptp_help">برای ادامه، لطفا گزینه دوربین (PTP) را در صفحه بعدی به شکل زیر روشن کنید.</string>
+    <string name="enable_usb_help">برای ادامه، لطفاً گزینه رفع عیب USB را در صفحه بعدی به شکل زیر فعال کنید.</string>
+    <string name="enable_ptp_help">برای ادامه، لطفاً گزینه دوربین (PTP) را در صفحه بعدی به شکل زیر فعال کنید.</string>
     <string name="device_ready">دستگاه شما برای نصب سیانوژنماد آماده است. برای ادامه نصب وب سایت زیر را در رایانه ویندوز خود مشاهده نمایید:</string>
-    <string name="device_ready_windows">با عرض تبریک، نصب گر سیانوژنماد با موفقیت دستگاه شما را شناسایی کرد! برای ادامه، به نصب گر سیانوژنماد بر روی رایانه ویندوزتان مراجعه کرده و دستورات داده شده را اجرا فرمایید.</string>
-    
-	<string name="unplug_device_instructions">برای ادامه نصب، دستگاهتان را از رایانه ویندوز قطع کنید.\n\nدستگاهتان را بدون درخواست نصب گر به رایانه وصل نکنید.</string>
+    <string name="device_ready_windows">با عرض تبریک، نصاب سیانوژن‌مد با موفقیت دستگاه شما را شناسایی کرد! برای ادامه، به نصاب سیانوژن‌مد بر روی رایانه ویندوزتان مراجعه کرده و دستورات داده شده را اجرا کنید.</string>
 
-    <string name="disable_fast_boot_help">برای ادامه، لطفا گزینه بوت سریع (Fast Boot) را در صفحه بعدی به شکل زیر خاموش کنید.</string>
+    <string name="unplug_device_instructions">برای ادامه نصب، دستگاه‌تان را از رایانه ویندوز قطع کنید.\n\nدستگاهتان را بدون درخواست نصاب به رایانه وصل نکنید.</string>
+    <string name="disable_fast_boot_help">برای ادامه، لطفاً گزینه بوت سریع (Fast Boot) را در صفحه بعدی به شکل زیر خاموش کنید.</string>
+
 </resources>
-
-
-
