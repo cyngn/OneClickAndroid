@@ -16,7 +16,7 @@ import android.widget.ImageView;
 
 public class PtpActivity extends Activity {
 
-	@Override
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -28,7 +28,7 @@ public class PtpActivity extends Activity {
 
         setContentView(R.layout.ptp);
 
-        ImageView instructionView = (ImageView)findViewById(R.id.ptp_instructions);
+        ImageView instructionView = (ImageView) findViewById(R.id.ptp_instructions);
 
         DecelerateInterpolator interpolator = new DecelerateInterpolator(2.0f);
 
@@ -56,33 +56,33 @@ public class PtpActivity extends Activity {
         findViewById(R.id.next).setAnimation(buttonAnimation);
 
         OnClickListener openPtpListener = new OnClickListener() {
-	        @Override
-	        public void onClick(View view) {
+            @Override
+            public void onClick(View view) {
                 Intent intent = new Intent();
                 intent.setClassName("com.android.settings", "com.android.settings.UsbSettings");
-	            try {
-	                startActivity(intent);
-	                startService(new Intent(getBaseContext(), PtpMonitorService.class));
-	            } catch (ActivityNotFoundException e) {
-	                // we want to know if this happens, right?
-	            }
-	        }
+                try {
+                    startActivity(intent);
+                    startService(new Intent(getBaseContext(), PtpMonitorService.class));
+                } catch (ActivityNotFoundException e) {
+                    // we want to know if this happens, right?
+                }
+            }
         };
-            
+
         findViewById(R.id.next).setOnClickListener(openPtpListener);
     }
-	
-	@Override
-	public void onResume() {
-		super.onResume();
-		
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
         if (ptpIsEnabled()) {
             startActivity(new Intent(getBaseContext(), UnplugDeviceActivity.class));
             finish();
-        }	
-	}
-	
-	private boolean ptpIsEnabled() {
+        }
+    }
+
+    private boolean ptpIsEnabled() {
         String usbConfig = SystemProperties.get("persist.sys.usb.config");
         if (usbConfig != null && usbConfig.contains("mtp")) {
             return false;

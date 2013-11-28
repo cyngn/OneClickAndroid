@@ -17,7 +17,7 @@ import android.widget.ImageView;
 
 public class HTCFastBootActivity extends Activity {
 
-	@Override
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -29,7 +29,7 @@ public class HTCFastBootActivity extends Activity {
 
         setContentView(R.layout.htc_fast_boot);
 
-        ImageView instructionView = (ImageView)findViewById(R.id.htc_fast_boot_instructions);
+        ImageView instructionView = (ImageView) findViewById(R.id.htc_fast_boot_instructions);
 
         DecelerateInterpolator interpolator = new DecelerateInterpolator(2.0f);
 
@@ -57,42 +57,41 @@ public class HTCFastBootActivity extends Activity {
         findViewById(R.id.next).setAnimation(buttonAnimation);
 
         OnClickListener openHtcFastBootListener = new OnClickListener() {
-	        @Override
-	        public void onClick(View view) {
-	            Intent intent = new Intent();
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
                 intent.setComponent(htcPowerManager);
-	            try {
-	                startActivity(intent);
-	                startService(new Intent(getBaseContext(), HTCFastBootMonitorService.class));
-	            } catch (ActivityNotFoundException e) {
-	                // we want to know if this happens, right?
-	            }
-	        }
+                try {
+                    startActivity(intent);
+                    startService(new Intent(getBaseContext(), HTCFastBootMonitorService.class));
+                } catch (ActivityNotFoundException e) {
+                    // we want to know if this happens, right?
+                }
+            }
         };
-            
+
         findViewById(R.id.next).setOnClickListener(openHtcFastBootListener);
     }
 
     ComponentName htcPowerManager = new ComponentName("com.htc.htcpowermanager", "com.htc.htcpowermanager.PowerManagerActivity");
-	
-	@Override
-	public void onResume() {
-		super.onResume();
-		
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
         if (fastBootIsDisabled()) {
             finish();
-        }	
-	}
-	
-	private boolean fastBootIsDisabled() {
+        }
+    }
+
+    private boolean fastBootIsDisabled() {
         try {
             // check the activity
             getPackageManager().getActivityInfo(htcPowerManager, 0);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             return true;
         }
 
         return Settings.Secure.getInt(getContentResolver(), "enable_fastboot", 1) == 0;
-	}
+    }
 }
