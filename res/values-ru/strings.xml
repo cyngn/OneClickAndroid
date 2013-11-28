@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Установщик CyanogenMod</string>
+
+    <string name="unsupported_title">Неподдерживаемое устройство</string>
+    <string name="unsupported_text">Извините, но ваше устройство на данный момент не поддерживается Установщиком CyanogenMod.\n\nДля подробной информации пройдите по ссылке <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">список поддерживаемых устройств</a>.\n\nВы можете продолжить подготовку вашего устройства на ваш страх и риск.</string>
+    <string name="continue_anyway">Все равно продолжить</string>
+
+    <string name="welcome">Добро пожаловать</string>
+    <string name="intro">Это приложение поможет вам установить CyanogenMod. Вам понадобится ПК с установленной Windows Vista или новее, USB кабель.\n\nВаше устройство в процессе будет приведено в заводское состояние, поэтому удостоверьтесь что вся важная для вас информация сохранена прежде чем продолжить.</string>
+    
+    <string name="begin">Начать</string>
+    <string name="open_developer_options">Продолжить</string>
+    <string name="continue_on_windows">Продолжите установку в Windows</string>
+    <string name="unplug_device">Отключите свое устройство</string>
+
+    <string name="enable_usb_help">Чтобы продолжить, включите Отладку по USB как показано ниже.</string>
+    <string name="enable_ptp_help">Чтобы продолжить, включите Камера (PTP) как показано ниже.</string>
+    <string name="device_ready">Теперь ваше устройство готово к установке CyanogenMod. Посетите эту веб страницу на вашем ПК чтобы продолжить:</string>
+    <string name="device_ready_windows">Ваше устройство было успешно обнаружено Установщиком CyanogenMod. Поздравляем! Чтобы продолжить, перейдите в Установщик CyanogenMod на ПК и следуйте инструкциям.</string>
+    <string name="website_link">http://get.cm</string>
+	<string name="unplug_device_instructions">Отключите ваше устройство от компьютера чтобы продолжить процесс установки.\n\nНе подключайте ваше устройство пока не увидите оповещение Установщика на ПК.</string>
+
+    <string name="disable_fast_boot_help">Чтобы продолжить, отключите Fast Boot как показано ниже.</string>
+</resources>

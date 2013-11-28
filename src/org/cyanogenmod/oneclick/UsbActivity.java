@@ -16,7 +16,7 @@ import android.widget.ImageView;
 
 public class UsbActivity extends Activity {
 
-	@Override
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -27,8 +27,8 @@ public class UsbActivity extends Activity {
         }
 
         setContentView(R.layout.usb);
-        
-        ImageView instructionView = (ImageView)findViewById(R.id.usb_instructions);
+
+        ImageView instructionView = (ImageView) findViewById(R.id.usb_instructions);
 
         DecelerateInterpolator interpolator = new DecelerateInterpolator(2.0f);
 
@@ -56,33 +56,33 @@ public class UsbActivity extends Activity {
         findViewById(R.id.next).setAnimation(buttonAnimation);
 
         OnClickListener openUsbListener = new View.OnClickListener() {
-	        @Override
-	        public void onClick(View view) {
-	            Intent intent = new Intent();
-	            intent.setClassName("com.android.settings", "com.android.settings.DevelopmentSettings");
-	            try {
-	                startActivity(intent);
-	                startService(new Intent(getBaseContext(), UsbDebuggingMonitorService.class));
-	            } catch (ActivityNotFoundException e) {
-	                // we want to know if this happens, right?
-	            }
-	        }
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClassName("com.android.settings", "com.android.settings.DevelopmentSettings");
+                try {
+                    startActivity(intent);
+                    startService(new Intent(getBaseContext(), UsbDebuggingMonitorService.class));
+                } catch (ActivityNotFoundException e) {
+                    // we want to know if this happens, right?
+                }
+            }
         };
-            
+
         findViewById(R.id.next).setOnClickListener(openUsbListener);
     }
-	
-	@Override
-	public void onResume() {
-		super.onResume();
-		
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
         if (adbIsEnabled()) {
             finish();
-        }	
-	}
-	
-	@SuppressWarnings("deprecation")
-	private boolean adbIsEnabled() {
-		return (Settings.Secure.getInt(getContentResolver(), Settings.Secure.ADB_ENABLED, 0) == 1);
-	}
+        }
+    }
+
+    @SuppressWarnings("deprecation")
+    private boolean adbIsEnabled() {
+        return (Settings.Secure.getInt(getContentResolver(), Settings.Secure.ADB_ENABLED, 0) == 1);
+    }
 }

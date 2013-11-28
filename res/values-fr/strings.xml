@@ -19,7 +19,7 @@
     <string name="device_ready">Votre appareil est maintenant prêt pour l\'installation de CyanogenMod. Accédez au site ci-dessous sur votre PC Windows pour continuer:</string>
     <string name="device_ready_windows">Votre appareil a correctement été détecté par le programme d\'installation de CyanogenMod. Félicitations! Pour continuer retournez à l\'installeur CyanogenMod Installer sur votre PC Windows et suivez les instructions.</string>
     <string name="website_link">http://get.cm</string>
-	<string name="unplug_device_instructions">Débranchez votre appareil de votre ordinateur pour continuer l\'installation.\n\nNe rebranchez pas votre appareil jusqu\'à ce que vous y soyez invité par le programme d\'installation Windows.</string>
+    <string name="unplug_device_instructions">Débranchez votre appareil de votre ordinateur pour continuer l\'installation.\n\nNe rebranchez pas votre appareil jusqu\'à ce que vous y soyez invité par le programme d\'installation Windows.</string>
 
     <string name="disable_fast_boot_help">Pour continuer, merci de désactiver Fast Boot sur ​​l\'écran suivant, comme indiqué ci-dessous.</string>
 </resources>

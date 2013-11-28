@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CyanogenMod Telepítő</string>
+
+    <string name="unsupported_title">Nem támogatott eszköz</string>
+    <string name="unsupported_text">Sajnáljuk, eszköze a telepítő által jelenleg nem támogatott. \n\További információkért kérjük látogasson el a <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">címre, ahol megtalálja a támogatott eszközök listáját</a>.\n\nSaját felelősségre folytathatja az előkészületeket a telepítésre.</string>
+    <string name="continue_anyway">Mindenképpen folytatja</string>
+
+    <string name="welcome">Üdvözlöm</string>
+    <string name="intro">Ez az alkalmazás segíti a CyanogenMod élmény telepítésében. Szüksége lesz egy Windows-t futtató PC-re (Vista, vagy újabb verzió) és egy USB kábelre.\n\nAz eszköz gyári állapotba kerül a folyamat során, ezért javasolt a fontos adatok lementése, mielőtt folytatná.</string>
+    
+    <string name="begin">Kezdődhet</string>
+    <string name="open_developer_options">Folytatás</string>
+    <string name="continue_on_windows">Folytassa a telepítést Windows-on</string>
+    <string name="unplug_device">Húzza ki a kábelt</string>
+
+    <string name="enable_usb_help">A folytatáshoz kapcsolja be az USB hibakeresést a következő képernyőn, a lent látható módon.</string>
+    <string name="enable_ptp_help">A folytatáshoz kapcsolja be a Kamera (PTP) üzemmódot a következő képernyőn, a lent látható módon.</string>
+    <string name="device_ready">Eszköze készen áll a CyanogenMod telepítésére. A folytatáshoz látogasson el a lenti webhelyre a PC-jén:</string>
+    <string name="device_ready_windows">Eszközét sikeresen felismerte a CyanogenMod telepítő. Gratulálunk! A folytatáshoz térjen át a Windows-on futó telepítőre és kövesse az ottani utasításokat.</string>
+    <string name="website_link">http://get.cm</string>
+	<string name="unplug_device_instructions">Húzza ki az USB kábelt a telepítés folytatásához.\n\nNe dugja vissza a kábelt, amíg a Windows telepítő erre nem kéri.</string>
+
+    <string name="disable_fast_boot_help">A folytatáshoz kapcsolja ki a Fast Boot módot a következő képernyőn, a lent látható módon.</string>
+</resources>

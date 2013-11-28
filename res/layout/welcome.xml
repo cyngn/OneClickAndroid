@@ -27,16 +27,15 @@
             style="@style/Title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/welcome"/>
+            android:text="@string/welcome" />
 
-        <ImageView
-            style="@style/ModSeparator" />
+        <ImageView style="@style/ModSeparator" />
 
         <TextView
             android:id="@+id/welcome_text"
             style="@style/Body"
-            android:text="@string/intro"
-            android:paddingBottom="30dp" />
-
+            android:paddingBottom="30dp"
+            android:text="@string/intro" />
     </LinearLayout>
+
 </RelativeLayout>

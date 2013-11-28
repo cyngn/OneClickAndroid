@@ -9,12 +9,12 @@ import android.provider.Settings;
  */
 public class HTCFastBootMonitorService extends MonitorService {
     ComponentName htcPowerManager = new ComponentName("com.htc.htcpowermanager", "com.htc.htcpowermanager.PowerManagerActivity");
+
     @Override
     protected boolean canContinue() {
         try {
             getPackageManager().getActivityInfo(htcPowerManager, 0);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             return true;
         }
 
