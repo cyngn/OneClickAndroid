@@ -3,23 +3,23 @@
     <string name="app_name">Installeur CyanogenMod</string>
 
     <string name="unsupported_title">Appareil non supporté</string>
-    <string name="unsupported_text">Désolé, votre appareil n'est pas supporté par l'installeur CyanogenMod.\n\nPour plus d'informations merci de consulter la <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">liste des appareilq supportés</a>.\n\nVous pouvez poursuivre la préparation de votre appareil à vos risques et périls.</string>
+    <string name="unsupported_text">Désolé, votre appareil n\'est pas supporté par l\'installeur CyanogenMod.\n\nPour plus d\'informations merci de consulter la <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">liste des appareilq supportés</a>.\n\nVous pouvez poursuivre la préparation de votre appareil à vos risques et périls.</string>
     <string name="continue_anyway">Continue Anyway</string>
 
     <string name="welcome">Bienvenue</string>
-    <string name="intro">Cette application vous assistera dans l'installation de CyanogenMod. Vous allez avoir besoin d'un PC Windows avec Vista ou plus récent, et d'un cable USB.\n\nDurant ce procédé, votre appareil va être réinitialisé, veillez donc à effectuer une sauvegarde préalable de vos données sensibles avant de continuer.</string>
+    <string name="intro">Cette application vous assistera dans l\'installation de CyanogenMod. Vous allez avoir besoin d\'un PC Windows avec Vista ou plus récent, et d\'un cable USB.\n\nDurant ce procédé, votre appareil va être réinitialisé, veillez donc à effectuer une sauvegarde préalable de vos données sensibles avant de continuer.</string>
     
     <string name="begin">Commencer</string>
     <string name="open_developer_options">Continuer</string>
-    <string name="continue_on_windows">Continuer l'installation dans Windows</string>
+    <string name="continue_on_windows">Continuer l\'installation dans Windows</string>
     <string name="unplug_device">Débranchez votre appareil</string>
 
-    <string name="enable_usb_help">Pour continuer, activez le déboguage USB sur l'écran suivant, comme indiqué ci-dessous.</string>
-    <string name="enable_ptp_help">Pour continuer, activez le mode Appareil photo (PTP) sur l'écran suivant, comme indiqué ci-dessous.</string>
-    <string name="device_ready">Votre appareil est maintenant prêt pour l'installation de CyanogenMod. Accédez au site ci-dessous sur votre PC Windows pour continuer:</string>
-    <string name="device_ready_windows">Votre appareil a correctement été détecté par le programme d'installation de CyanogenMod. Félicitations! Pour continuer retournez à l'installeur CyanogenMod Installer sur votre PC Windows et suivez les instructions.</string>
+    <string name="enable_usb_help">Pour continuer, activez le déboguage USB sur l\'écran suivant, comme indiqué ci-dessous.</string>
+    <string name="enable_ptp_help">Pour continuer, activez le mode Appareil photo (PTP) sur l\'écran suivant, comme indiqué ci-dessous.</string>
+    <string name="device_ready">Votre appareil est maintenant prêt pour l\'installation de CyanogenMod. Accédez au site ci-dessous sur votre PC Windows pour continuer:</string>
+    <string name="device_ready_windows">Votre appareil a correctement été détecté par le programme d\'installation de CyanogenMod. Félicitations! Pour continuer retournez à l\'installeur CyanogenMod Installer sur votre PC Windows et suivez les instructions.</string>
     <string name="website_link">http://get.cm</string>
-	<string name="unplug_device_instructions">Débranchez votre appareil de votre ordinateur pour continuer l'installation.\n\nNe rebranchez pas votre appareil jusqu'à ce que vous y soyez invité par le programme d'installation Windows.</string>
+	<string name="unplug_device_instructions">Débranchez votre appareil de votre ordinateur pour continuer l\'installation.\n\nNe rebranchez pas votre appareil jusqu\'à ce que vous y soyez invité par le programme d\'installation Windows.</string>
 
-    <string name="disable_fast_boot_help">Pour continuer, merci de désactiver Fast Boot sur ​​l'écran suivant, comme indiqué ci-dessous.</string>
+    <string name="disable_fast_boot_help">Pour continuer, merci de désactiver Fast Boot sur l\'écran suivant, comme indiqué ci-dessous.</string>
 </resources>
