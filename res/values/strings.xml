@@ -22,4 +22,8 @@
 	<string name="unplug_device_instructions">Unplug your device from your computer to continue the installation process.\n\nDo not plug in your device again until prompted to by the Windows installer.</string>
 
     <string name="disable_fast_boot_help">To proceed, please disable Fast Boot on the next screen as shown below.</string>
+
+    <string name="i_agree">I Agree</string>
+    <string name="warning">Warning!</string>
+    <string name="disclaimer">Installing CyanogenMod will completely replace your phone\'s operating system, and in rare cases, this may cause your device to become nonfunctional.\n\nBut we\'ve worked very hard to make sure that the installation is as reliable and safe as possible.\n\nBy continuing, you understand the potential risks.</string>
 </resources>

@@ -5,16 +5,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class StartActivity extends Activity {
+/**
+ * Created by koush on 11/28/13.
+ */
+public class DisclaimerActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.welcome);
-        
-        findViewById(R.id.begin).setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.disclaimer);
+
+        findViewById(R.id.i_agree).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(StartActivity.this, DisclaimerActivity.class));
+                startActivity(new Intent(DisclaimerActivity.this, UsbActivity.class));
             }
         });
     }
