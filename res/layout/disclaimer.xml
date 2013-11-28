@@ -15,7 +15,7 @@
         android:id="@+id/i_agree"
         style="@style/ContinueButton"
         android:layout_marginBottom="30dp"
-        android:text="@string/begin" />
+        android:text="@string/i_agree" />
 
     <LinearLayout
         android:layout_width="fill_parent"
