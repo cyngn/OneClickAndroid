@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CM installeren</string>
+    <string name="unsupported_title">Apparaat niet ondersteund</string>
+    <string name="unsupported_text">Helaas, uw apparaat wordt momenteel niet ondersteund door het installatieprogramma.\n\nVoor meer informatie gaat u naar <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">de lijst van ondersteunde apparaten</a>.\n\nU kunt op eigen risico doorgaan met het voorbereiden van uw apparaat op de installatie.</string>
+    <string name="continue_anyway">Toch doorgaan</string>
+    <string name="welcome">Welkom</string>
+    <string name="intro">Deze app helpt u bij het opzetten van CyanogenMod. U heeft een pc met Windows Vista of nieuwer nodig en een USB-kabel.\n\nUw apparaat wordt tijdens het proces hersteld naar fabrieksinstellingen. Wees er dus zeker van dat u een back-up van uw belangrijke gegevens heeft, voordat u doorgaat.</string>
+    <string name="begin">Starten</string>
+    <string name="open_developer_options">Doorgaan</string>
+    <string name="continue_on_windows">Installatie voortzetten in Windows</string>
+    <string name="unplug_device">Uw apparaat ontkoppelen</string>
+    <string name="enable_usb_help">Om door te gaan schakelt u \'USB-foutopsporingsmodus\' in op het volgende scherm.</string>
+    <string name="enable_ptp_help">Om door te gaan schakelt u \'Camera (PTP)\' in op het volgende scherm.</string>
+    <string name="device_ready">Uw apparaat is nu gereed voor installatie van CyanogenMod. Bezoek onderstaande website op uw pc om door te gaan:</string>
+    <string name="device_ready_windows">Het installatieprogramma van CyanogenMod heeft uw apparaat succesvol gedetecteerd. Gefeliciteerd! Om door te gaan gaat u terug naar het installatieprogramma op uw pc en volgt u de instructies.</string>
+	<string name="unplug_device_instructions">Om door te gaan met de installatie ontkoppelt u uw apparaat van uw pc.\n\nKoppel uw apparaat niet aan uw pc, voordat het installatieprogramma op uw pc dit aangeeft.</string>
+    <string name="disable_fast_boot_help">Om door te gaan schakelt u \'Fast boot\' of \'Snel opstarten\' uit op het volgende scherm.</string>
+</resources>
