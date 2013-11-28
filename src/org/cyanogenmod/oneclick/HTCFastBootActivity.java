@@ -84,7 +84,6 @@ public class HTCFastBootActivity extends Activity {
         }	
 	}
 	
-	@SuppressWarnings("deprecation")
 	private boolean fastBootIsDisabled() {
         try {
             // check the activity
