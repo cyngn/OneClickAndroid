@@ -15,13 +15,13 @@
             android:text="@string/unplug_device"
             android:textSize="35sp" />
 
-        <ImageView
-            style="@style/ModSeparator" />
+        <ImageView style="@style/ModSeparator" />
 
         <TextView
             style="@style/Body"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/unplug_device_instructions"/>
+            android:text="@string/unplug_device_instructions" />
     </LinearLayout>
+
 </RelativeLayout>

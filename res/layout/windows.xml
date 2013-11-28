@@ -15,14 +15,13 @@
             android:text="@string/continue_on_windows"
             android:textSize="35sp" />
 
-        <ImageView
-            style="@style/ModSeparator" />
+        <ImageView style="@style/ModSeparator" />
 
         <TextView
             style="@style/Body"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/device_ready"/>
+            android:text="@string/device_ready" />
 
         <TextView
             android:layout_width="match_parent"
