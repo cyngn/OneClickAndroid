@@ -10,7 +10,7 @@ public class StartActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome);
-        
+
         findViewById(R.id.begin).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
