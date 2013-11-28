@@ -3,23 +3,23 @@
     <string name="app_name">CyanogenMod Installer</string>
 
     <string name="unsupported_title">Dispositivo non supportato</string>
-    <string name="unsupported_text">Spiacenti, il dispositivo non è attualmente supportato da CyanogenMod Installer.\n\nPer maggiori informazioni visita la <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">lista dei dispositivi supportati</a>.\n\nÈ possibile continuare la preparazione del dispositivo per l'installazione a proprio rischio.</string>
+    <string name="unsupported_text">Spiacenti, il dispositivo non è attualmente supportato da CyanogenMod Installer.\n\nPer maggiori informazioni visita la <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">lista dei dispositivi supportati</a>.\n\nÈ possibile continuare la preparazione del dispositivo per l\'installazione a proprio rischio.</string>
     <string name="continue_anyway">Continua comunque</string>
 
     <string name="welcome">Benvenuto</string>
-    <string name="intro">Questa app ti assisterà durante l'installazione di CyanogenMod. Avrai bisogno di un PC con Windows Vista o versioni successive e di un cavo USB.\n\nIl dispositivo verrà ripristinato alle impostazioni di fabbrica durante il processo, quindi assicurati di eseguire un backup dei dati importanti prima di continuare.</string>
+    <string name="intro">Questa app ti assisterà durante l\'installazione di CyanogenMod. Avrai bisogno di un PC con Windows Vista o versioni successive e di un cavo USB.\n\nIl dispositivo verrà ripristinato alle impostazioni di fabbrica durante il processo, quindi assicurati di eseguire un backup dei dati importanti prima di continuare.</string>
     
     <string name="begin">Inizio</string>
     <string name="open_developer_options">Continua</string>
-    <string name="continue_on_windows">Continua l'installazione su Windows</string>
+    <string name="continue_on_windows">Continua l\'installazione su Windows</string>
     <string name="unplug_device">Scollega il dispositivo</string>
 
     <string name="enable_usb_help">Per continuare, attiva il debug USB nella schermata successiva, come mostrato di seguito.</string>
     <string name="enable_ptp_help">Per continuare, attiva la modalità Fotocamera (PTP) nella schermata successiva, come mostrato di seguito.</string>
-    <string name="device_ready">Il dispositivo è ora pronto per l'installazione di CyanogenMod. Visita il seguente sito web dal PC Windows per continuare:</string>
+    <string name="device_ready">Il dispositivo è ora pronto per l\'installazione di CyanogenMod. Visita il seguente sito web dal PC Windows per continuare:</string>
     <string name="device_ready_windows">Il dispositivo è stato rilevato con successo da CyanogenMod installer. Congratulazioni! Per continuare, torna a CyanogenMod Installer sul PC Windows e segui le istruzioni.</string>
     <string name="website_link">http://get.cm</string>
-	<string name="unplug_device_instructions">Scollega il dispositivo dal computer per continuare il processo di installazione.\n\nNon ricollegare il dispositivo finché non viene richiesto dall'installer Windows.</string>
+	<string name="unplug_device_instructions">Scollega il dispositivo dal computer per continuare il processo di installazione.\n\nNon ricollegare il dispositivo finché non viene richiesto dall\'installer Windows.</string>
 
     <string name="disable_fast_boot_help">Per continuare, disattiva Fast Boot nella schermata successiva, come mostrato di seguito.</string>
 </resources>
