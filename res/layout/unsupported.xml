@@ -27,16 +27,15 @@
             style="@style/Title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/unsupported_title"/>
+            android:text="@string/unsupported_title" />
 
-        <ImageView
-            style="@style/ModSeparator" />
+        <ImageView style="@style/ModSeparator" />
 
         <TextView
             android:id="@+id/unsupported_text"
             style="@style/Body"
-            android:text="@string/unsupported_text"
-            android:paddingBottom="30dp" />
-
+            android:paddingBottom="30dp"
+            android:text="@string/unsupported_text" />
     </LinearLayout>
+
 </RelativeLayout>
