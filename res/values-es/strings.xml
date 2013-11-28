@@ -14,12 +14,12 @@
     <string name="continue_on_windows">Continuar instalación en Windows</string>
     <string name="unplug_device">Desconecta tu Dispositivo</string>
 
-    <string name="enable_usb_help">Para seguir, activa Depuración de USB en la siguiente pantalla como se muestra abajo.</string>
-    <string name="enable_ptp_help">Para seguir, activa Cámara (PTP) en la siguiente pantalla como se muestra abajo.</string>
+    <string name="enable_usb_help">Para continuar, activa Depuración de USB en la siguiente pantalla como se muestra abajo.</string>
+    <string name="enable_ptp_help">Para continuar, activa Cámara (PTP) en la siguiente pantalla como se muestra abajo.</string>
     <string name="device_ready">Tu dispositivo está preparado para la instalación de CyanogenMod. Visita el sitio web debajo en tu PC con Windows para continuar:</string>
     <string name="device_ready_windows">Tu dispositivo ha sido detectado correctamente por el Instalador de CyanogenMod. ¡Felicidades! Para continuar, vuelve al Instalador de CyanogenMod en tu PC con Windows y sigue las instrucciones.</string>
     <string name="website_link">http://get.cm</string>
         <string name="unplug_device_instructions">Desconecta tu dispositivo de tu computadora para continuar con la instalación.\n\nNo vuelvas a conectar tu dispositivo hasta que se te sea pedido por el instalador de Windows.</string>
 
-    <string name="disable_fast_boot_help">Para continuar, por favor desactiva Inicio Rápido como se muestra abajo.</string>
+    <string name="disable_fast_boot_help">Para continuar, desactiva Inicio Rápido como se muestra abajo.</string>
 </resources>
