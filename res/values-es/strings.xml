@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Instalador CyanogenMod</string>
-
-    <string name="unsupported_title">Dispositivo sin Soporte</string>
-    <string name="unsupported_text">Lo sentimos, tu dispositivo no tiene soporte del Instalador de CyanogenMod\n\nPara más información, por favor chequea la <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">lista</a>.\n\nPuedes continuar para preparar tu dispositivo para la instalación bajo tu propio riesgo.</string>
-    <string name="continue_anyway">Continuar Igualmente</string>
-
+    <string name="unsupported_title">Dispositivo no soportado</string>
+    <string name="unsupported_text">Lo sentimos, tu dispositivo no está soportado por el instalador de CyanogenMod\n\nPara más información, consulta la siguiente <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">lista de dispositivos soportados</a>.\n\nPuedes continuar para preparar la instalación en tu dispositivo bajo tu propio riesgo.</string>
+    <string name="continue_anyway">Continuar igualmente</string>
     <string name="welcome">Bienvenido</string>
-    <string name="intro">Esta app te asistirá a medida que instalas la experiencia CyanogenMod. Necesitarás una PC con Windows Vista o posterior, y un cable USB.\n\nTu dispositivo será restaurado de fábrica durante este proceso, así que por favor asegúrate de tener una copia de seguridad de tu información importante antes de continuar.</string>
-    
+    <string name="intro">Esta aplicación te ayudará  a medida que instalas la experiencia CyanogenMod. Necesitarás un ordenador con Windows Vista o posterior, y un cable USB.\n\nTu dispositivo será restaurado a su estado inicial de fábrica durante este proceso, así que por favor asegúrate de tener una copia de seguridad de tus datos importantes antes de continuar.</string>
     <string name="begin">Comenzar</string>
     <string name="open_developer_options">Continuar</string>
     <string name="continue_on_windows">Continuar instalación en Windows</string>
-    <string name="unplug_device">Desconecta tu Dispositivo</string>
-
-    <string name="enable_usb_help">Para continuar, activa Depuración de USB en la siguiente pantalla como se muestra abajo.</string>
-    <string name="enable_ptp_help">Para continuar, activa Cámara (PTP) en la siguiente pantalla como se muestra abajo.</string>
-    <string name="device_ready">Tu dispositivo está preparado para la instalación de CyanogenMod. Visita el sitio web debajo en tu PC con Windows para continuar:</string>
-    <string name="device_ready_windows">Tu dispositivo ha sido detectado correctamente por el Instalador de CyanogenMod. ¡Felicidades! Para continuar, vuelve al Instalador de CyanogenMod en tu PC con Windows y sigue las instrucciones.</string>
+    <string name="unplug_device">Desconecta tu dispositivo</string>
+    <string name="enable_usb_help">Para continuar activa Depuración USB en la siguiente pantalla, tal y como se muestra abajo.</string>
+    <string name="enable_ptp_help">Para continuar activa Cámara (PTP) en la siguiente pantalla, tal y como se muestra abajo.</string>
+    <string name="device_ready">Tu dispositivo está preparado para la instalación de CyanogenMod. Visita la siguiente dirección web en tu ordenador con Windows para continuar:</string>
+    <string name="device_ready_windows">Tu dispositivo ha sido detectado correctamente por el instalador de CyanogenMod. ¡Felicidades! Para continuar, vuelve al instalador de CyanogenMod en tu ordenador con Windows y sigue las instrucciones.</string>
     <string name="website_link">http://get.cm</string>
-        <string name="unplug_device_instructions">Desconecta tu dispositivo de tu computadora para continuar con la instalación.\n\nNo vuelvas a conectar tu dispositivo hasta que se te sea pedido por el instalador de Windows.</string>
-
-    <string name="disable_fast_boot_help">Para continuar, desactiva Inicio Rápido como se muestra abajo.</string>
+    <string name="unplug_device_instructions">Desconecta tu dispositivo del ordenador para continuar con la instalación.\n\nNo vuelvas a conectar tu dispositivo hasta que lo solicite el instalador de Windows.</string>
+    <string name="disable_fast_boot_help">Para continuar desactiva Inicio Rápido, tal y como se muestra abajo.</string>
+    <string name="i_agree">Estoy conforme</string>
+    <string name="warning">¡Aviso!</string>
+    <string name="disclaimer">AVISO: La instalación de CyanogenMod reemplazará completamente el sistema operativo del dispositivo y, en raras ocasiones puede ocasionar que el dispositivo deje de funcionar.\n\nPero nosotros hemos trabajado duramente para asegurarnos de que la instalación sea lo más segura y fiable posible.\n\Si continuas, entiendes los riesgos potenciales.</string>
 </resources>
