@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CM installeren</string>
+    <string name="app_name">CyanogenMod installeren</string>
     <string name="unsupported_title">Apparaat niet ondersteund</string>
     <string name="unsupported_text">Helaas, uw apparaat wordt momenteel niet ondersteund door het installatieprogramma.\n\nVoor meer informatie gaat u naar <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">de lijst van ondersteunde apparaten</a>.\n\nU kunt op eigen risico doorgaan met het voorbereiden van uw apparaat op de installatie.</string>
     <string name="continue_anyway">Toch doorgaan</string>
@@ -14,6 +14,8 @@
     <string name="enable_ptp_help">Om door te gaan schakelt u \'Camera (PTP)\' in op het volgende scherm.</string>
     <string name="device_ready">Uw apparaat is nu gereed voor installatie van CyanogenMod. Bezoek onderstaande website op uw pc om door te gaan:</string>
     <string name="device_ready_windows">Het installatieprogramma van CyanogenMod heeft uw apparaat succesvol gedetecteerd. Gefeliciteerd! Om door te gaan gaat u terug naar het installatieprogramma op uw pc en volgt u de instructies.</string>
-	<string name="unplug_device_instructions">Om door te gaan met de installatie ontkoppelt u uw apparaat van uw pc.\n\nKoppel uw apparaat niet aan uw pc, voordat het installatieprogramma op uw pc dit aangeeft.</string>
+    <string name="unplug_device_instructions">Om door te gaan met de installatie ontkoppelt u uw apparaat van uw pc.\n\nKoppel uw apparaat niet aan uw pc, voordat het installatieprogramma op uw pc dit aangeeft.</string>
     <string name="disable_fast_boot_help">Om door te gaan schakelt u \'Fast boot\' of \'Snel opstarten\' uit op het volgende scherm.</string>
+    <string name="i_agree">Ik ga akkoord</string>
+    <string name="warning">Let op</string>
 </resources>
