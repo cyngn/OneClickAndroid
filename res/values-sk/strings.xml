@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Inštalátor CyanogenMod</string>
+
+    <string name="unsupported_title">Nepodporované zariadenie</string>
+    <string name="unsupported_text">Prepáčte, Vaše zariadenie nie je v súčasnosti podporované Inštalátorom CyanogenMod.\n\nPre viac informácií prosím skontrolujte <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">zoznam podporovaných zariadení</a>.\n\nMôžete pokračovať na vlastné nebezpečenstvo v príprave zariadenia na inštaláciu.</string>
+    <string name="continue_anyway">Napriek tomu pokračovať</string>
+
+    <string name="welcome">Vitajte</string>
+    <string name="intro">Táto aplikácia Vám pomôže s inštaláciou CyanogenModu na Vaše zariadenie. Budete potrebovať počítač so systémom Windows Vista alebo novším a USB kábel.\n\nPočas tohto procesu dôjde k obnoveniu továrenských nastavení, a preto sa pred pokračovaním uistite, či máte vytvorenú zálohu dôležitých dát.</string>
+    
+    <string name="begin">Začať</string>
+    <string name="open_developer_options">Pokračovať</string>
+    <string name="continue_on_windows">Pokračujte v systéme Windows</string>
+    <string name="unplug_device">Odpojte zariadenie</string>
+
+    <string name="enable_usb_help">Ak chcete pokračovať, na nasledujúcej obrazovke povoľte \"Ladenie USB\" tak, ako je znázornené nižšie.</string>
+    <string name="enable_ptp_help">Ak chcete pokračovať, na nasledujúcej obrazovke povoľte \"Fotoaparát (PTP)\" tak, ako je znázornené nižšie.</string>
+    <string name="device_ready">Vaše zariadenie je pripravené na inštaláciu CyanogenModu. Navštívte nižšie uvedenú webovú stránku na Vašom počítači so systémom Windows pre pokračovanie:</string>
+    <string name="device_ready_windows">Vaše zariadenie bolo úspešne detegované Inštalátorom CyanogenMod. Gratulujeme! Ak chcete pokračovať, vráťte sa do Inštalátora CyanogenMod na Vašom počítači so systémom Windows a postupujte podľa pokynov.</string>
+    <string name="website_link">http://get.cm</string>
+  	<string name="unplug_device_instructions">Odpojte Vaše zariadenie od počítača pre pokračovanie v procese inštalácie.\n\nNepripájajte zariadenie znovu, pokiaľ nebudete na to vyzvaní Inštalátorom pre Windows.</string>
+
+    <string name="disable_fast_boot_help">Ak chcete pokračovať, na nasledujúcej obrazovke zakážte \"Rýchle spustenie\" tak, ako je znázornené nižšie.</string>
+
+    <string name="i_agree">Súhlasím</string>
+    <string name="warning">Varovanie!</string>
+</resources>
