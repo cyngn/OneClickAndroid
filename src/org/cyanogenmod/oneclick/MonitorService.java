@@ -22,7 +22,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.IBinder;
 
-abstract public class MonitorService extends Service {
+public abstract class MonitorService extends Service {
     private Handler mHandler;
 
     @Override
@@ -51,7 +51,7 @@ abstract public class MonitorService extends Service {
 
         mHandler = new Handler();
 
-        new Runnable() {
+        (new Runnable() {
             @Override
             public void run() {
                 if (mHandler == null)
@@ -67,7 +67,7 @@ abstract public class MonitorService extends Service {
                 }
                 mHandler.postDelayed(this, 1000);
             }
-        }.run();
+        }).run();
 
         mHandler.postDelayed(new Runnable() {
             @Override
