@@ -54,8 +54,9 @@ public abstract class MonitorService extends Service {
         (new Runnable() {
             @Override
             public void run() {
-                if (mHandler == null)
+                if (mHandler == null) {
                     return;
+                }
                 if (canContinue()) {
                     Intent i = new Intent(getBaseContext(), getNextActivityClass());
                     i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

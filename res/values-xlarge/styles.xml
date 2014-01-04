@@ -2,37 +2,37 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <style name="Title">
-    	<item name="android:textSize">75sp</item>
-    	<item name="android:textColor">@android:color/black</item>
-    	<item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">75sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-    	<item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingLeft">30dp</item>
         <item name="android:paddingRight">30dp</item>
     </style>
-    
+
     <style name="Header">
-    	<item name="android:textSize">24sp</item>
-    	<item name="android:textColor">@android:color/black</item>
-    	<item name="android:textStyle">bold</item>
-    	<item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-    	<item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingLeft">30dp</item>
         <item name="android:paddingRight">30dp</item>
         <item name="android:paddingBottom">20dp</item>
         <item name="android:paddingTop">10dp</item>
     </style>
-    
+
     <style name="Body">
-    	<item name="android:textSize">22sp</item>
-    	<item name="android:textColor">@android:color/black</item>
-    	<item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-    	<item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingLeft">30dp</item>
         <item name="android:paddingRight">30dp</item>
         <item name="android:paddingBottom">15dp</item>
         <item name="android:paddingTop">5dp</item>
     </style>
-    
+
     <style name="Separator">
         <item name="android:layout_marginLeft">6dp</item>
         <item name="android:layout_marginRight">6dp</item>
@@ -40,7 +40,7 @@
         <item name="android:layout_height">1dp</item>
         <item name="android:background">#ccc</item>
     </style>
-    
+
     <style name="ModSeparator">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -57,7 +57,7 @@
         <item name="android:paddingTop">8dp</item>
         <item name="android:paddingBottom">8dp</item>
     </style>
-    
+
     <style name="ContinueButton">
         <item name="android:textSize">30sp</item>
         <item name="android:textColor">@android:color/white</item>
@@ -65,18 +65,16 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_alignParentBottom">true</item>
         <item name="android:layout_centerHorizontal">true</item>
-        
         <item name="android:layout_marginBottom">30dp</item>
-        
         <item name="android:paddingLeft">45dp</item>
         <item name="android:paddingRight">45dp</item>
         <item name="android:paddingTop">15dp</item>
         <item name="android:paddingBottom">20dp</item>
-        
-        <item name="android:background">@drawable/button_default</item>   
+        <item name="android:background">@drawable/button_default</item>
     </style>
-    
+
     <style name="DefaultLayout">
         <item name="android:background">#fff</item>
     </style>
+
 </resources>

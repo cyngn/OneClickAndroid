@@ -28,34 +28,30 @@
         <activity android:name="DisclaimerActivity"
                   android:screenOrientation="portrait"/>
         <activity android:name=".UsbActivity"
-            android:screenOrientation="portrait"/>
+                  android:screenOrientation="portrait"/>
         <activity android:name=".HTCFastBootActivity"
-            android:screenOrientation="portrait"/>
+                  android:screenOrientation="portrait"/>
         <activity android:name=".PtpActivity"
-            android:screenOrientation="portrait"/>
+                  android:screenOrientation="portrait"/>
         <activity android:name=".UnplugDeviceActivity"
-            android:screenOrientation="portrait"/>
+                  android:screenOrientation="portrait"/>
         <activity android:name=".FinishActivity"
-            	  android:exported="true"
+                  android:exported="true"
                   android:screenOrientation="portrait"/>
         <activity android:name=".ReturnToWindowsActivity"
-            	  android:exported="true"
+                  android:exported="true"
                   android:screenOrientation="portrait"/>
         <activity android:name=".ReturnToMacActivity"
-            android:exported="true"
-            android:screenOrientation="portrait" />
+                  android:exported="true"
+                  android:screenOrientation="portrait" />
 
         <service android:name=".UsbDebuggingMonitorService"
-                 android:exported="false"
-                />
+                 android:exported="false"/>
         <service android:name=".PtpMonitorService"
-            android:exported="false"
-            />
+                 android:exported="false"/>
         <service android:name=".UnplugDeviceMonitorService"
-            android:exported="false"
-            />
+                 android:exported="false"/>
         <service android:name=".HTCFastBootMonitorService"
-            android:exported="false"
-        />
+                 android:exported="false"/>
     </application>
 </manifest>
