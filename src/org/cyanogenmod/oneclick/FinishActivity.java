@@ -19,7 +19,6 @@ package org.cyanogenmod.oneclick;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.WindowManager;
 
 public class FinishActivity extends Activity {
@@ -33,15 +32,10 @@ public class FinishActivity extends Activity {
     @Override
     public void onResume() {
         super.onResume();
-        if (!adbIsEnabled()) {
-            // oh snap. we need to start over 
+        if (!Utils.adbIsEnabled(this)) {
+            // oh snap. we need to start over
             startActivity(new Intent(getBaseContext(), StartActivity.class));
             finish();
         }
-    }
-
-    @SuppressWarnings("deprecation")
-    private boolean adbIsEnabled() {
-        return (Settings.Secure.getInt(getContentResolver(), Settings.Secure.ADB_ENABLED, 0) == 1);
     }
 }

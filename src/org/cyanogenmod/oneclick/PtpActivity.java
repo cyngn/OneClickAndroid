@@ -20,7 +20,6 @@ import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.SystemProperties;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.AlphaAnimation;
@@ -36,7 +35,7 @@ public class PtpActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (ptpIsEnabled()) {
+        if (Utils.ptpIsEnabled()) {
             startActivity(new Intent(getBaseContext(), HTCFastBootActivity.class));
             finish();
             return;
@@ -92,17 +91,9 @@ public class PtpActivity extends Activity {
     public void onResume() {
         super.onResume();
 
-        if (ptpIsEnabled()) {
+        if (Utils.ptpIsEnabled()) {
             startActivity(new Intent(getBaseContext(), UnplugDeviceActivity.class));
             finish();
         }
-    }
-
-    private boolean ptpIsEnabled() {
-        String usbConfig = SystemProperties.get("persist.sys.usb.config");
-        if (usbConfig != null && usbConfig.contains("mtp")) {
-            return false;
-        }
-        return true;
     }
 }

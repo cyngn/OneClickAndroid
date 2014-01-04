@@ -18,10 +18,8 @@ package org.cyanogenmod.oneclick;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
-import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.AlphaAnimation;
@@ -75,7 +73,7 @@ public class HTCFastBootActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
-                intent.setComponent(htcPowerManager);
+                intent.setComponent(HTCFastBootMonitorService.HTC_POWER_MANAGER);
                 try {
                     startActivity(intent);
                     startService(new Intent(getBaseContext(), HTCFastBootMonitorService.class));
@@ -87,8 +85,6 @@ public class HTCFastBootActivity extends Activity {
 
         findViewById(R.id.next).setOnClickListener(openHtcFastBootListener);
     }
-
-    ComponentName htcPowerManager = new ComponentName("com.htc.htcpowermanager", "com.htc.htcpowermanager.PowerManagerActivity");
 
     @Override
     public void onResume() {
@@ -102,11 +98,11 @@ public class HTCFastBootActivity extends Activity {
     private boolean fastBootIsDisabled() {
         try {
             // check the activity
-            getPackageManager().getActivityInfo(htcPowerManager, 0);
+            getPackageManager().getActivityInfo(HTCFastBootMonitorService.HTC_POWER_MANAGER, 0);
         } catch (Exception e) {
             return true;
         }
 
-        return Settings.Secure.getInt(getContentResolver(), "enable_fastboot", 1) == 0;
+        return Utils.fastbootIsDisabled(getBaseContext());
     }
 }

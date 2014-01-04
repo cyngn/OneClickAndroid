@@ -18,20 +18,19 @@ package org.cyanogenmod.oneclick;
 
 import android.app.Activity;
 import android.content.ComponentName;
-import android.provider.Settings;
 
 public class HTCFastBootMonitorService extends MonitorService {
-    ComponentName htcPowerManager = new ComponentName("com.htc.htcpowermanager", "com.htc.htcpowermanager.PowerManagerActivity");
+    public static final ComponentName HTC_POWER_MANAGER = new ComponentName("com.htc.htcpowermanager", "com.htc.htcpowermanager.PowerManagerActivity");
 
     @Override
     protected boolean canContinue() {
         try {
-            getPackageManager().getActivityInfo(htcPowerManager, 0);
+            getPackageManager().getActivityInfo(HTC_POWER_MANAGER, 0);
         } catch (Exception e) {
             return true;
         }
 
-        return Settings.Secure.getInt(getContentResolver(), "enable_fastboot", 1) == 0;
+        return Utils.fastbootIsDisabled(getBaseContext());
     }
 
     @Override

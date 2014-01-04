@@ -20,7 +20,6 @@ import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.AlphaAnimation;
@@ -36,7 +35,7 @@ public class UsbActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (adbIsEnabled()) {
+        if (Utils.adbIsEnabled(this)) {
             startActivity(new Intent(getBaseContext(), PtpActivity.class));
             finish();
             return;
@@ -92,13 +91,8 @@ public class UsbActivity extends Activity {
     public void onResume() {
         super.onResume();
 
-        if (adbIsEnabled()) {
+        if (Utils.adbIsEnabled(this)) {
             finish();
         }
-    }
-
-    @SuppressWarnings("deprecation")
-    private boolean adbIsEnabled() {
-        return (Settings.Secure.getInt(getContentResolver(), Settings.Secure.ADB_ENABLED, 0) == 1);
     }
 }

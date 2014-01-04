@@ -18,8 +18,6 @@ package org.cyanogenmod.oneclick;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.IntentFilter;
-import android.os.BatteryManager;
 import android.os.Bundle;
 
 public class UnplugDeviceActivity extends Activity {
@@ -28,7 +26,7 @@ public class UnplugDeviceActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (!deviceIsPluggedIn()) {
+        if (!Utils.deviceIsPluggedIn(this)) {
             startActivity(new Intent(getBaseContext(), FinishActivity.class));
             finish();
             return;
@@ -43,14 +41,8 @@ public class UnplugDeviceActivity extends Activity {
     public void onResume() {
         super.onResume();
 
-        if (!deviceIsPluggedIn()) {
+        if (!Utils.deviceIsPluggedIn(this)) {
             finish();
         }
-    }
-
-    private boolean deviceIsPluggedIn() {
-        Intent intent = getBaseContext().registerReceiver(null, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
-        int plugged = intent.getIntExtra(BatteryManager.EXTRA_PLUGGED, -1);
-        return (plugged == BatteryManager.BATTERY_PLUGGED_USB) || (plugged == BatteryManager.BATTERY_PLUGGED_AC);
     }
 }
