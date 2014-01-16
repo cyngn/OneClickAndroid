@@ -7,7 +7,7 @@
 
     <TextView
         style="@style/Title"
-        android:text="@string/continue_on_windows"
+        android:text="@string/continue_on_computer"
         android:textSize="35sp" />
 
     <ImageView style="@style/ModSeparator" />

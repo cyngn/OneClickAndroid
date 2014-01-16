@@ -11,7 +11,7 @@ public class FinishActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.windows);
+        setContentView(R.layout.computer);
     }
 
     @Override
