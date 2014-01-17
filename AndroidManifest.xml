@@ -41,6 +41,9 @@
         <activity android:name=".ReturnToWindowsActivity"
             	  android:exported="true"
                   android:screenOrientation="portrait"/>
+        <activity android:name=".ReturnToMacActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
 
         <service android:name=".UsbDebuggingMonitorService"
                  android:exported="false"

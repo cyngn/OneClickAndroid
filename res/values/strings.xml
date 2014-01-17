@@ -7,21 +7,25 @@
     <string name="continue_anyway">Continue Anyway</string>
 
     <string name="welcome">Welcome</string>
-    <string name="intro">This app will assist you as you install the CyanogenMod experience. You will need a Windows PC running Vista or newer, and a USB cable.\n\nYour device will be factory reset during this process, so please ensure important data is backed up before continuing.</string>
+    <string name="intro">This app will assist you as you install the CyanogenMod experience. You will need a Windows PC running Vista or newer, or a modern (x86) Mac, and a USB cable.\n\nYour device will be factory reset during this process, so please ensure important data is backed up before continuing.</string>
     
     <string name="begin">Begin</string>
     <string name="open_developer_options">Continue</string>
-    <string name="continue_on_windows">Continue installation in Windows</string>
+    <string name="continue_on_windows">Continue installation on Your Windows PC</string>
+    <string name="continue_on_mac">Continue installation on Your Mac</string>
+    <string name="continue_on_computer">Continue installation on Your Computer</string>
     <string name="unplug_device">Unplug your Device</string>
 
     <string name="enable_usb_help">To proceed, enable USB Debugging on the next screen as shown below.</string>
     <string name="enable_ptp_help">To proceed, enable Camera (PTP) on the next screen as shown below.</string>
-    <string name="device_ready">Your device is now prepared for CyanogenMod installation. Visit the website below on your Windows PC to continue:</string>
-    <string name="device_ready_windows">Your device has been successfully detected by the CyanogenMod installer. Congratulations! To continue, return to the CyanogenMod Installer on your Windows PC and follow the instructions.</string>
-    <string name="website_link">http://get.cm</string>
-	<string name="unplug_device_instructions">Unplug your device from your computer to continue the installation process.\n\nDo not plug in your device again until prompted to by the Windows installer.</string>
-
     <string name="disable_fast_boot_help">To proceed, please disable Fast Boot on the next screen as shown below.</string>
+
+    <string name="device_ready">Your device is now prepared for CyanogenMod installation. Visit the website below on your computer to continue:</string>
+    <string name="device_ready_windows">Your device has been successfully detected by the CyanogenMod installer. Congratulations! To continue, return to the CyanogenMod Installer on your Windows PC and follow the instructions.</string>
+    <string name="device_ready_mac">Your device has been successfully detected by the CyanogenMod installer. Congratulations! To continue, return to the CyanogenMod Installer on your Mac and follow the instructions.</string>
+
+    <string name="website_link">http://get.cm</string>
+    <string name="unplug_device_instructions">Unplug your device from your computer to continue the installation process.\n\nDo not plug in your device again until prompted to by the installer.</string>
 
     <string name="i_agree">I Agree</string>
     <string name="warning">Warning!</string>
