@@ -17,7 +17,9 @@ public class Utils {
         SUPPORTED_DEVICES.add("grouper");
         SUPPORTED_DEVICES.add("tilapia");
         SUPPORTED_DEVICES.add("flo");
+        SUPPORTED_DEVICES.add("deb");
         SUPPORTED_DEVICES.add("mako");
+        SUPPORTED_DEVICES.add("hammerhead");
         SUPPORTED_DEVICES.add("manta");
         SUPPORTED_DEVICES.add("skyrocket");
         SUPPORTED_DEVICES.add("SGH-I727"); // Alternative for 'skyrocket'
@@ -30,6 +32,7 @@ public class Utils {
         SUPPORTED_DEVICES.add("m0"); // Alternative for 'i9300'
         SUPPORTED_DEVICES.add("d2att");
         SUPPORTED_DEVICES.add("SGH-I747"); // Alternative for 'd2att'
+        SUPPORTED_DEVICES.add("d2can");
         SUPPORTED_DEVICES.add("d2spr");
         SUPPORTED_DEVICES.add("SPH-L710"); // Alternative for 'd2spr'
         SUPPORTED_DEVICES.add("d2tmo");

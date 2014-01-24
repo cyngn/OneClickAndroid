@@ -29,5 +29,6 @@
 
     <string name="i_agree">I Agree</string>
     <string name="warning">Warning!</string>
-    <string name="disclaimer">DO NO TRANSLATE THIS YET: Installing CyanogenMod will completely replace your phone\'s operating system, and in rare cases, this may cause your device to become nonfunctional.\n\nBut we\'ve worked very hard to make sure that the installation is as reliable and safe as possible.\n\nBy continuing, you understand the potential risks.</string>
+    <!-- DO NOT TRANSLATE YET -->
+    <string name="disclaimer" >Installing CyanogenMod will completely replace your phone\'s operating system, and in rare cases, this may cause your device to become nonfunctional.\n\nBut we\'ve worked very hard to make sure that the installation is as reliable and safe as possible.\n\nBy continuing, you understand the potential risks.</string>
 </resources>
