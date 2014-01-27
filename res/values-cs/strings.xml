@@ -21,7 +21,7 @@
     <string name="device_ready">Zařízení je nyní připraveno k instalaci systému CyanogenMod. Pro pokračování prosím navštivte na svém PC stránku níže:</string>
     <string name="device_ready_windows">Zařízení bylo správně detekováno instalátorem CyanogenMod. Gratulujeme! Pro pokračování se vraťte do instalátoru CyanogenMod na PC a pokračujte podle instrukcí.</string>
     <string name="device_ready_mac">Zařízení bylo správně detekováno instalátorem CyanogenMod. Gratulujeme! Pro pokračování se vraťte do instalátoru CyanogenMod na Mac a pokračujte podle instrukcí.</string>
-	<string name="unplug_device_instructions">Pro pokračování v instalaci odpojte zařízení od PC.\n\nNepřipojujte znovu zařízení do té doby, dokud nebudete vyzváni instalátorem na PC.</string>
+    <string name="unplug_device_instructions">Pro pokračování v instalaci odpojte zařízení od PC.\n\nNepřipojujte znovu zařízení do té doby, dokud nebudete vyzváni instalátorem na PC.</string>
 
     <string name="disable_fast_boot_help">Chcete-li pokračovat, na následující obrazovce vypněte položku \"Faastboot\" tak, jak je znázorněno níže.</string>
 
