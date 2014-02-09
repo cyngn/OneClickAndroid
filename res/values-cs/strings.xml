@@ -7,12 +7,12 @@
     <string name="continue_anyway">Přesto pokračovat</string>
 
     <string name="welcome">Vítejte</string>
-    <string name="intro">Tato aplikace Vám pomůže v instalaci systému CyanogenMod na zařízení. Budete potřebovat PC s operačním systémem Windows ve verzi Vista nebo novější nebo moderní (x86) Mac a USB kabel pro připojení zařízení.\n\nPři instalaci dojde k obnovení továrního nastavení a proto si před pokračováním prosím zazlohujte důležitá data.</string>
+    <string name="intro">Tato aplikace Vám pomůže v instalaci systému CyanogenMod na zařízení. Budete potřebovat PC s operačním systémem Windows ve verzi Vista nebo novější a USB kabel pro připojení zařízení.\n\nPři instalaci dojde k obnovení továrního nastavení a proto si před pokračováním prosím zazlohujte důležitá data.</string>
 
     <string name="begin">Začít</string>
     <string name="open_developer_options">Pokračovat</string>
     <string name="continue_on_windows">Pokračovat instalaci ve Windows</string>
-    <string name="continue_on_mac">Pokračovat instalaci na Macu</string>
+    <string name="continue_on_mac">Pokračovat instalaci na stanici Mac</string>
     <string name="continue_on_computer">Pokračovat instalaci na počítači</string>
     <string name="unplug_device">Odpojte zařízení</string>
 
@@ -20,7 +20,7 @@
     <string name="enable_ptp_help">Chcete-li pokračovat, ma následující obrazovce povolte položku \"Fotoaparát (PTP)\" tak, jak je znázorněno níže.</string>
     <string name="device_ready">Zařízení je nyní připraveno k instalaci systému CyanogenMod. Pro pokračování prosím navštivte na svém PC stránku níže:</string>
     <string name="device_ready_windows">Zařízení bylo správně detekováno instalátorem CyanogenMod. Gratulujeme! Pro pokračování se vraťte do instalátoru CyanogenMod na PC a pokračujte podle instrukcí.</string>
-    <string name="device_ready_mac">Zařízení bylo správně detekováno instalátorem CyanogenMod. Gratulujeme! Pro pokračování se vraťte do instalátoru CyanogenMod na Mac a pokračujte podle instrukcí.</string>
+    <string name="device_ready_mac">Zařízení bylo správně detekováno instalátorem CyanogenMod. Congratulations! Pro pokračování se vraťte do instalátoru CyanogenMod na stanici Mac a pokračujte podle instrukcí.</string>
     <string name="unplug_device_instructions">Pro pokračování v instalaci odpojte zařízení od PC.\n\nNepřipojujte znovu zařízení do té doby, dokud nebudete vyzváni instalátorem na PC.</string>
 
     <string name="disable_fast_boot_help">Chcete-li pokračovat, na následující obrazovce vypněte položku \"Faastboot\" tak, jak je znázorněno níže.</string>
