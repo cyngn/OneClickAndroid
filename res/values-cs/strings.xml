@@ -7,7 +7,7 @@
     <string name="continue_anyway">Přesto pokračovat</string>
 
     <string name="welcome">Vítejte</string>
-    <string name="intro">Tato aplikace Vám pomůže v instalaci systému CyanogenMod na zařízení. Budete potřebovat PC s operačním systémem Windows ve verzi Vista nebo novější a USB kabel pro připojení zařízení.\n\nPři instalaci dojde k obnovení továrního nastavení a proto si před pokračováním prosím zazlohujte důležitá data.</string>
+    <string name="intro">Tato aplikace Vám pomůže v instalaci systému CyanogenMod na zařízení. Budete potřebovat PC s operačním systémem Windows ve verzi Vista nebo novější, nebo moderní (x86) Mac a USB kabel pro připojení zařízení.\n\nPři instalaci dojde k obnovení továrního nastavení a proto si před pokračováním prosím zazlohujte důležitá data.</string>
 
     <string name="begin">Začít</string>
     <string name="open_developer_options">Pokračovat</string>
