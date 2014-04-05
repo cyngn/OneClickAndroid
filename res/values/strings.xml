@@ -24,11 +24,11 @@
     <string name="device_ready_windows">Your device has been successfully detected by the CyanogenMod installer. Congratulations! To continue, return to the CyanogenMod Installer on your Windows PC and follow the instructions.</string>
     <string name="device_ready_mac">Your device has been successfully detected by the CyanogenMod installer. Congratulations! To continue, return to the CyanogenMod Installer on your Mac and follow the instructions.</string>
 
-    <string name="website_link">http://get.cm</string>
+    <string name="website_link" translatable="false">http://get.cm</string>
     <string name="unplug_device_instructions">Unplug your device from your computer to continue the installation process.\n\nDo not plug in your device again until prompted to by the installer.</string>
 
     <string name="i_agree">I Agree</string>
     <string name="warning">Warning!</string>
     <!-- DO NOT TRANSLATE YET -->
-    <string name="disclaimer" >Installing CyanogenMod will completely replace your phone\'s operating system, and in rare cases, this may cause your device to become nonfunctional.\n\nBut we\'ve worked very hard to make sure that the installation is as reliable and safe as possible.\n\nBy continuing, you understand the potential risks.</string>
+    <string name="disclaimer">Installing CyanogenMod will completely replace your device\'s operating system, and in rare cases, this may cause your device to become nonfunctional.\n\nBut we\'ve worked very hard to make sure that the installation is as reliable and safe as possible.\n\nBy continuing, you understand the potential risks.</string>
 </resources>
