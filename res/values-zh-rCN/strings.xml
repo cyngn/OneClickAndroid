@@ -5,6 +5,8 @@
   <string name="unsupported_title">不支持的设备</string>
   <string name="unsupported_text">抱歉，您的设备目前不支持 CyanogenMod 安装器。\n\n详细信息请查阅 <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices"> 支持设备列表</a>。 \n\n您也可以继续准备设备并安装但需要您自担风险。</string>
   <string name="continue_anyway">仍要继续</string>
+  <string name="welcome">欢迎</string>
+  <string name="intro">此应用将协助您安装 CyanogenMod。您需要运行 Vista 或更高版本的 Windows PC，或者较新版本的 Mac (x86) ，还需要一个 USB 连接线。\n\n此过程中您的设备将恢复到出厂重置，所以请确保在继续之前备份重要的数据。</string>
   <string name="begin">开始</string>
   <string name="open_developer_options">继续 </string>
   <string name="continue_on_windows">在您的 Windows PC 上继续安装</string>
@@ -19,4 +21,5 @@
   <string name="device_ready_mac">您的设备已被 CyanogenMod 安装程序成功地检测。祝贺！若要继续，请返回到 Mac 上的 CyanogenMod 安装程序，并按照说明进行操作。</string>
   <string name="unplug_device_instructions">从计算机上拔出设备以继续安装。\n\n在安装程序提示操作前不要插入设备。</string>
   <string name="i_agree">我同意</string>
+  <string name="warning">警告！</string>
 </resources>

@@ -21,4 +21,5 @@
   <string name="device_ready_mac">Votre appareil a été détecté avec succès par l\'installateur de CyanogenMod. Félicitations ! Pour continuer, retournez à l\'installateur de CyanogenMod sur votre Mac et suivez les instructions.</string>
   <string name="unplug_device_instructions">Débranchez votre appareil de votre ordinateur pour continuer l\'installation.\n\nNe rebranchez pas votre appareil jusqu\'à ce que vous y soyez invité par le programme d\'installation Windows.</string>
   <string name="i_agree">J\'accepte</string>
+  <string name="warning">Attention !</string>
 </resources>
