@@ -7,7 +7,7 @@
   <string name="continue_anyway">Trotzdem fortfahren</string>
   <string name="welcome">Willkommen</string>
   <string name="intro">Diese App führt Sie durch die Installation von CyanogenMod. Sie brauchen einen Windows-PC mit Vista oder neuer oder einen modernen (x86) Mac, sowie ein USB-Kabel.\n\nWährend der Installation wird ihr Gerät auf die Werkseinstellungen zurückgesetzt, darum sollten Sie jetzt von allen wichtigen Daten eine Sicherungskopie erstellen.</string>
-  <string name="begin">Los gehts\'s</string>
+  <string name="begin">Los geht\'s</string>
   <string name="open_developer_options">Fortsetzen</string>
   <string name="continue_on_windows">Installation auf einem Windows-PC fortsetzen</string>
   <string name="continue_on_mac">Installation auf einem Mac fortsetzen</string>
