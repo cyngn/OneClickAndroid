@@ -2,6 +2,8 @@ package org.cyanogenmod.oneclick;
 
 import android.os.SystemProperties;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 
 public class Utils {
@@ -97,7 +99,7 @@ public class Utils {
     }
 
     public static boolean isDeviceSupported() {
-        String device = SystemProperties.get("ro.product.device");
+        String device = getDevice();
         if (device != null) {
             if (SUPPORTED_DEVICES.contains(device.toLowerCase())) {
                 return true;
@@ -106,4 +108,33 @@ public class Utils {
 
         return false;
     }
+    
+    public static String getDevice() {
+        return SystemProperties.get("ro.product.device");
+    }
+    
+	public static final String md5(final String s) {
+	    final String MD5 = "MD5";
+	    try {
+	        // Create MD5 Hash
+	        MessageDigest digest = java.security.MessageDigest
+	                .getInstance(MD5);
+	        digest.update(s.getBytes());
+	        byte messageDigest[] = digest.digest();
+
+	        // Create Hex String
+	        StringBuilder hexString = new StringBuilder();
+	        for (byte aMessageDigest : messageDigest) {
+	            String h = Integer.toHexString(0xFF & aMessageDigest);
+	            while (h.length() < 2)
+	                h = "0" + h;
+	            hexString.append(h);
+	        }
+	        return hexString.toString();
+
+	    } catch (NoSuchAlgorithmException e) {
+	        e.printStackTrace();
+	    }
+	    return "";
+	}
 }

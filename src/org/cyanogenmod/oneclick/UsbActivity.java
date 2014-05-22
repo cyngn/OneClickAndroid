@@ -19,8 +19,11 @@ public class UsbActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
+        Analytics.Send("apk.termsAccepted");
 
         if (adbIsEnabled()) {
+            Analytics.Send("apk.adbAlreadyEnabled");
             startActivity(new Intent(getBaseContext(), PtpActivity.class));
             finish();
             return;

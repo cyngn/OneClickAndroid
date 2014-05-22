@@ -9,7 +9,11 @@ public class StartActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.welcome);
+        
+        Analytics.Init(getApplicationContext(), this);
+        Analytics.Send("apk.started");
 
         findViewById(R.id.begin).setOnClickListener(new View.OnClickListener() {
             @Override

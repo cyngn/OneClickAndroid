@@ -20,7 +20,9 @@ public class PtpActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        Analytics.Send("apk.adbEnabled");
         if (ptpIsEnabled()) {
+            Analytics.Send("apk.ptpAlreadyEnabled");
             startActivity(new Intent(getBaseContext(), HTCFastBootActivity.class));
             finish();
             return;
