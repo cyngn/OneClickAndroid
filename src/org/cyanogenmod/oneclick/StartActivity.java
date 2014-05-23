@@ -5,6 +5,8 @@ import com.google.android.gms.common.GooglePlayServicesUtil;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnDismissListener;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -21,12 +23,19 @@ public class StartActivity extends Activity {
         if (resultCode != ConnectionResult.SUCCESS) {
             Dialog dialog = GooglePlayServicesUtil.getErrorDialog(resultCode, this, 0);
             if (dialog != null) {
+                dialog.setOnDismissListener(new OnDismissListener() {
+                    @Override
+					public void onDismiss(DialogInterface dialog) {
+						// bail
+			            finish();
+					}
+				});
+
                 dialog.show();
             }
         }
         
-        Analytics.init(getApplicationContext(), this);
-        Analytics.send(Analytics.STARTED);
+        Analytics.send(getApplicationContext(), Analytics.STARTED);
 
         findViewById(R.id.begin).setOnClickListener(new View.OnClickListener() {
             @Override

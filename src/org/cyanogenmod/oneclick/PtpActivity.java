@@ -20,9 +20,9 @@ public class PtpActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-        Analytics.send(Analytics.ADB_ENABLED);
+        Analytics.send(getApplicationContext(), Analytics.ADB_ENABLED);
         if (ptpIsEnabled()) {
-            Analytics.send(Analytics.PTP_ALREADY_ENABLED);
+            Analytics.send(getApplicationContext(), Analytics.PTP_ALREADY_ENABLED);
             startActivity(new Intent(getBaseContext(), HTCFastBootActivity.class));
             finish();
             return;

@@ -12,13 +12,13 @@ public class UnplugDeviceActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         if (!deviceIsPluggedIn()) {
-            Analytics.send(Analytics.DEVICE_ALREADY_UNPLUGGED);
+            Analytics.send(getApplicationContext(), Analytics.DEVICE_ALREADY_UNPLUGGED);
             startActivity(new Intent(getBaseContext(), FinishActivity.class));
             finish();
             return;
         }
 
-        Analytics.send(Analytics.UNPLUG_DEVICE);
+        Analytics.send(getApplicationContext(), Analytics.UNPLUG_DEVICE);
         setContentView(R.layout.unplugdevice);
 
         startService(new Intent(getBaseContext(), UnplugDeviceMonitorService.class));

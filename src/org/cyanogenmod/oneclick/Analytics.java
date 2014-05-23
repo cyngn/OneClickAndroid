@@ -39,8 +39,8 @@ public class Analytics {
 	
 	private static final Boolean DEBUG = true;
 
-	public static void init(Context applicationContext, Activity currentActivity) {
-		if (DEBUG) GoogleAnalytics.getInstance(currentActivity).getLogger().setLogLevel(LogLevel.VERBOSE);
+	private static void init(Context applicationContext) {
+		if (DEBUG) GoogleAnalytics.getInstance(applicationContext).getLogger().setLogLevel(LogLevel.VERBOSE);
 
 		GoogleAnalytics ga = GoogleAnalytics.getInstance(applicationContext);
 		mTracker = ga.newTracker(applicationContext.getString(R.string.ga_trackingId));
@@ -49,14 +49,13 @@ public class Analytics {
 		mTracker.setClientId(Utils.getUniqueID(applicationContext));
 	}
 
-	public static void send(String category) {
-		send(category, Utils.getDevice());
+	public static void send(Context context, String category) {
+		send(context, category, Utils.getDevice());
 	}
 	
-	public static void send(String category, String action) {
+	public static void send(Context context, String category, String action) {
 		if (mTracker == null) {
-			Log.e("Analytics", "you have to init() before using Analytics.");
-			throw new IllegalStateException("Analytics was not initialized");
+			init(context);
 		}
 
 		mTracker.send(new HitBuilders.EventBuilder().setCategory(category).setAction(action).build());
