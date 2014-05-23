@@ -7,8 +7,7 @@ import android.os.BatteryManager;
 import android.os.Bundle;
 
 public class UnplugDeviceActivity extends Activity {
-
-	@Override
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 

@@ -4,9 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 
 public class ReturnToWindowsActivity extends Activity {
-
-
-	@Override
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Analytics.send(Analytics.CONTINUE_ON_WINDOWS);

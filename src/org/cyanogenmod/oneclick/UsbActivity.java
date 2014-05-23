@@ -15,8 +15,7 @@ import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 
 public class UsbActivity extends Activity {
-
-	@Override
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
