@@ -8,18 +8,18 @@ import android.os.Bundle;
 
 public class UnplugDeviceActivity extends Activity {
 
-    @Override
+	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         if (!deviceIsPluggedIn()) {
-            Analytics.Send("apk.deviceAlreadyUnplugged");
+            Analytics.send(Analytics.DEVICE_ALREADY_UNPLUGGED);
             startActivity(new Intent(getBaseContext(), FinishActivity.class));
             finish();
             return;
         }
 
-        Analytics.Send("apk.unplugDevice");
+        Analytics.send(Analytics.UNPLUG_DEVICE);
         setContentView(R.layout.unplugdevice);
 
         startService(new Intent(getBaseContext(), UnplugDeviceMonitorService.class));

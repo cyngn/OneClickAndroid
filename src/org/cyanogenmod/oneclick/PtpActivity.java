@@ -16,13 +16,13 @@ import android.widget.ImageView;
 
 public class PtpActivity extends Activity {
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
 
-        Analytics.Send("apk.adbEnabled");
+        Analytics.send(Analytics.ADB_ENABLED);
         if (ptpIsEnabled()) {
-            Analytics.Send("apk.ptpAlreadyEnabled");
+            Analytics.send(Analytics.PTP_ALREADY_ENABLED);
             startActivity(new Intent(getBaseContext(), HTCFastBootActivity.class));
             finish();
             return;

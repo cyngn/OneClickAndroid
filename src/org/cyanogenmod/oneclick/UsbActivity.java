@@ -16,14 +16,14 @@ import android.widget.ImageView;
 
 public class UsbActivity extends Activity {
 
-    @Override
+	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
-        Analytics.Send("apk.termsAccepted");
+        Analytics.send(Analytics.TERMS_ACCEPTED);
 
         if (adbIsEnabled()) {
-            Analytics.Send("apk.adbAlreadyEnabled");
+            Analytics.send(Analytics.ADB_ALREADY_ENABLED);
             startActivity(new Intent(getBaseContext(), PtpActivity.class));
             finish();
             return;

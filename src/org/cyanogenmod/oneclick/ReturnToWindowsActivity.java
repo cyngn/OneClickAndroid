@@ -4,10 +4,12 @@ import android.app.Activity;
 import android.os.Bundle;
 
 public class ReturnToWindowsActivity extends Activity {
-    @Override
+
+
+	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Analytics.Send("apk.continueOnWindows");
+        Analytics.send(Analytics.CONTINUE_ON_WINDOWS);
         setContentView(R.layout.returntowindows);
     }
 }

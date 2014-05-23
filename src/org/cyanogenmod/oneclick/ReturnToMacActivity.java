@@ -4,10 +4,12 @@ import android.app.Activity;
 import android.os.Bundle;
 
 public class ReturnToMacActivity extends Activity {
-    @Override
+
+
+	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Analytics.Send("apk.continueOnMac");
+        Analytics.send(Analytics.CONTINUE_ON_MAC);
         setContentView(R.layout.returntomac);
     }
 }

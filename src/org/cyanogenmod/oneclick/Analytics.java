@@ -17,50 +17,49 @@
 package org.cyanogenmod.oneclick;
 
 import android.app.Activity;
-import android.app.Dialog;
 import android.content.Context;
-import android.provider.Settings;
 import android.util.Log;
 
-import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Logger.LogLevel;
 import com.google.android.gms.analytics.Tracker;
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GooglePlayServicesUtil;
 
 public class Analytics {
 	private static Tracker mTracker;
+	public static final String ADB_ALREADY_ENABLED = "apk.adbAlreadyEnabled";
+	public static final String ADB_ENABLED = "apk.adbEnabled";
+	public static final String CONTINUE_ON_MAC = "apk.continueOnMac";
+	public static final String CONTINUE_ON_WINDOWS = "apk.continueOnWindows";
+	public static final String DEVICE_ALREADY_UNPLUGGED = "apk.deviceAlreadyUnplugged";
+	public static final String PTP_ALREADY_ENABLED = "apk.ptpAlreadyEnabled";
+	public static final String STARTED = "apk.started";
+	public static final String TERMS_ACCEPTED = "apk.termsAccepted";
+	public static final String UNPLUG_DEVICE = "apk.unplugDevice";
 	
-	public static void Init(Context applicationContext, Activity currentActivity) {
-        // let's make sure play services is up to date, or analytics probably won't work
-        Integer resultCode = GooglePlayServicesUtil.isGooglePlayServicesAvailable(currentActivity);
-        if (resultCode != ConnectionResult.SUCCESS) {
-            Dialog dialog = GooglePlayServicesUtil.getErrorDialog(resultCode, currentActivity, 0);
-            if (dialog != null) {
-                dialog.show();
-            }
-        }
-				
-        GoogleAnalytics ga = GoogleAnalytics.getInstance(applicationContext);
-        mTracker = ga.newTracker(applicationContext.getString(R.string.ga_trackingId));
-        mTracker.setUseSecure(true);
+	private static final Boolean DEBUG = true;
 
-        mTracker.setClientId(getUniqueID(applicationContext));
+	public static void init(Context applicationContext, Activity currentActivity) {
+		if (DEBUG) GoogleAnalytics.getInstance(currentActivity).getLogger().setLogLevel(LogLevel.VERBOSE);
+
+		GoogleAnalytics ga = GoogleAnalytics.getInstance(applicationContext);
+		mTracker = ga.newTracker(applicationContext.getString(R.string.ga_trackingId));
+		mTracker.setUseSecure(true);
+
+		mTracker.setClientId(Utils.getUniqueID(applicationContext));
+	}
+
+	public static void send(String category) {
+		send(category, Utils.getDevice());
 	}
 	
-	public static void Send(String category)
-	{
+	public static void send(String category, String action) {
 		if (mTracker == null) {
-			Log.e("Analytics", "you have to Init() before using analytics.");
-			return;
+			Log.e("Analytics", "you have to init() before using Analytics.");
+			throw new IllegalStateException("Analytics was not initialized");
 		}
-		
-		String action = Utils.getDevice();
+
 		mTracker.send(new HitBuilders.EventBuilder().setCategory(category).setAction(action).build());
-		//Log.i("Analytics", "sent GA ping with category: " + category + " and action: " + action);
-	}
-	
-	private static String getUniqueID(Context applicationContext) {
-		return Utils.md5(Settings.Secure.getString(applicationContext.getContentResolver(), Settings.Secure.ANDROID_ID));		
+		if (DEBUG) Log.i("Analytics", "sent GA ping with category: " + category + " and action: " + action);
 	}
 }

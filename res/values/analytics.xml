@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="ga_trackingId">UA-39737599-9</string>
+    <integer name="ga_dispatchPeriod">10</integer>
 </resources>
