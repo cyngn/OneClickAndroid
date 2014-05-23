@@ -19,10 +19,10 @@ public class UsbActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
-        Analytics.send(getApplicationContext(), Analytics.TERMS_ACCEPTED);
+        Analytics.sendEvent(getApplicationContext(), Analytics.TERMS_ACCEPTED);
 
         if (adbIsEnabled()) {
-            Analytics.send(getApplicationContext(), Analytics.ADB_ALREADY_ENABLED);
+            Analytics.sendEvent(getApplicationContext(), Analytics.ADB_ALREADY_ENABLED);
             startActivity(new Intent(getBaseContext(), PtpActivity.class));
             finish();
             return;

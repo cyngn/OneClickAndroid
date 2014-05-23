@@ -35,7 +35,7 @@ public class StartActivity extends Activity {
             }
         }
         
-        Analytics.send(getApplicationContext(), Analytics.STARTED);
+        Analytics.sendEvent(getApplicationContext(), Analytics.STARTED);
 
         findViewById(R.id.begin).setOnClickListener(new View.OnClickListener() {
             @Override

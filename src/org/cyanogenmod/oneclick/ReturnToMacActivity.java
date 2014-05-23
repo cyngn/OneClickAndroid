@@ -7,7 +7,7 @@ public class ReturnToMacActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Analytics.send(getApplicationContext(), Analytics.CONTINUE_ON_MAC);
+        Analytics.sendEvent(getApplicationContext(), Analytics.CONTINUE_ON_MAC);
         setContentView(R.layout.returntomac);
     }
 }
