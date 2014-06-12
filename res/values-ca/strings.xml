@@ -6,7 +6,7 @@
   <string name="unsupported_text">Ho sento, el teu dispositiu actualment no està suportat per l\'instal·lador de CyanogenMod.\n\nPer a més informació si us plau visita la <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">llista de dispositius suportats</a>. \n\nPots continuar preparant el dispositiu per a la instal·lació sota el teu propi risc.</string>
   <string name="continue_anyway">Continua igualment</string>
   <string name="welcome">Benvingut</string>
-  <string name="intro">Aquesta app us ajudarà a instal·lar l\'experiència de CyanogenMod. Necessites un PC amb Windows Vista o superior, o un Mac modern (x86) i un cable USB.\n\nEl teu dispositiu serà re-inicialitzat als ajustaments de fàbrica durant aquest procés, així que si us plau estigues segur que les dades importants tenen una còpia de seguretat abans de continuar.</string>
+  <string name="intro">Aquesta app us ajudarà a instal·lar l\'experiència de CyanogenMod. Necessites un PC amb Windows Vista o superior, o un Mac modern (x86) i un cable USB.\n\nEl teu dispositiu serà restablert a la configuració de fàbrica durant aquest procés, així que si us plau estigues segur que les dades importants tenen una còpia de seguretat abans de continuar.</string>
   <string name="begin">Comença</string>
   <string name="open_developer_options">Continua</string>
   <string name="continue_on_windows">Continua la instal·lació al teu PC amb Windows</string>
