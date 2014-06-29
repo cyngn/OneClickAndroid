@@ -6,9 +6,20 @@
   <string name="unsupported_text">申し訳ありませんが、あなたの端末は現在CyanogenModインストーラーにサポートされていません。\n\n詳細情報については<a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">対応端末一覧</a>を確認してください。\n\n自己責任でインストールの準備を続けることもできます。</string>
   <string name="continue_anyway">とにかく続ける</string>
   <string name="welcome">ようこそ</string>
+  <string name="intro">このアプリはCyanogenMod体験のインストールをアシストします。Vista以降のWindows、または最近（32bit）のMacがインストールされているパソコンとUSBケーブルが必要になります。\n\nこの過程で端末は工場出荷時の状態にリセットされますので、続ける前に重要なデータがバックアップされていることを確認してください。</string>
   <string name="begin">始める</string>
   <string name="open_developer_options">続ける</string>
+  <string name="continue_on_windows">お使いのWindowsパソコンでインストールを続ける</string>
+  <string name="continue_on_mac">お使いのMacでインストールを続ける</string>
+  <string name="continue_on_computer">お使いのコンピューターでインストールを続ける</string>
   <string name="unplug_device">端末を取り外してください</string>
+  <string name="enable_usb_help">続けるには、以下に表示されているように次の画面でUSBデバッグを有効にしてください。</string>
+  <string name="enable_ptp_help">続けるには、以下に表示されているように次の画面でカメラ（PTP）を有効にしてください。</string>
+  <string name="disable_fast_boot_help">続けるには、以下に表示されているように次の画面でファストブートを無効にしてください。</string>
+  <string name="device_ready">端末にCyanogenModをインストールする準備ができました。続けるには、コンピューターで以下のウェブサイトを参照してください:</string>
+  <string name="device_ready_windows">お使いの端末はCyanogenModインストーラーによって正常に検出されました。おめでとうございます！続けるには、お使いのWindowsのパソコンのCyanogenModインストーラーに戻り、指示に従ってください。</string>
+  <string name="device_ready_mac">お使いの端末はCyanogenModインストーラーによって正常に検出されました。おめでとうございます！続けるには、お使いのMacのCyanogenModインストーラーに戻り、指示に従ってください。</string>
+  <string name="unplug_device_instructions">インストールプロセスを続けるにはパソコンから端末を取り外してください。\n\nインストーラーがプロンプトを表示するまでは再び端末を接続しないでください。</string>
   <string name="i_agree">同意します</string>
   <string name="warning">警告！</string>
 </resources>
