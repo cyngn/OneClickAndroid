@@ -3,7 +3,7 @@
 <resources>
   <string name="app_name">CyanogenModインストーラ</string>
   <string name="unsupported_title">サポートされていない端末</string>
-  <string name="unsupported_text">申し訳ありませんが、あなたの端末は現在CyanogenModインストーラにサポートされていません。\n\n詳細情報については<a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">対応端末リスト</a>を確認してください。\n\n自己責任でインストールの準備を続けることもできます。</string>
+  <string name="unsupported_text">申し訳ありませんが、お使いの端末は現在CyanogenModインストーラにサポートされていません。\n\n詳細情報については<a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">対応端末リスト</a>を確認してください。\n\n自己責任でインストールの準備を続けることもできます。</string>
   <string name="continue_anyway">とにかく続ける</string>
   <string name="welcome">ようこそ</string>
   <string name="intro">このアプリはCyanogenMod体験のインストールをアシストします。Vista以降のWindows、または最近のMac（32bit）がインストールされているパソコンとUSBケーブルが必要になります。\n\nこのプロセスの中で、お使いの端末は工場出荷時の状態にリセットされますので、続ける前に重要なデータがバックアップされていることを確認してください。</string>
