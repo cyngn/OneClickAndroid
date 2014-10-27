@@ -6,7 +6,7 @@
   <string name="unsupported_text">抱歉，您的裝置目前不被 CyanogenMod 安裝程式支援。\n\n詳細資訊請查詢<a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">支援裝置列表</a>。\n\n您可以繼續準備您的裝置安裝，但您需要自行承擔風險。</string>
   <string name="continue_anyway">仍要繼續</string>
   <string name="welcome">歡迎</string>
-  <string name="intro">此應用程式將會協助您安裝 CyanogenMod。您將需要執行 Vista 或更新版本的 Windows PC，或者較新的 (x86) Mac，以及一條 USB 傳輸線。\n\n過程中您的裝置將會被恢復原廠設定，因此在繼續之前請確保重要資料都已經備份。</string>
+  <string name="intro">此應用程式將會協助您安裝 CyanogenMod。你將需要執行 Vista 或更新版本的 Windows PC，或者較新的 (x86) Mac，以及一條 USB 傳輸綫。\n\n過程中你的裝置將會被恢復原廠設定，因此在繼續之前請確保重要數據都已經備份。</string>
   <string name="begin">開始 </string>
   <string name="open_developer_options">繼續</string>
   <string name="continue_on_windows">在您的 Windows PC 上繼續安裝</string>
