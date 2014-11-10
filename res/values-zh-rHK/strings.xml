@@ -19,7 +19,7 @@
   <string name="device_ready">您的裝置已準備好 CyanogenMod 安裝。使用你的電腦造訪以下網站來繼續：</string>
   <string name="device_ready_windows">您的裝置已被 CyanogenMod 的安裝程式成功地檢測到。恭喜！若要繼續，返回的您的 Windows PC 上 CyanogenMod 的安裝程式，並按照說明進行操作。</string>
   <string name="device_ready_mac">您的裝置已被 CyanogenMod 的安裝程式成功地檢測到。恭喜！若要繼續，返回的您的 Mac 上 CyanogenMod 的安裝程式，並按照說明進行操作。</string>
-  <string name="unplug_device_instructions">從電腦上拔除您的裝置以繼續安裝。 \n\n在安裝程序提示操作前不要插入裝置。</string>
+  <string name="unplug_device_instructions">從電腦上拔除你的裝置以繼續安裝。 \n\n在安裝程序提示操作前不要插入裝置。</string>
   <string name="i_agree">我同意 </string>
   <string name="warning">警告！</string>
 </resources>

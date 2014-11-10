@@ -6,10 +6,10 @@
   <string name="unsupported_text">Désolé, votre appareil n\'est pas supporté par l\'installeur CyanogenMod.\n\nPour plus d\'informations merci de consulter la <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">liste des appareils supportés</a>.\n\nVous pouvez poursuivre la préparation de votre appareil à vos risques et périls.</string>
   <string name="continue_anyway">Continuer quand même</string>
   <string name="welcome">Bienvenue</string>
-  <string name="intro">Cette application vous assistera dans l\'installation de CyanogenMod. Vous allez avoir besoin d\'un PC Windows avec Vista ou plus récent, et d\'un cable USB.\n\nDurant ce procédé, votre appareil va être réinitialisé, veillez donc à effectuer une sauvegarde préalable de vos données sensibles avant de continuer.</string>
+  <string name="intro">Cette application vous assistera dans l\'installation de CyanogenMod. Vous allez avoir besoin d\'un PC Windows avec Vista ou plus récent, et d\'un câble USB.\n\nDurant ce procédé, votre appareil va être réinitialisé, veillez donc à effectuer une sauvegarde préalable de vos données sensibles avant de continuer.</string>
   <string name="begin">Commencer</string>
   <string name="open_developer_options">Continuer</string>
-  <string name="continue_on_windows">Continuer l\'installation dans Windows</string>
+  <string name="continue_on_windows">Continuer l\'installation sur votre PC Windows</string>
   <string name="continue_on_mac">Continuer l\'installation sur votre Mac</string>
   <string name="continue_on_computer">Continuer l\'installation sur votre ordinateur</string>
   <string name="unplug_device">Débranchez votre appareil</string>
