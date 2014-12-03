@@ -12,6 +12,9 @@ public class UnplugDeviceActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        OneClickStats.sendEvent(this,
+                OneClickStats.Categories.PAGE_SHOWN, OneClickStats.Actions.PAGE_UNPLUG);
+
         if (!deviceIsPluggedIn()) {
             startActivity(new Intent(getBaseContext(), FinishActivity.class));
             finish();

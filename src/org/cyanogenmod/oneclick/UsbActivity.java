@@ -20,6 +20,9 @@ public class UsbActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        OneClickStats.sendEvent(this,
+                OneClickStats.Categories.PAGE_SHOWN, OneClickStats.Actions.PAGE_ADB);
+
         if (adbIsEnabled()) {
             startActivity(new Intent(getBaseContext(), PtpActivity.class));
             finish();
@@ -61,10 +64,14 @@ public class UsbActivity extends Activity {
                 Intent intent = new Intent();
                 intent.setClassName("com.android.settings", "com.android.settings.DevelopmentSettings");
                 try {
+                    OneClickStats.sendEvent(view.getContext(),
+                            OneClickStats.Categories.BUTTON_CLICK, OneClickStats.Actions.BTN_ADB);
                     startActivity(intent);
                     startService(new Intent(getBaseContext(), UsbDebuggingMonitorService.class));
                 } catch (ActivityNotFoundException e) {
                     // we want to know if this happens, right?
+                    OneClickStats.sendEvent(view.getContext(),
+                            OneClickStats.Categories.SWITCH_ERROR, OneClickStats.Actions.ERR_ADB);
                 }
             }
         };

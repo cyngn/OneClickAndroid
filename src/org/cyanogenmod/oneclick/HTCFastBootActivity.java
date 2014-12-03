@@ -21,6 +21,9 @@ public class HTCFastBootActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        OneClickStats.sendEvent(this,
+                OneClickStats.Categories.PAGE_SHOWN, OneClickStats.Actions.PAGE_HTC_FASTBOOT);
+
         if (fastBootIsDisabled()) {
             startActivity(new Intent(getBaseContext(), UnplugDeviceActivity.class));
             finish();
@@ -62,10 +65,14 @@ public class HTCFastBootActivity extends Activity {
                 Intent intent = new Intent();
                 intent.setComponent(htcPowerManager);
                 try {
+                    OneClickStats.sendEvent(view.getContext(),
+                            OneClickStats.Categories.BUTTON_CLICK, OneClickStats.Actions.BTN_HTC_FASTBOOT);
                     startActivity(intent);
                     startService(new Intent(getBaseContext(), HTCFastBootMonitorService.class));
                 } catch (ActivityNotFoundException e) {
                     // we want to know if this happens, right?
+                    OneClickStats.sendEvent(view.getContext(),
+                            OneClickStats.Categories.SWITCH_ERROR, OneClickStats.Actions.ERR_HTC_FASTBOOT);
                 }
             }
         };
