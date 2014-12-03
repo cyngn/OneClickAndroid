@@ -11,9 +11,14 @@ public class StartActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome);
 
+        OneClickStats.sendEvent(this,
+                OneClickStats.Categories.PAGE_SHOWN, OneClickStats.Actions.PAGE_WELCOME);
+
         findViewById(R.id.begin).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                OneClickStats.sendEvent(view.getContext(),
+                        OneClickStats.Categories.BUTTON_CLICK, OneClickStats.Actions.BTN_WELCOME);
                 startActivity(new Intent(StartActivity.this, DisclaimerActivity.class));
             }
         });
