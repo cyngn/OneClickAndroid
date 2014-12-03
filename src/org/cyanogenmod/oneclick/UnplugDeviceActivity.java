@@ -12,6 +12,9 @@ public class UnplugDeviceActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        OneClickStats.sendEvent(this, OneClickStats.Categories.PAGE_SHOWN,
+            OneClickStats.Actions.PAGE_UNPLUG);
+
         if (!deviceIsPluggedIn()) {
             startActivity(new Intent(getBaseContext(), FinishActivity.class));
             finish();
@@ -33,8 +36,10 @@ public class UnplugDeviceActivity extends Activity {
     }
 
     private boolean deviceIsPluggedIn() {
-        Intent intent = getBaseContext().registerReceiver(null, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
+        Intent intent = getBaseContext().registerReceiver(null,
+            new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
         int plugged = intent.getIntExtra(BatteryManager.EXTRA_PLUGGED, -1);
-        return (plugged == BatteryManager.BATTERY_PLUGGED_USB) || (plugged == BatteryManager.BATTERY_PLUGGED_AC);
+        return (plugged == BatteryManager.BATTERY_PLUGGED_USB) ||
+            (plugged == BatteryManager.BATTERY_PLUGGED_AC);
     }
 }

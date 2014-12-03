@@ -20,6 +20,9 @@ public class PtpActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        OneClickStats.sendEvent(this, OneClickStats.Categories.PAGE_SHOWN,
+            OneClickStats.Actions.PAGE_PTP);
+
         if (ptpIsEnabled()) {
             startActivity(new Intent(getBaseContext(), HTCFastBootActivity.class));
             finish();
@@ -61,10 +64,14 @@ public class PtpActivity extends Activity {
                 Intent intent = new Intent();
                 intent.setClassName("com.android.settings", "com.android.settings.UsbSettings");
                 try {
+                    OneClickStats.sendEvent(view.getContext(),
+                        OneClickStats.Categories.BUTTON_CLICK, OneClickStats.Actions.BTN_PTP);
                     startActivity(intent);
                     startService(new Intent(getBaseContext(), PtpMonitorService.class));
                 } catch (ActivityNotFoundException e) {
                     // we want to know if this happens, right?
+                    OneClickStats.sendEvent(view.getContext(),
+                        OneClickStats.Categories.SWITCH_ERROR, OneClickStats.Actions.ERR_PTP);
                 }
             }
         };
