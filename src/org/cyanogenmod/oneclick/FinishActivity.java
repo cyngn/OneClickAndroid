@@ -11,6 +11,9 @@ public class FinishActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         super.onCreate(savedInstanceState);
+
+        OneClickStats.sendEvent(this, OneClickStats.Categories.PAGE_SHOWN,
+            OneClickStats.Actions.PAGE_FINISH);
         setContentView(R.layout.computer);
     }
 
