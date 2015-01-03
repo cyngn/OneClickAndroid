@@ -3,10 +3,23 @@
 <resources>
   <string name="app_name">CyanogenMod-Installer</string>
   <string name="unsupported_title">Net ënnerstëtzten Apparat</string>
+  <string name="unsupported_text">Leider gëtt däin Apparat net vum CyanogenMod-Installatiounsprogramm ënnerstëtzt.\n\nKuck fir méi Informatiounen d\'<a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">Lëscht vun ënnerstëtzten Apparater</a>.\n\nDu kanns op däin eegene Risiko versichen däin Apparat trotzdeem fir d\'Installatioun ze preparéieren.</string>
   <string name="continue_anyway">Trotzdeem weidermaachen</string>
   <string name="welcome">Wëllkomm</string>
+  <string name="intro">Dës App féiert dech duerch d\'Installation vu CyanogenMod. Du brauchs e Windows-PC mat Vista oder méi nei oder e modernen \"x86\"-Mac. Ausserdeem brauchs du en USB-Kabel.\n\nWährend der Installatioun gëtt den Apparat op d\'Wierksastellungen zréckgesat, dofir ass et wichteg datt et vun alle wichtegen Daten eng Sécherungskopie gëtt ier s de weiderfiers.</string>
   <string name="begin">Ufänken</string>
   <string name="open_developer_options">Weider</string>
+  <string name="continue_on_windows">Installatioun op dengem Windows-Computer weiderféieren</string>
+  <string name="continue_on_mac">Installatioun op dengem Mac-Computer weiderféieren</string>
+  <string name="continue_on_computer">Installatioun op dengem Computer weiderféieren</string>
+  <string name="unplug_device">Trenn de Kabel vum Apparat</string>
+  <string name="enable_usb_help">Fir weiderzemaache muss du um nächste Schierm \"USB-Debugging\" aktivéieren, wéi hei drënner gewisen.</string>
+  <string name="enable_ptp_help">Fir weiderzemaache muss du um nächste Schierm \"Kamera (PTP)\" aktivéieren, wéi hei drënner gewisen.</string>
+  <string name="disable_fast_boot_help">Fir weiderzemaache muss du um nächste Schierm \"Fast Boot\" desaktivéieren, wéi hei drënner gewisen.</string>
+  <string name="device_ready">Däin Apparat ass elo fir d\'Installatioun vu CyanogenMod preparéiert. Besich dësen Internetsite op dengem Computer fir weiderzemaachen:</string>
+  <string name="device_ready_windows">Däin Apparat gouf erfollegräich vum CyanogenMod-Installatiounsprogramm erkannt. Gléckwonsch! Suivéier d\'Uweisunge vum CyanogenMod-Installatiounsprogramm op dengem Windows-Computer fir weiderzefueren.</string>
+  <string name="device_ready_mac">Däin Apparat gouf erfollegräich vum CyanogenMod-Installatiounsprogramm erkannt. Gléckwonsch! Suivéier d\'Uweisunge vum CyanogenMod-Installatiounsprogramm op dengem Mac fir weiderzefueren.</string>
+  <string name="unplug_device_instructions">Trenn däin Apparat vum Computer fir mam Installatiounsprozess weiderzemaachen.\n\nSchléiss den Apparat net méi u bis den Installatiounsprogramm duerno freet.</string>
   <string name="i_agree">Ech stëmmen zou</string>
   <string name="warning">Warnung!</string>
 </resources>
