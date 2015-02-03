@@ -27,16 +27,15 @@
             style="@style/Title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/warning"/>
+            android:text="@string/warning" />
 
-        <ImageView
-            style="@style/ModSeparator" />
+        <ImageView style="@style/ModSeparator" />
 
         <TextView
             android:id="@+id/disclaimer_text"
             style="@style/Body"
-            android:text="@string/disclaimer"
-            android:paddingBottom="30dp" />
-
+            android:paddingBottom="30dp"
+            android:text="@string/disclaimer" />
     </LinearLayout>
+
 </RelativeLayout>
