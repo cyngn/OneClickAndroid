@@ -3,7 +3,7 @@
 <resources>
   <string name="app_name">Instalador CyanogenMod</string>
   <string name="unsupported_title">Dispositivo no soportado</string>
-  <string name="unsupported_text">Lo sentimos, tu dispositivo no está soportado por el instalador de CyanogenMod.\n\nPara más información, consulta la siguiente <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">lista de dispositivos soportados</a>.\n\nPuedes continuar para preparar la instalación en tu dispositivo bajo tu propio riesgo.</string>
+  <string name="unsupported_text">Lo sentimos, tu dispositivo no está soportado actualmente por el instalador de CyanogenMod.\n\nPara más información, consulta la siguiente <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">lista de dispositivos soportados</a>.\n\nPuedes continuar para preparar la instalación en tu dispositivo bajo tu propio riesgo.</string>
   <string name="continue_anyway">Continuar igualmente</string>
   <string name="welcome">Bienvenido</string>
   <string name="intro">Esta aplicación te ayudará a medida que instalas la experiencia CyanogenMod. Necesitarás un ordenador con Windows Vista o posterior, o un Mac (x86) moderno y un cable USB.\n\nTu dispositivo será restaurado a su estado inicial de fábrica durante este proceso, así que por favor asegúrate de tener una copia de seguridad de tus datos importantes antes de continuar.</string>
@@ -19,7 +19,7 @@
   <string name="device_ready">Tu dispositivo está preparado para la instalación de CyanogenMod. Visita la siguiente dirección web en tu ordenador para continuar:</string>
   <string name="device_ready_windows">Tu dispositivo ha sido detectado correctamente por el instalador de CyanogenMod. ¡Felicidades! Para continuar, vuelve al instalador de CyanogenMod en tu ordenador con Windows y sigue las instrucciones.</string>
   <string name="device_ready_mac">Tu dispositivo ha sido detectado correctamente por el instalador de CyanogenMod. ¡Felicidades! Para continuar, vuelve al instalador de CyanogenMod en tu Mac y sigue las instrucciones.</string>
-  <string name="unplug_device_instructions">Desconecta tu dispositivo de tu ordenador para continuar con el proceso de instalación.\n\nNo desconectes tu dispositivo hasta que sea indicado por el instalador.</string>
+  <string name="unplug_device_instructions">Desconecta tu dispositivo de tu ordenador para continuar con el proceso de instalación.\n\nNo conectes tu dispositivo hasta que sea indicado por el instalador.</string>
   <string name="i_agree">Estoy conforme</string>
   <string name="warning">¡Aviso!</string>
 </resources>

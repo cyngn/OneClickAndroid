@@ -3,7 +3,7 @@
 <resources>
   <string name="app_name">Installeur CyanogenMod</string>
   <string name="unsupported_title">Appareil non supporté</string>
-  <string name="unsupported_text">Désolé, votre appareil n\'est pas supporté par l\'installeur CyanogenMod.\n\nPour plus d\'informations merci de consulter la <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">liste des appareils supportés</a>.\n\nVous pouvez poursuivre la préparation de votre appareil à vos risques et périls.</string>
+  <string name="unsupported_text">Désolé, votre appareil n\'est pas supporté par l\'installeur CyanogenMod.\n\nPour plus d\'informations, veuillez consulter la <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices">liste des appareils supportés</a>.\n\nVous pouvez poursuivre la préparation de votre appareil à vos risques et périls.</string>
   <string name="continue_anyway">Continuer quand même</string>
   <string name="welcome">Bienvenue</string>
   <string name="intro">Cette application vous assistera dans l\'installation de CyanogenMod. Vous allez avoir besoin d\'un PC Windows avec Vista ou plus récent, et d\'un câble USB.\n\nDurant ce procédé, votre appareil va être réinitialisé, veillez donc à effectuer une sauvegarde préalable de vos données sensibles avant de continuer.</string>
@@ -15,7 +15,7 @@
   <string name="unplug_device">Débranchez votre appareil</string>
   <string name="enable_usb_help">Pour continuer, activez le débogage USB sur l\'écran suivant, comme indiqué ci-dessous.</string>
   <string name="enable_ptp_help">Pour continuer, activez le mode Appareil photo (PTP) sur l\'écran suivant, comme indiqué ci-dessous.</string>
-  <string name="disable_fast_boot_help">Pour continuer, merci de désactiver FastBoot sur ​​l\'écran suivant, comme indiqué ci-dessous.</string>
+  <string name="disable_fast_boot_help">Pour continuer, veuillez désactiver FastBoot sur ​​l\'écran suivant, comme indiqué ci-dessous.</string>
   <string name="device_ready">Votre appareil est maintenant prêt pour l\'installation de CyanogenMod. Accédez au site ci-dessous sur votre PC Windows pour continuer:</string>
   <string name="device_ready_windows">Votre appareil a été détecté avec succès par l\'installateur de CyanogenMod. Félicitations ! Pour continuer, retournez à l\'installateur de CyanogenMod sur votre PC Windows et suivez les instructions.</string>
   <string name="device_ready_mac">Votre appareil a été détecté avec succès par l\'installateur de CyanogenMod. Félicitations ! Pour continuer, retournez à l\'installateur de CyanogenMod sur votre Mac et suivez les instructions.</string>
