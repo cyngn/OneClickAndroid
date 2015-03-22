@@ -6,6 +6,7 @@
   <string name="unsupported_text">Bağışlayın, cihazınız CyanogenMod Yükləyici tərəfindən dəstəklənmir.\n\nDaha ətraflı məlumat üçün <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices"> dəstəklənən cihazlar siyahısı</a> səhifəsini ziyarət edin.\n\nƏgər yükləməyə davam etsəniz, bunun cihazınız üçün riskli olduğunu unutmayın.</string>
   <string name="continue_anyway">Yenədə Davam et</string>
   <string name="welcome">Xoş gəldiniz</string>
+  <string name="intro">Bu tətbiqetmə CyanogenMod təcrübəsi quraşdırılarkən sizə kömək edəcək. Vista və ya başqa əməliyyat sistemi ilə işləyən Windows PC və ya müasir (x86) Mac və USB kabeli lazım olacaq.\n\nBu əməliyyat ərzində cihazınız fabrika tənzimləmələrinə sıfırlanacaq, ona görə də zəhmət olmasa davam etməmişdən əvvəl lazımi verllənlərin nüsxələndiyindən əmin olun.</string>
   <string name="begin">Başla</string>
   <string name="open_developer_options">Davam et</string>
   <string name="continue_on_windows">Windows PC\'nizdə yükləməyə davam edin</string>
