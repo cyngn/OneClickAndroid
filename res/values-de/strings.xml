@@ -13,9 +13,9 @@
   <string name="continue_on_mac">Installation auf einem Mac fortsetzen</string>
   <string name="continue_on_computer">Installation auf einem Windows-PC fortsetzen</string>
   <string name="unplug_device">Trennen Sie die Verbindung zu Ihrem Gerät</string>
-  <string name="enable_usb_help">Im nächsten Schritt, aktivieren Sie USB-Debugging, wie unten abgebildet.</string>
+  <string name="enable_usb_help">Im nächsten Schritt aktivieren Sie \"USB-Debugging\", wie unten abgebildet.</string>
   <string name="enable_ptp_help">Im nächsten Schritt, aktivieren Sie Kamera (PTP), wie unten abgebildet.</string>
-  <string name="disable_fast_boot_help">Im nächsten Schritt, deaktivieren Sie Fast Boot, wie unten abgebildet.</string>
+  <string name="disable_fast_boot_help">Im nächsten Schritt deaktivieren Sie Fast Boot, wie unten abgebildet.</string>
   <string name="device_ready">Ihr Gerät ist jetzt für die Installation von CyanogenMod bereit. Besuchen Sie die unten stehende Website auf Ihrem Windows-PC um fortzufahren:</string>
   <string name="device_ready_windows">Ihr Gerät wurde erfolgreich vom CyanogenMod-Installer erkannt. Um fortzufahren, folgen Sie den Anweisungen des CyanogenMod Installers auf Ihrem Windows-PC.</string>
   <string name="device_ready_mac">Ihr Gerät wurde erfolgreich vom CyanogenMod-Installer erkannt. Um fortzufahren, folgen Sie den Anweisungen des CyanogenMod Installers auf Ihrem MAC.</string>

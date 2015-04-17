@@ -15,7 +15,6 @@
   <string name="unplug_device">Zure gailua deskonektatu</string>
   <string name="enable_usb_help">Jarraitzeko hurrengo pantailan USB arazketa gaitu, azpian erakusten den bezala.</string>
   <string name="enable_ptp_help">Jarraitzeko (PTP) Kamera gaitu hurrengo pantailan, azpian erakusten den bezala.</string>
-  <string name="disable_fast_boot_help">Jarraitzeko Haste Bizkorra ezgaitu, azpian erakusten den bezala.</string>
   <string name="device_ready">Zure gailua CyanogenMod erabiltzeko prest dago. Ordenagailuan hurrengo web gunea bisitatu jarraitu ahal izateko:</string>
   <string name="device_ready_windows">CyanogenMod instalatzaileak zure gailua arrakastaz detektatu du. Zorionak! Jarraitzeko, itzul zaitez Windows-a duen ordenagailuko CyanogenMod instalatzailera eta argibideak jarraitu.</string>
   <string name="device_ready_mac">CyanogenMod instalatzaileak zure gailua arrakastaz detektatu du. Zorionak! Jarraitzeko, itzul zaitez Mac-ean dagoen CyanogenMod instalatzailera eta argibideak jarraitu.</string>
