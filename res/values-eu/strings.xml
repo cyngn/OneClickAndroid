@@ -6,7 +6,7 @@
   <string name="unsupported_text">Sentitzen dugu, CyanogenMod instalatzaileak ez du zure gailua jasaten.\n\nInformazio gehiagorako, jasandako gailuen hurrengo <a href="http://wiki.cyanogenmod.org/w/CyanogenMod_Installer#Supported_Devices"> zerrenda kontsultatu</a>.\n\nZure ardurapean instalazioa prestatzen jarrai zaitezke.</string>
   <string name="continue_anyway">Jarraitu horretaz gain</string>
   <string name="welcome">Ongi etorri</string>
-  <string name="intro">Aplikazio honek CyanogenMod esperientzia instalatu bitartean agunduko dizu. Windows Vista tik gorako ordenagailua edo Mac (x86) moderno bat beharko duzu USB kable batez gain.\n\nZure gailua lantegiko jatorrizko egoerara itzuliko da prozesuan zehar, beraz zure datu garrantzitsuenen babeskopia bat duzula berretsi.</string>
+  <string name="intro">Aplikazio honek CyanogenMod esperientzia instalatu bitartean agunduko dizu. Windows Vistatik gorako ordenagailua edo Mac (x86) moderno bat beharko duzu USB kable batez gain.\n\nZure gailua lantegiko jatorrizko egoerara leheneratuko da prozesuan zehar, beraz zure datu garrantzitsuenen babeskopia bat duzula berretsi.</string>
   <string name="begin">Hasi</string>
   <string name="open_developer_options">Jarraitu</string>
   <string name="continue_on_windows">Instalazioa zure Windows ordenagailuan jarraitu</string>
@@ -15,9 +15,10 @@
   <string name="unplug_device">Zure gailua deskonektatu</string>
   <string name="enable_usb_help">Jarraitzeko hurrengo pantailan USB arazketa gaitu, azpian erakusten den bezala.</string>
   <string name="enable_ptp_help">Jarraitzeko (PTP) Kamera gaitu hurrengo pantailan, azpian erakusten den bezala.</string>
+  <string name="disable_fast_boot_help">Jarraitzeko abio azkarra ezgaitu hurrengo pantailan, azpian erakusten den bezala.</string>
   <string name="device_ready">Zure gailua CyanogenMod erabiltzeko prest dago. Ordenagailuan hurrengo web gunea bisitatu jarraitu ahal izateko:</string>
-  <string name="device_ready_windows">CyanogenMod instalatzaileak zure gailua arrakastaz detektatu du. Zorionak! Jarraitzeko, itzul zaitez Windows-a duen ordenagailuko CyanogenMod instalatzailera eta argibideak jarraitu.</string>
-  <string name="device_ready_mac">CyanogenMod instalatzaileak zure gailua arrakastaz detektatu du. Zorionak! Jarraitzeko, itzul zaitez Mac-ean dagoen CyanogenMod instalatzailera eta argibideak jarraitu.</string>
+  <string name="device_ready_windows">CyanogenMod instalatzaileak zure gailua ondo antzeman du. Zorionak! Jarraitzeko, itzuli zaitez zure Windows PCko CyanogenMod instalatzailera eta jarraitu argibideak.</string>
+  <string name="device_ready_mac">CyanogenMod instalatzaileak zure gailua ondo antzeman du. Zorionak! Jarraitzeko, itzuli zaitez zure Mac ordenagailuko CyanogenMod instalatzailera eta jarraitu argibideak.</string>
   <string name="unplug_device_instructions">Gailua ordenagailutik deskonektatu instalazioarekin jarraitzeko.\n\nGailua ez konektatu instalatzaileak hala esan arte.</string>
   <string name="i_agree">Ados nago</string>
   <string name="warning">Kontuz!</string>
