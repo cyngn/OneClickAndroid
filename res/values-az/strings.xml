@@ -12,5 +12,6 @@
   <string name="continue_on_windows">Windows PC\'nizdə yükləməyə davam edin</string>
   <string name="continue_on_mac">Mac\'ınızda yükləməyə davam edin</string>
   <string name="continue_on_computer">Komputerinizdə yükləməyə davam edin</string>
+  <string name="disable_fast_boot_help">Davam etmək üçün zəhmət olmasa növbəti ekranda Sürətli Önyükləməni aşağıda göstərildiyi kimi ləğv edin.</string>
   <string name="i_agree">Razıyam</string>
 </resources>
